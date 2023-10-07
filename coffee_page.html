@@ -8,8 +8,7 @@
         .parent
         {
             border: 1px solid black;
-            flex-direction: row;
-           
+            width: 100%;
         }
         nav
         {
@@ -25,7 +24,7 @@
             background: url(./Images/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png) no-repeat;
             background-size: cover;
             font-size: 70px;
-             padding-top: 30px;
+            padding-top: 30px;
             color: #feedda;
             font-weight: 400;
             font-family: "Yeseva One";
@@ -41,8 +40,48 @@
             width: 174px;
             height: 54px;
             background-color: #b13941;
-            color: white;
+            color: #feedda;
             font-size: large;
+        }
+        .page2
+        {
+            width: 100%;
+            height: 477px;
+            border: 1px solid black;
+            background-color: #b13941;
+            display: flex;
+        }
+        .page2 img{
+            width: 300px;
+            height: 300px;
+            padding-left: 150px;
+            padding-top: 100px;
+        }
+         #p1
+        {
+            font-family: "Yeseva One";
+            font-size: 45px;
+            padding-left: 100px;
+            padding-top: 78px;
+            color: #feedda;
+        }
+         #p2
+        {
+            font-size: large;
+            color: black;
+            color: #feedda;
+            padding-left: 100px;
+        }
+        #b2
+        {
+            margin-left: 100px;
+            width: 219px;
+            height: 47px;
+            font-family: "Yeseva One";
+            color: #b13941;
+            background-color: #feedda;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -66,5 +105,17 @@
         </p>
         <button id="b1">Get Started</button>
     </div>
+
+    <div class="page2">
+        <img src="./Images/coffee logo.png" alt="">
+        
+        <div>
+        <p id="p1">Gift Voucher
+            <br> <b>1 Free Cup of Coffee</b></p>
+        <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et temporibus est nam accusantium officia quaerat illo sunt, recusandae eligendi aperiam.</p>
+        <br>
+        <button id="b2">Claim Voucher Here</button>
+        </div>
+        </div>
 </body>
 </html>
