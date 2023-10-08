@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee</title>
-    <style>
+
         .parent
         {
             border: 1px solid black;
@@ -83,39 +77,38 @@
             font-size: 20px;
             font-weight: bold;
         }
-    </style>
-</head>
-<body>
-    <div class="parent">
-    <nav>
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Menu</h2>
-        <img src="./Images/icon1.png" alt="">
-        <h2>Blog</h2>
-        <h2>Shop</h2>
-        <h2>Contact</h2>
-    </nav>
-</div>
-    <div class="parent2">
-        <h3>Morning Coffee Routine</h3>
-        <p id="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            <br> Nam quod explicabo quo vel praesentium qui suscipit alias ratione incidunt non?
-        </p>
-        <button id="b1">Get Started</button>
-    </div>
-
-    <div class="page2">
-        <img src="./Images/coffee logo.png" alt="">
-        
-        <div>
-        <p id="p1">Gift Voucher
-            <br> <b>1 Free Cup of Coffee</b></p>
-        <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et temporibus est nam accusantium officia quaerat illo sunt, recusandae eligendi aperiam.</p>
-        <br>
-        <button id="b2">Claim Voucher Here</button>
-        </div>
-        </div>
-</body>
-</html>
+        .parent3
+        {
+            border: 1px solid black;
+            width: 100%;
+            height: 777px;
+            background-color: #feedda;
+            display: flex;
+        }
+        .parent3 img
+        {
+            border: 1p solid black;
+           
+        }
+        #Best1
+        {
+            font-size: 75px;
+            letter-spacing: 1px;
+            color: #000000;
+            font-weight: 300;
+            font-family: "Yeseva One";
+        }
+        #Best2
+        {
+            width: 576px;
+            height: 277px;
+            font-size: 21px;
+            line-height: 33px;
+            color: #575757;
+            font-weight: 400;
+            font-family: "PT Serif";
+        }
+        .mydiv2
+        {
+            padding-left: 100px;    
+        }
