@@ -1,0 +1,160 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .cards
+    {
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align: center;
+        gap: 20px;
+    }
+
+    #title3
+    {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    #img
+    {
+        align-items: center;
+        width: 400px;
+    }
+
+    #content3
+    {
+        font-size: 20px;
+        padding: 10px;
+    }
+   
+    #shape2
+    {
+        position: absolute;
+        top: -10px;
+        left: 80px;
+    }
+
+    #shape3
+    {
+        position: absolute;
+        top: 160px;
+        left: 30px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .cards
+    {
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align: center;
+        gap: 20px;
+    }
+
+    #title3
+    {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    #img
+    {
+        align-items: center;
+        width: 400px;
+    }
+
+    #content3
+    {
+        font-size: 20px;
+        padding: 10px;
+    }
+   
+    #shape2
+    {
+        position: absolute;
+        top: -10px;
+        left: 80px;
+    }
+
+    #shape3
+    {
+        position: absolute;
+        top: 160px;
+        left: 30px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cards
+    {
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align: center;
+        gap: 20px;
+    }
+
+    #title3
+    {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    #img
+    {
+        align-items: center;
+        width: 400px;
+    }
+
+    #content3
+    {
+        font-size: 20px;
+        padding: 10px;
+    }
+   
+    #shape2
+    {
+        position: absolute;
+        top: -10px;
+        left: 110px;
+    }
+
+    #shape3
+    {
+        position: absolute;
+        top: 150px;
+        left: 88px;
+    }
+
+  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .cards
+    {
+        flex-direction: row;
+        /* justify-content: center; */
+        text-align: center;
+        gap: 20px;
+    }
+
+    #shape5
+    {
+        top: 243px;
+        position: absolute;
+        right: -20px;
+    }
+
+    #shape4
+    {
+    position: absolute;
+    bottom: 57px;
+    left: -78px;
+}
+ }

@@ -86,7 +86,12 @@ font-family: "Montserrat";
     font-size: 30px;
     font-family: "Montserrat";
     background-color: #21243d;
-    margin-top: 100px;
+    margin-top: 20px;
+}
+
+.space-50
+{
+    padding-bottom: 100px;
 }
 
 
@@ -173,7 +178,7 @@ text-align: center;
 .cards
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
 
