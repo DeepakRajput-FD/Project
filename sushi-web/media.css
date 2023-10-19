@@ -45,7 +45,8 @@
  }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (max-width: 768px) {
+    
     .cards
     {
         flex-direction: column;
@@ -85,6 +86,30 @@
         top: 160px;
         left: 30px;
     }
+
+    .joint2
+    {
+        flex-direction: column;
+    }
+    
+
+        
+    .imagepage3
+    {
+      
+    }
+
+    .joint2
+    {
+        flex-direction: column;
+    }
+    
+    .main-content3
+    {
+        justify-content: center;
+        text-align: center;
+    }
+
  }
 
 /* // Large devices (desktops, 992px and up) */
@@ -127,6 +152,104 @@
         position: absolute;
         top: 150px;
         left: 88px;
+    }
+
+    .joint1
+    {
+        position: relative;
+        left: 0px;
+        top: 50px;
+    }
+    
+    
+#shape7
+{
+    position: absolute;
+   top: 140px;
+   left: 160px;
+}
+    
+
+    .imagepage3
+    {
+    padding:100px 50px 100px 100px;
+    width: 50%;
+    /* border: 1px solid black; */
+    }
+
+    #title4
+    {
+        font-size: 55px;
+    }
+
+    
+    #content4
+    {
+    font-size: 30px;
+    width: 320px;
+    padding-left: 20px;
+    color: #21243d;
+    font-weight: 400;
+    font-family: "Montserrat";
+    }
+
+    #shape12 {
+        position: absolute;
+        top: 60px;
+        right: 33px;
+    }
+
+    #shape16 {
+        position: absolute;
+        bottom: 38px;
+        right: 348px;
+    }
+
+    #shape21 {
+        position: absolute;
+        bottom: 39px;
+        left: 352px;
+    }
+
+    #title6
+    {
+        width: 400px;
+        padding-left: 30px;
+    }
+
+    #content6
+    {
+        width: 400px;
+        padding-left: 30px;
+    }
+
+    #b3
+    {
+        margin-left: 30px;
+    }
+
+    #shape19 {
+        position: absolute;
+        top: 150px;
+        left: 30px;
+    }
+
+    #shape24 {
+        position: absolute;
+        top: 75px;
+        left: 109px;
+    }
+
+    #shape26 {
+        position: absolute;
+        bottom: 30px;
+        left: 357px;
+    }
+
+    #shape25 {
+        position: absolute;
+        bottom: 145px;
+        left: 38px;
     }
 
   }
