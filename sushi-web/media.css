@@ -2,7 +2,7 @@
 /* // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
     .cards
     {
         flex-direction: column;
@@ -53,12 +53,17 @@
         /* justify-content: center; */
         text-align: center;
         gap: 20px;
-    }
+    }   
 
     #title3
     {
         font-size: 50px;
         padding: 10px;
+    }
+
+    #content1
+    {
+        margin-right: 30px;
     }
 
     #img
@@ -73,11 +78,13 @@
         padding: 10px;
     }
    
-    #shape2
-    {
-        position: absolute;
-        top: -10px;
-        left: 80px;
+
+    #img2 {
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        /* border: 1px solid black; */
     }
 
     #shape3
@@ -87,33 +94,44 @@
         left: 30px;
     }
 
+    #shape7 {
+        position: absolute;
+        top: 126px;
+        left: 50px;
+    }
+
+    #shape10 {
+        position: relative;
+        top: 142px;
+        right: 299px;
+    }
+
+    #content4
+    {
+    /* width: 380px; */
+    text-align: left;
+    color: #21243d;
+    font-weight: 400;
+    font-family: "Montserrat";
+    }
+
+
     .joint2
     {
         flex-direction: column;
     }
-    
 
-        
-    .imagepage3
-    {
-      
-    }
-
-    .joint2
-    {
-        flex-direction: column;
-    }
-    
     .main-content3
     {
-        justify-content: center;
-        text-align: center;
+        /* margin: 10px 20px; */
+        margin: 0 auto;
     }
+
 
  }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .cards
     {
         flex-direction: column;
@@ -122,10 +140,9 @@
         gap: 20px;
     }
 
-    #title3
+    .b2
     {
-        font-size: 50px;
-        padding: 10px;
+        margin-left: 20px;
     }
 
     #img
@@ -140,11 +157,10 @@
         padding: 10px;
     }
    
-    #shape2
-    {
+    #shape2 {
         position: absolute;
         top: -10px;
-        left: 110px;
+        left: 101px;
     }
 
     #shape3
@@ -161,20 +177,20 @@
         top: 50px;
     }
     
-    
-#shape7
-{
-    position: absolute;
-   top: 140px;
-   left: 160px;
-}
-    
+    #shape7 {
+        position: absolute;
+        top: 126px;
+        left: 26px;
+    }
+
+    .page5title
+    {
+        margin-left: 30px;
+    }
 
     .imagepage3
     {
-    padding:100px 50px 100px 100px;
-    width: 50%;
-    /* border: 1px solid black; */
+    padding:100px 20px 100px 100px;
     }
 
     #title4
@@ -193,22 +209,53 @@
     font-family: "Montserrat";
     }
 
+    #shape10 {
+        position: absolute;
+        top: 142px;
+        right: 299px;
+    }
+
+    #shape11 {
+        position: absolute;
+        bottom: 24px;
+        left: 30px;
+    }
+
     #shape12 {
         position: absolute;
         top: 60px;
         right: 33px;
     }
 
-    #shape16 {
+    #shape14 {
         position: absolute;
-        bottom: 38px;
-        right: 348px;
+        top: 200px;
+        left: 67px;
     }
 
+    #shape16 {
+        position: absolute;
+        bottom: 21px;
+        right: 275px;
+    }
+
+
+    #shape17 {
+        position: absolute;
+        bottom: 67px;
+        right: 19px;
+    }
+
+
+    #shape18 {
+        position: absolute;
+        top: 50px;
+        left: 340px;
+    }
     #shape21 {
         position: absolute;
-        bottom: 39px;
-        left: 352px;
+        bottom: 10px;
+        left: 311px;
     }
 
     #title6
@@ -251,6 +298,13 @@
         bottom: 145px;
         left: 38px;
     }
+
+    .circle
+    {
+        margin: 50px 50px;
+        justify-content: space-between;
+    }
+
 
   }
 
