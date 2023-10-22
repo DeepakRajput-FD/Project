@@ -156,7 +156,7 @@ padding-right: 50px;
 
 .content2
 {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 80px;
 }
 
@@ -189,14 +189,29 @@ padding-right: 50px;
 .cards
 {
     display: flex;
-    justify-content: space-evenly;
-    margin: 50px 80px 100px ;
+   flex-direction: row;
+   margin-top: 50px;
 }
+
+.Card2
+{
+    text-align: center;
+    /* border: 3px solid white; */
+    /* background-color: bisque; */
+}
+
+#img3
+{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 
 #img
 {
     border: 1px solid black;
     border-radius: 50%;
+    margin-left: 50px;
 }
 
 #title3
@@ -206,7 +221,7 @@ padding-right: 50px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Montserrat";
-    text-align: center;
+    /* text-align: center; */
 }
 
 #content3
@@ -232,7 +247,7 @@ padding-right: 50px;
 #shape7
 {
     position: absolute;
-   top: 140px;
+   top: 90px;
    left: 160px;
 }
 
@@ -267,7 +282,7 @@ padding-right: 50px;
 
 .imagepage3
 {
-    padding:100px;
+    padding:100px 50px 50px 20px ;
     /* width: 50%; */
     /* border: 1px solid black; */
 }
@@ -275,7 +290,6 @@ padding-right: 50px;
 #img2
 {
     border-radius:50%;
-    overflow: hidden;
     position: relative;
     z-index: 2;
     /* border: 1px solid black; */
@@ -472,7 +486,7 @@ text-align: center;
 #shape20
 {
     position: absolute;
-    top: 85px;
+    top: 90px;
     right: 130px;
 }
 
@@ -485,28 +499,26 @@ text-align: center;
 
 .page5title
 {
-    width: 50%;
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
 }
 
 #title6
 {
-    padding-top: 50px;
-    margin-top: 80px;
-    font-size: 75px;
-color: #21243d;
-font-weight: 700;
-font-family: "Montserrat";
+    font-size: 60px;
+    color: #21243d;
+    font-weight: 700;
+    font-family: "Montserrat";
 }
 
 .page5title
 {
-    padding: 100px;
+    padding: 50px;
 }
 
 #content6
 {
-font-size: 30px;
+font-size: 25px;
 color: #21243d;
 font-weight: 400;
 font-family: "Montserrat";
@@ -527,6 +539,7 @@ border: 1px solid blue;
 
 .page5image
 {
+    width: 50%;
     padding-top: 80px;
     padding-right: 40px;
 }
@@ -554,6 +567,7 @@ border: 1px solid blue;
 /* height: 796px; */
 background: url(./image/bgimage2.png) no-repeat center center/cover;
 overflow-x: hidden;
+
 }
 
 .page6titile
@@ -571,7 +585,8 @@ overflow-x: hidden;
 
 #title7
 {
-    padding-top: 30px;
+    width: 50%;
+    margin: 0 auto;
 font-size: 35px;
 color: #ffffff;
 font-weight: 400;

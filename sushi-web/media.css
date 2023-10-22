@@ -1,337 +1,337 @@
-/* // X-Small devices (portrait phones, less than 576px) */
-/* // No media query for `xs` since this is the default in Bootstrap */
-
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-    .cards
-    {
-        flex-direction: column;
-        /* justify-content: center; */
-        text-align: center;
-        gap: 20px;
-    }
+@media (max-width: 576px)
+{
 
-    #title3
-    {
-        font-size: 50px;
-        padding: 10px;
-    }
-
-    #img
-    {
-        align-items: center;
-        width: 400px;
-    }
-
-    #content3
-    {
-        font-size: 20px;
-        padding: 10px;
-    }
-   
-    #shape2
-    {
-        position: absolute;
-        top: -10px;
-        left: 80px;
-    }
-
-    #shape3
-    {
-        position: absolute;
-        top: 160px;
-        left: 30px;
-    }
- }
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px)
+    {
+        .Title-container,.content2, .cards, .card1
+        {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #title2 {
+            font-size: 45px;           
+        }
+
+        #title4
+        {
+            font-size: 60px;
+        }
+
+        #title7 {
+            /* width: 50%; */
+           padding-top: 10px;
+        }
+
+        #title9{
+            font-size: 22px;
+        }
+
+        
+         th
+         {
+            font-size: 22px;
+            padding-right: 0px;
+            /* padding-left: 10px; */
+            /* padding-left: 20px; */
+            text-align: center;
+         }
+
+        td
+        {
+            font-size: 15px;
+        }
+
+        #title5
+        {
+            font-size: 50px;
+            margin-top: 40px;
+        }
+
+        #content5
+         {
+            font-size: 20px;
+        }
+
+        #content9 {
+            font-size: 15px;
+            margin-right: 50px;
+        }
+
+        #shape3 {
+            top: 125px;
+            left: 30px;
+        }
+
+        #shape7
+         {
+            top: 86px;
+            left: 68px;
+        }
     
-    .cards
-    {
-        flex-direction: column;
-        /* justify-content: center; */
-        text-align: center;
-        gap: 20px;
-    }   
+            #shape10
+         {
+        position: absolute;
+        top: 663px;
+        right: 323px;
+      }
 
-    #title3
-    {
-        font-size: 50px;
-        padding: 10px;
-    }
-
-    #content1
-    {
-        margin-right: 30px;
-    }
-
-    #img
-    {
-        align-items: center;
-        width: 400px;
-    }
-
-    #content3
-    {
+      .icons
+      {
         font-size: 20px;
-        padding: 10px;
+      }
+
+        #shape11 {
+            position: absolute;
+            top: 275px;
+            left: 27px;
+        }
+
+        .joint1
+        {
+            width: 40%;
+            /* border: 1px solid white; */
+            margin-top: 50px;
+            /* padding: 50px; */
+            position: relative;
+            left: 20px;
+            top: 40px;
+        }
+
+        .joint2
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page5title
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #b3 
+        {
+            margin: 0 auto;
+        }
+
+        #p4,#p5
+        {
+            font-size: 40px;
+        }
+
+        #imagepage3 , #img2
+        {
+            /* padding: 0px; */
+            margin-left: 50px;
+            /* margin: 0 auto; */
+            /* text-align: center; */
+            width: 350px;
+        }
+
+        #image5
+        {
+            padding: 0;
+            width: 400px;
+        }
+
+        .page5image
+        {
+            /* text-align: center; */
+            margin-right: 50px;
+        }
+        .connect
+        {
+            text-align: center;
+            /* padding-left: 50px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .circle
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px 0px;
+        }
+
+        .circle1
+        {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* margin: 50px 0px; */
+        }
+
+        #title6
+        {
+            margin-top: 50px;
+        }
+
+        #content6
+        {
+            padding: 20px 70px;
+        }
+
+        #shape12 {
+            width: 140px;
+            top: 58px;
+            right: 21px;
+        }
+
+        #shape13 {
+            width: 140px;
+            top: 97px;
+            left: 28px;
+        }
+
+        #shape14
+         {
+            width: 75px;
+            top: 273px;
+            left: 33px;
+        }
+
+        #shape15 {
+            width: 150px;
+            bottom: -63px;
+            left: 111px;
+        }
+
+        #shape16 {
+            width: 140px;
+            bottom: 27px;
+            right: 155px;
+        }
+
+        #shape17 {
+            width: 73px;
+            bottom: 53px;
+            right: 34px;
+        }
+
+        #shape19 {
+            position: absolute;
+            top: 75px;
+            left: 258px;
+        }
+
+        #shape20 {
+            position: absolute;
+            top: 206px;
+            right: 18px;
+        }
+
+        #shape21 {
+            position: absolute;
+            bottom: 24px;
+            left: 18px;
+        }
+
+        #shape26 {
+            position: absolute;
+            bottom: 30px;
+            left: 298px;
+        }
+
     }
-   
-
-    #img2 {
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-        z-index: 2;
-        /* border: 1px solid black; */
-    }
-
-    #shape3
-    {
-        position: absolute;
-        top: 160px;
-        left: 30px;
-    }
-
-    #shape7 {
-        position: absolute;
-        top: 126px;
-        left: 50px;
-    }
-
-    #shape10 {
-        position: relative;
-        top: 142px;
-        right: 299px;
-    }
-
-    #content4
-    {
-    /* width: 380px; */
-    text-align: left;
-    color: #21243d;
-    font-weight: 400;
-    font-family: "Montserrat";
-    }
-
-
-    .joint2
-    {
-        flex-direction: column;
-    }
-
-    .main-content3
-    {
-        /* margin: 10px 20px; */
-        margin: 0 auto;
-    }
-
-
- }
 
 /* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    .cards
+    @media (min-width:769px) and (max-width: 992px) 
     {
-        flex-direction: column;
-        /* justify-content: center; */
-        text-align: center;
-        gap: 20px;
-    }
+        .Title-container,.content2, .cards, .card1
+        {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-    .b2
-    {
-        margin-left: 20px;
-    }
+        #shape3 {
+            top: 150px;
+            left: 80px;
+        }
 
-    #img
-    {
-        align-items: center;
-        width: 400px;
-    }
+        .joint2
+        {
+            display: flex;
+            flex-direction: column;
+        }
 
-    #content3
-    {
-        font-size: 20px;
-        padding: 10px;
-    }
-   
-    #shape2 {
-        position: absolute;
-        top: -10px;
-        left: 101px;
-    }
+        .page5title
+        {
+            display: flex;
+            flex-direction: column;
+        }
 
-    #shape3
-    {
-        position: absolute;
-        top: 150px;
-        left: 88px;
+        #b3 
+        {
+            margin: 0 auto;
+        }
+
+        #image5
+        {
+            padding: 0;
+            width: 400px;
+        }
+
+        .page5image
+        {
+            /* text-align: center; */
+            margin-right: 50px;
+        }
+        .connect
+        {
+            text-align: center;
+            /* padding-left: 50px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        #title6
+        {
+            margin-top: 50px;
+        }
+
+        #content6
+        {
+            padding: 20px 70px;
+        }
+
+        #shape19 {
+            position: absolute;
+            top: 75px;
+            left: 258px;
+        }
+
+        #shape20 {
+            position: absolute;
+            top: 206px;
+            right: 18px;
+        }
+
+        #shape21 {
+            position: absolute;
+            bottom: 24px;
+            left: 18px;
+        }
+
+        #shape26 {
+            position: absolute;
+            bottom: 30px;
+            left: 298px;
+        }
+
     }
-
-    .joint1
-    {
-        position: relative;
-        left: 0px;
-        top: 50px;
-    }
-    
-    #shape7 {
-        position: absolute;
-        top: 126px;
-        left: 26px;
-    }
-
-    .page5title
-    {
-        margin-left: 30px;
-    }
-
-    .imagepage3
-    {
-    padding:100px 20px 100px 100px;
-    }
-
-    #title4
-    {
-        font-size: 55px;
-    }
-
-    
-    #content4
-    {
-    font-size: 30px;
-    width: 320px;
-    padding-left: 20px;
-    color: #21243d;
-    font-weight: 400;
-    font-family: "Montserrat";
-    }
-
-    #shape10 {
-        position: absolute;
-        top: 142px;
-        right: 299px;
-    }
-
-    #shape11 {
-        position: absolute;
-        bottom: 24px;
-        left: 30px;
-    }
-
-    #shape12 {
-        position: absolute;
-        top: 60px;
-        right: 33px;
-    }
-
-    #shape14 {
-        position: absolute;
-        top: 200px;
-        left: 67px;
-    }
-
-    #shape16 {
-        position: absolute;
-        bottom: 21px;
-        right: 275px;
-    }
-
-
-    #shape17 {
-        position: absolute;
-        bottom: 67px;
-        right: 19px;
-    }
-
-
-    #shape18 {
-        position: absolute;
-        top: 50px;
-        left: 340px;
-    }
-    #shape21 {
-        position: absolute;
-        bottom: 10px;
-        left: 311px;
-    }
-
-    #title6
-    {
-        width: 400px;
-        padding-left: 30px;
-    }
-
-    #content6
-    {
-        width: 400px;
-        padding-left: 30px;
-    }
-
-    #b3
-    {
-        margin-left: 30px;
-    }
-
-    #shape19 {
-        position: absolute;
-        top: 150px;
-        left: 30px;
-    }
-
-    #shape24 {
-        position: absolute;
-        top: 75px;
-        left: 109px;
-    }
-
-    #shape26 {
-        position: absolute;
-        bottom: 30px;
-        left: 357px;
-    }
-
-    #shape25 {
-        position: absolute;
-        bottom: 145px;
-        left: 38px;
-    }
-
-    .circle
-    {
-        margin: 50px 50px;
-        justify-content: space-between;
-    }
-
-
-  }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {  }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    .cards
-    {
-        flex-direction: row;
-        /* justify-content: center; */
-        text-align: center;
-        gap: 20px;
-    }
-
-    #shape5
-    {
-        top: 243px;
-        position: absolute;
-        right: -20px;
-    }
-
-    #shape4
-    {
-    position: absolute;
-    bottom: 57px;
-    left: -78px;
-}
- }
+@media (min-width: 1400px) {  }
