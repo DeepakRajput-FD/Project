@@ -5,7 +5,7 @@
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 360px) and (max-width: 768px)
+@media (min-width: 576px) and (max-width: 768px)
     {
         .Title-container,.content2, .cards, .card1
         {
@@ -29,22 +29,31 @@
         }
 
         #title9{
-            font-size: 22px;
+            font-size: 25px;
         }
 
         
          th
          {
-            font-size: 22px;
+            font-size: 25px;
             padding-right: 0px;
-            /* padding-left: 10px; */
-            /* padding-left: 20px; */
-            text-align: center;
+           /* align-items: center; */
+            /* text-align: center; */
+         }
+
+         #t1
+         {
+            padding-right: 65px;
+         }
+
+         #t2
+         {
+            padding-right: 30px;
          }
 
         td
         {
-            font-size: 15px;
+            font-size: 20px;
         }
 
         #title5
@@ -59,8 +68,8 @@
         }
 
         #content9 {
-            font-size: 15px;
-            margin-right: 50px;
+            font-size: 20px;
+            /* margin-right: 50px; */
         }
 
         #shape3 {
@@ -83,7 +92,8 @@
 
       .icons
       {
-        font-size: 20px;
+        font-size: 25px;
+        color: brown;
       }
 
         #shape11 {
@@ -167,6 +177,13 @@
             height: 200px;
             margin: 0 auto;
             /* margin: 50px 0px; */
+        }
+
+        .joint
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #title6
