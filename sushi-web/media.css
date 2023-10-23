@@ -1,12 +1,39 @@
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px)
+@media  (min-width: 300px) and (max-width: 576px)
 {
 
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid red;
+        /* padding: 20px auto; */
+    }
+ 
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 576px) and (max-width: 768px)
     {
+        .image
+        {
+            padding-left: 20px;
+        }
+
+        #search
+        {
+            padding-left: 50px;
+        }
+        
+        .menu
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px auto;
+        }
+
         .Title-container,.content2, .cards, .card1
         {
             flex-direction: column;
@@ -262,6 +289,24 @@
 /* // Large devices (desktops, 992px and up) */
     @media (min-width:769px) and (max-width: 992px) 
     {
+        .image
+        {
+            padding-left: 20px;
+        }
+
+        #search
+        {
+            padding-left: 50px;
+        }
+        
+        .menu
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px auto;
+        }
+
         .Title-container,.content2, .cards, .card1
         {
             flex-direction: column;
@@ -348,7 +393,28 @@
     }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 993px) and (max-width: 1200px) { 
+
+    .image
+    {
+        padding-left: 20px;
+    }
+
+    #search
+    {
+        padding-left: 50px;
+    }
+
+    .menu
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 5px solid blue;
+        margin-left: 10px;
+        /* padding: 20px auto; */
+    }
+ }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
