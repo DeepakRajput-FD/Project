@@ -1,4 +1,4 @@
-*
+        *
         {
             margin: 0;
             padding: 0;
@@ -6,7 +6,7 @@
         }
         #header1
         {
-            width: 100%;
+            /* width: 100%; */
             height: 825px;
             background-color: #ffc045;
             position: relative;
@@ -90,7 +90,6 @@
             padding-top: 20px;
             font-size: 120px;
             padding-left: 50px;
-            /* line-height: 62px; */
             text-transform: uppercase;
             color: #3d2514;
             font-weight:  bold;
@@ -169,13 +168,23 @@
    #burger2
    {
     margin-top: 50px;
-    margin-left: 80px;
+    margin-right: 100px;
    }
 
    #burger3
    {
     margin-top: 30px;
-    margin-left: 80px;
+    margin-right: 100px;
+   }
+
+   .burgerimage2 
+   {
+    margin-left: 50px;
+   }
+
+   .burgerimage3
+   {
+    margin-left: 50px;
    }
 
    #page2p1
@@ -201,7 +210,7 @@
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 70px;
-    right: 600px;
+    left: 850px;
    }
 
    #page2p3
@@ -214,13 +223,13 @@
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     bottom: 200px;
-    right: 580px;
+    left: 850px;
    }
 
    .joint
    {
         display: flex;
-        /* justify-content: space-between; */
+        justify-content: space-between;
    }
 
     .button1
@@ -335,6 +344,11 @@
    {
     margin-top: 50px;
    }
+
+#page3
+{
+    width: 100%;
+}
 
 
    #page3p4
@@ -645,7 +659,7 @@ padding-left: 10px;
     position: absolute;
     bottom: 20px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 50px;
     right: 120px;
 
 }

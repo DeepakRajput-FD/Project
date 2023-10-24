@@ -1,0 +1,630 @@
+@media  (min-width: 300px) and (max-width: 576px)
+    {
+
+    }
+@media (min-width: 576px) and (max-width: 768px)
+    {
+     
+        #logo1
+        {
+            left: 20px;
+            width: 220px;
+        }
+
+        #pagep1
+        {
+            font-size: 15px;
+        }
+
+        #Drinks
+        {
+             position: absolute;
+             top: 400px;
+             right: 100px;
+             border: 5px solid black;
+             width: 150px;
+        }
+ 
+        #Burger
+        {
+         position: absolute;
+         top: 440px;
+         right: 140px;
+         z-index: 2;
+         width: 400px;
+        }
+ 
+        #Fries
+        {
+         position: absolute;
+         top: 405px;
+         right: 430px;
+         width: 204px;
+        }
+ 
+        #Ellipse
+        {
+         position: absolute;
+         top: 660px;
+         right: 460px;
+         z-index: 3;
+         width: 140px;
+        }
+ 
+        #Price
+        {
+         position: absolute;
+         top: 693px;
+         right: 505px;
+         z-index: 4;
+         width: 54px;
+        }
+ 
+        #Shadow
+        {
+         position: absolute;
+         top: 655px;
+         right: 0;
+         /* z-index: 4; */
+        }
+
+        #title1
+        {
+            font-size: 77px;
+            padding-left: 80px;
+        }
+
+        #page2p1
+        {
+            position: absolute;
+            top: 100px;
+            /* right: 200px; */
+            left: 300px;
+        }
+
+                
+        #page6p2
+        {
+            position: absolute;
+            bottom: 30px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 80px;
+        }
+        
+        #page2p2 
+        {
+            position: absolute;
+            top: 550px;
+            left: 190px;
+            width: 150px;
+        }
+
+        #page2p3 
+        {
+            bottom: 180px;
+            left: 190px; 
+        }
+
+        .joint
+        {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+        .mainBurger  
+        {
+            align-items: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;    
+        }
+
+
+        #burger4,#burger5 ,#burger6
+        {
+            position: relative;
+            top: 0px;
+            /* left: 30px; */
+            align-items: center;
+            /* text-align: center; */
+        }
+
+        #Shadow2
+        {
+            position: relative;
+            top: 30px;
+            right: 150px;
+        }
+
+      
+        #Shadow3
+        {
+            position: relative;
+            top: 35px;
+            right: 160px;
+        }
+
+        .jointpage4
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+                
+        #page4img3
+        {
+            position: relative;
+            top: 468px;
+            right: 100px;
+        }
+
+        
+        #img2
+        {
+            width: 300px;
+            position: absolute;
+            top: -50px;
+            left: -55px;
+        }
+
+                
+        #bottle1
+        {
+            width: 220px;
+            position: absolute;
+            top: 200px;
+            left: -46px;
+        }
+
+        
+        #plate1
+        {
+            width: 400px;
+            position: absolute;
+            top: 240px;
+            right: -250px;
+            overflow: hidden;
+        }
+
+                
+        #page6p1 , #Burger-House6
+        {
+            left: 50px;
+        }
+
+        
+        #page6p3
+        {
+            position: absolute;
+            bottom: 180px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 0px;
+        }
+
+         #page6p4
+        {
+            position: absolute;
+            bottom: 130px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 0px;
+        }
+
+        .icons
+        {
+            position: absolute;
+            bottom: 70px;
+            color: #ffffff;
+            font-size: 30px;
+            color: red;
+            left: 0px;
+
+        }
+
+        #b1
+        {
+         /* border: 1px solid black; */
+             position: relative;
+             left: 300px;
+        }   
+
+        .control1 , .control2 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #email1 , #Button2
+        {
+            margin-left: 0px;
+        }
+
+    }
+@media (min-width:769px) and (max-width: 992px) 
+    {
+
+        #Drinks
+        {
+             position: absolute;
+             top: 400px;
+             right: 100px;
+             border: 5px solid black;
+             width: 150px;
+        }
+ 
+        #Burger
+        {
+         position: absolute;
+         top: 440px;
+         right: 140px;
+         z-index: 2;
+         width: 400px;
+        }
+ 
+        #Fries
+        {
+         position: absolute;
+         top: 405px;
+         right: 430px;
+         width: 204px;
+        }
+ 
+        #Ellipse
+        {
+         position: absolute;
+         top: 660px;
+         right: 460px;
+         z-index: 3;
+         width: 140px;
+        }
+ 
+        #Price
+        {
+         position: absolute;
+         top: 693px;
+         right: 505px;
+         z-index: 4;
+         width: 54px;
+        }
+ 
+        #Shadow
+        {
+         position: absolute;
+         top: 655px;
+         right: 0;
+         /* z-index: 4; */
+        }
+
+        #title1
+        {
+            font-size: 77px;
+            padding-left: 80px;
+        }
+
+        #page2p1
+        {
+            position: absolute;
+            top: 100px;
+            /* right: 200px; */
+            left: 300px;
+        }
+        
+        #page2p2 
+        {
+            position: absolute;
+            top: 550px;
+            left: 190px;
+            width: 150px;
+        }
+
+        #page2p3 
+        {
+            bottom: 180px;
+            left: 190px; 
+        }
+
+        .joint
+        {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+        .mainBurger  
+        {
+            align-items: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;    
+        }
+
+
+        #burger4,#burger5 ,#burger6
+        {
+            position: relative;
+            top: 0px;
+            /* left: 30px; */
+            align-items: center;
+            /* text-align: center; */
+        }
+
+        #Shadow2
+        {
+            position: relative;
+            top: 30px;
+            right: 150px;
+        }
+
+      
+        #Shadow3
+        {
+            position: relative;
+            top: 35px;
+            right: 160px;
+        }
+
+        .jointpage4
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+                
+        #page4img3
+        {
+            position: relative;
+            top: 468px;
+            right: 100px;
+        }
+
+        
+        #img2
+        {
+            width: 300px;
+            position: absolute;
+            top: -50px;
+            left: -55px;
+        }
+
+                
+        #bottle1
+        {
+            width: 220px;
+            position: absolute;
+            top: 200px;
+            left: -46px;
+        }
+
+        
+        #plate1
+        {
+            width: 400px;
+            position: absolute;
+            top: 240px;
+            right: -250px;
+            overflow: hidden;
+        }
+
+        
+        #page6p3 
+        {
+            position: absolute;
+            bottom: 150px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 108;
+        }
+
+         #page6p4
+        {
+            position: absolute;
+            bottom: 110px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 0;
+        }
+
+        .icons
+        {
+            position: absolute;
+            bottom: 20px;
+            color: #ffffff;
+            font-size: 30px;
+            color: red;
+            right: 80px;
+
+        }
+
+        #b1
+        {
+         /* border: 1px solid black; */
+             position: relative;
+             left: 300px;
+        }
+
+    }
+@media (min-width: 993px) and (max-width: 1200px) 
+    {
+
+        #page2p1
+        {
+            position: absolute;
+            top: 100px;
+            /* right: 200px; */
+            left: 300px;
+        }
+        
+        #page2p2 
+        {
+            position: absolute;
+            top: 550px;
+            left: 300px;
+        }
+
+        #page2p3 
+        {
+            position: absolute;
+            bottom: 200px;
+            left: 300px; 
+        }
+
+        .joint
+        {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+        .mainBurger  
+        {
+         display: flex;
+         flex-direction: column;
+         /* align-items: center;     */
+        }
+
+
+        #burger4,#burger5 ,#burger6
+        {
+            position: relative;
+            top: 0px;
+            left: 195px;
+        }
+
+        #Shadow2
+        {
+            position: relative;
+            top: 30px;
+            right: 150px;
+        }
+
+      
+        #Shadow3
+        {
+            position: relative;
+            top: 35px;
+            right: 160px;
+        }
+
+        .jointpage4
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+                
+        #page4img3
+        {
+            position: relative;
+            top: 400px;
+            right: 200px;
+        }
+
+        
+        #img2
+        {
+            width: 300px;
+            position: absolute;
+            top: -50px;
+            left: -55px;
+        }
+
+                
+        #bottle1
+        {
+            width: 220px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+
+        
+        #plate1
+        {
+            width: 400px;
+            position: absolute;
+            top: 240px;
+            right: -200px;
+            overflow: hidden;
+        }
+
+        
+        #page6p3 , #page6p4
+        {
+            position: absolute;
+            bottom: 150px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 0;
+        }
+
+         #page6p4
+        {
+            position: absolute;
+            bottom: 110px;
+            color: #ffffff;
+            font-size: 20px;
+            left: 0;
+        }
+
+            
+        .icons
+        {
+            position: absolute;
+            bottom: 20px;
+            color: #ffffff;
+            font-size: 50px;
+            right: 120px;
+
+        }
+        
+          #b1
+        {
+         /* border: 1px solid black; */
+             position: relative;
+             left: 300px;
+        }
+
+
+    }
+@media (min-width: 1200px) and (max-width: 1400px)
+    {
+        #page2p1
+        {
+            position: absolute;
+            top: 100px;
+            /* right: 200px; */
+            left: 460px;
+        }
+        
+        #page2p2 
+        {
+            position: absolute;
+            top: 550px;
+            left: 390px;
+        }
+
+        #page2p3 
+        {
+            bottom: 200px;
+            left: 390px; 
+        }
+
+        .joint
+        {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+
+        
+   #b1
+   {
+    /* border: 1px solid black; */
+        position: relative;
+        left: 300px;
+   }
+    }
