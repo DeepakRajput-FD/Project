@@ -607,74 +607,73 @@ padding-left: 10px;
 
 #header6
 {
-    width: 100%;
-    margin-top: 5px;
-    position: relative;
+    /* margin-top: 5px; */
+    background: url(./Images/page6.png) no-repeat center center/cover;
+    width: 90%;
+    /* position: relative; */
+    margin: 0 auto;
 }
 
 .main
 {
-    /* text-align: center;   */
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    color: white;
+    /* padding-bottom: 100px; */
 }
 
-#img6
+.main-container1
 {
-    text-align: center;
+    width: 50%;
+    padding-left: 30px;
 }
 
-#Burger-House6
+.main-container2
 {
-    position: absolute;
-    top: 60px;
-    left: 120px;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 5px solid yellow; */
+    padding-top: 100px;
+    padding-left: 50px;
 }
 
-#page6p1
+.image-wrapper
 {
-    position: absolute;
-    top: 180px;
-    left: 120px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: left;
+    padding-top: 30px;
 }
 
-#page6p2
+.text
 {
-    position: absolute;
-    bottom: 30px;
-    color: #ffffff;
-    font-size: 20px;
-    left: 120px;
+padding: 30px 100px 100px 0px;
+font-size: 17px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
 }
 
-#page6p3
-{
-    position: absolute;
-    bottom: 300px;
-    color: #ffffff;
-    font-size: 20px;
-    right: 150px;
-}
 
-#page6p4
+.text2
 {
-    position: absolute;
-    bottom: 260px;
-    color: #ffffff;
-    font-size: 20px;
-    right: 230px;
+padding-left: 100px;
+padding-top: 60px;
+font-size: 21px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Bebas Neue";
 }
 
 .icons
 {
     position: absolute;
-    bottom: 20px;
-    color: #ffffff;
-    font-size: 50px;
-    right: 120px;
+    bottom: 0px;
+    right: 30px;
+    font-size: 30px;
+}
 
+#page6p2
+{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Bebas Neue";
 }
