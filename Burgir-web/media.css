@@ -5,6 +5,11 @@
 @media (min-width: 576px) and (max-width: 768px)
     {
      
+        #img6
+        {
+            width: 576px;
+        }
+
         #logo1
         {
             left: 20px;
@@ -21,7 +26,7 @@
              position: absolute;
              top: 400px;
              right: 100px;
-             border: 5px solid black;
+             /* border: 5px solid black; */
              width: 150px;
         }
  
@@ -134,15 +139,14 @@
         {
             position: relative;
             top: 30px;
-            right: 150px;
+            left: 20px;
         }
 
       
-        #Shadow3
-        {
+        #Shadow3 {
             position: relative;
-            top: 35px;
-            right: 160px;
+            top: 14px;
+            left: 8px;
         }
 
         .jointpage4
@@ -246,6 +250,10 @@
     }
 @media (min-width:769px) and (max-width: 992px) 
     {
+        #img6
+        {
+            width: 769px;
+        }
 
         #Drinks
         {
@@ -344,26 +352,28 @@
 
         #burger4,#burger5 ,#burger6
         {
-            position: relative;
-            top: 0px;
-            /* left: 30px; */
-            align-items: center;
+             position: relative;
+            top: -10px;
+            left: 30px; 
+            /* margin: 0 auto; */
+            /* align-items: center; */
             /* text-align: center; */
         }
 
         #Shadow2
         {
             position: relative;
-            top: 30px;
-            right: 150px;
+            top: -4px;
+            right: -45px;
         }
 
       
         #Shadow3
         {
-            position: relative;
-            top: 35px;
-            right: 160px;
+           position: relative;
+            top: 18px;
+            right: -12px;
+            
         }
 
         .jointpage4
@@ -449,7 +459,11 @@
     }
 @media (min-width: 993px) and (max-width: 1200px) 
     {
-
+        
+        #img6
+        {
+            width: 973px;
+        }
         #page2p1
         {
             position: absolute;
@@ -592,6 +606,10 @@
     }
 @media (min-width: 1200px) and (max-width: 1400px)
     {
+        #img6
+        {
+            width: 1200px;
+        }
         #page2p1
         {
             position: absolute;
@@ -620,11 +638,50 @@
              align-items: center;
         }
 
+        #Burger-House6 {
+            top: 60px;
+            left: 50px;
+        }
+
+        #page6p1
+        {
+            top: 170px;
+            left: 50px;
+        } 
         
-   #b1
-   {
-    /* border: 1px solid black; */
-        position: relative;
-        left: 300px;
-   }
+        #page6p3 {
+            position: absolute;
+            bottom: 262px;
+            color: #ffffff;
+            font-size: 20px;
+            right: 292px;
+        }
+        #page6p4 {
+            position: absolute;
+            bottom: 218px;
+            color: #ffffff;
+            font-size: 20px;
+            right: 372px;
+        }
+        #b1
+        {
+            /* border: 1px solid black; */
+                position: relative;
+                left: 300px;
+        }
+
+         .icons
+         {
+             position: absolute;
+             bottom: 20px;
+             color: #ffffff;
+             font-size: 50px;
+             right: 300px;
+         }
+
+         #page6p2 {
+            bottom: 30px;
+            font-size: 20px;
+            left: 52px;
+        }
     }
