@@ -9,8 +9,24 @@
             /* width: 100%; */
             /* height: 825px; */
             background-color: #ffc045;
-            position: relative;
             overflow: hidden;
+        }
+
+        .main-content1
+        {
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .content1
+        {
+            width: 50%;
+        }
+
+        .content2
+        {
+            width: 50%;
         }
 
         #logo1
@@ -107,14 +123,14 @@
        #Drinks
        {
             position: absolute;
-            top: 190px;
+            top: 75px;
             right: 100px;
        }
 
        #Burger
        {
         position: absolute;
-        top: 300px;
+        top: 190px;
         right: 140px;
         z-index: 2;
        }
@@ -122,14 +138,14 @@
        #Fries
        {
         position: absolute;
-        top: 250px;
-        right: 380px;
+        top: 125px;
+        right: 380px
        }
 
        #Ellipse
        {
         position: absolute;
-        top: 540px;
+        top: 406px;
         right: 460px;
         z-index: 3;
        }
@@ -137,15 +153,15 @@
        #Price
        {
         position: absolute;
-        top: 580px;
+        top: 446px;
         right: 505px;
-        z-index: 4;
+        z-index: 3;
        }
 
        #Shadow
        {
         position: absolute;
-        top: 655px;
+        top: 540px;
         right: 0;
         /* z-index: 4; */
        }
@@ -428,7 +444,7 @@
 .page4content
 {
     margin-top: 50px;
-    /* margin-left: 50px; */
+    position: relative;
 }
 
 #page4p1
@@ -469,8 +485,9 @@ font-family: "Montserrat";
 
 #page4img3
 {
-    position: relative;
-    top: 140px;
+    position: absolute;
+    /* top: 140px; */
+    bottom: 0px;
 }
 
 .jointpage4
@@ -655,6 +672,7 @@ font-family: "Montserrat";
 
 .text2
 {
+    text-transform: uppercase;
 padding-left: 100px;
 padding-top: 60px;
 font-size: 21px;
