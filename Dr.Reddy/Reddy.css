@@ -23,6 +23,13 @@
     text-transform: uppercase;
 }
 
+.flex
+{
+    display: flex;
+    /* gap: 10px; */
+    /* padding-left: 20px; */
+}
+
 .menu
 {
     display: flex;  
@@ -73,7 +80,7 @@ a:active
     display: none;
     position: absolute;
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     list-style-type: none
 }
 
@@ -172,6 +179,7 @@ a:active
     /* border: 5px solid black; */
     margin: 0 auto;
     margin-bottom: 100px;
+    font-size: 20px;
 }
 .page2img
 {
@@ -188,11 +196,16 @@ a:active
     line-height: 30px;
 }
 
+.page2content p
+{
+ font-size: 20px;
+}
 #page2content2
 {
     padding-top: 40px;
     padding-bottom: 30px;
 }
+
 
 #b1
 {
@@ -241,6 +254,7 @@ a:active
 #page3text1
 {
     padding: 50px 100px 50px;
+    font-size: 20px;
 }
 
 #page3text2
@@ -542,7 +556,7 @@ h2
 {
     padding-top: 30px;
     /* padding-bottom: 50px; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .page7text
@@ -619,4 +633,110 @@ progress::-webkit-progress-value {
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid red;
+}
+
+#header9
+{
+    background-color: black;
+}
+
+.page9container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    color: white;
+    font-family: Drlcircular,sans-serif;
+    border: 1px solid yellow;
+}
+
+.page9table a
+{
+    color: white;
+}
+
+.page9table a:hover
+{
+    color: red;
+    text-decoration: underline white;
+}
+
+
+.page9table ul
+{
+    list-style-type: none;
+}
+
+.flex1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one
+{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.one ~ li
+{
+    padding-bottom: 10px;
+}
+
+.last
+{
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.last-menu
+{
+    padding: 10px 0px;
+    border-top:1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.last-menu1
+{
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+}
+
+.last-menu1 li
+{
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+.page9main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page9main ul
+{
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.icons
+{
+    font-size: 25px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+p
+{
+    font-size: 12px;
+    padding-left: 10px;
 }
