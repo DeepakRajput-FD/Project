@@ -63,6 +63,12 @@ a:active
 {
     position: relative;
     text-transform: capitalize;
+    list-style-type: none;
+}
+
+.dropdown:hover
+{
+    text-decoration: underline red;
 }
 
 #home1
