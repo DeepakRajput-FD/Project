@@ -7,12 +7,30 @@
 .nav1
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     font-family: Drlcircular,sans-serif;
     color: rgb(144, 144, 144);
     align-items: center;
     margin-bottom: 20px;
+}
+
+.country-option
+{
+    display: none;
+}
+
+
+.icon2:hover .country-option
+{
+    padding: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.country-option ul
+{
+    list-style-type: none;
 }
 
 .menu1
@@ -26,8 +44,6 @@
 .flex
 {
     display: flex;
-    /* gap: 10px; */
-    /* padding-left: 20px; */
 }
 
 .menu
@@ -50,8 +66,9 @@ a:active
 .maindrop
 {
     display: flex;
-    /* border: 1px solid red; */
-    /* width: 100%; */
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 10px;
 }
 
 #home1
@@ -68,7 +85,7 @@ a:active
 
 .dropdown:hover
 {
-    text-decoration: underline red;
+    text-decoration: underline red 2px;
 }
 
 #home1
@@ -113,6 +130,11 @@ a:active
     text-decoration: underline;
 }
 
+.icon2
+{
+    position: relative;
+}
+
 .icon2 img
 {
     padding-left: 10px;
@@ -121,22 +143,25 @@ a:active
 
 .page1place
 {
-    width: 80%;
-    /* border: 5px solid black; */
+    width: 100%;
+    position: fixed;
+    top: 0;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
     color: rgb(144, 144, 144);
 
 }
 
 .page1
 {
-    margin-top: 30px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .images
 {
+    margin-top: 50px;
     width: 100%;
     height: 639px;
     background: url(./image/1.png) no-repeat center center/cover;
@@ -321,7 +346,6 @@ span
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 5px solid yellow; */
     margin-bottom: 100px;
 }
 
@@ -400,6 +424,12 @@ h2
     padding-top: 30px;
     display: flex;
     justify-content: space-evenly;   
+    overflow: hidden;
+}
+
+.page5cards .card2
+{
+    overflow: hidden;
 }
 
 #page5p1
@@ -427,10 +457,22 @@ h2
     padding-bottom: 50px;
 }
 
-.page5img:hover
+.page5img
 {
-    
- transform: scale(1.1);   
+    width: 352px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.page5img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.page5img img:hover
+{
+ transform: scale(1.3);   
 }
 
 
@@ -546,12 +588,25 @@ h2
     border-bottom:1px solid red ;
 }
 
-.page7img img
+.page7img 
 {
     width: 348px;
     height: 280px;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
+
+.page7img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.page7img img:hover
+{
+    transform: scale(1.3);
+}
+
 .page7cards
 {
     display: flex;
@@ -561,8 +616,6 @@ h2
 .page7card
 {
     padding-top: 30px;
-    /* padding-bottom: 50px; */
-    /* border: 2px solid black; */
 }
 
 .page7text
@@ -653,7 +706,7 @@ progress::-webkit-progress-value {
     padding: 100px 0px;
     color: white;
     font-family: Drlcircular,sans-serif;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .page9table a
