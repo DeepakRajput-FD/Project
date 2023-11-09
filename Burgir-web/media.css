@@ -1,11 +1,67 @@
-@media  (min-width: 300px) and (max-width: 576px)
-    {
 
-    }
 @media (min-width: 576px) and (max-width: 768px)
+{
+    
+    
+    .main-content1
     {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    
+    #Drinks
+    {
+        width: 80px;
+        position: absolute;
+        top: 420px;
+        right: 100px;
+    }
+       #Burger
+       {
+        width: 200px;
+        position: absolute;
+        top: 465px;
+        right: 140px;
+        z-index: 2;
+       }
 
-        
+       #Fries
+       {
+        width: 200px;
+        position: absolute;
+        top: 405px;
+        right: 226px
+       }
+
+       #Ellipse
+       {
+        width: 100px;
+        position: absolute;
+        top: 570px;
+        right: 295px;
+        z-index: 3;
+       }
+
+       #Price
+       {
+        width: 40px;
+        position: absolute;
+        top: 596px;
+        right: 326px;
+        z-index: 3;
+       }
+
+       #Shadow
+       {
+        width: 400px;
+        position: absolute;
+        top: 637px;
+        right: 22px;
+       }
+      
+
         .text2
         {
             padding-left: 0px;
@@ -13,14 +69,18 @@
         }
 
     
-
+        #header5
+        {
+            position: relative;
+            overflow: hidden;
+        }
 
         #bottle1
         {
-            /* width: 190px; */
+            width: 190px;
             position: absolute;
             top: 200px;
-            left: 20px;
+            left: 0px;
         }
 
         #logo1
@@ -34,11 +94,6 @@
             font-size: 15px;
         }
 
-        #main-content1
-        {
-            display: flex;
-            flex-direction: column;
-        }
 
         #page2p1
         {
@@ -48,15 +103,6 @@
             left: 130px;
         }
 
-                
-        #page6p2
-        {
-            position: absolute;
-            bottom: 30px;
-            color: #ffffff;
-            font-size: 20px;
-            left: 80px;
-        }
         
         #page2p2 
         {
@@ -117,12 +163,17 @@
             align-items: center;
         }
 
+        .page4content
+        {
+            position: relative;
+        }
+
                 
         #page4img3
         {
             position: relative;
             top: 468px;
-            right: 100px;
+            right:  0px;
         }
 
         
@@ -149,7 +200,7 @@
         {
          /* border: 1px solid black; */
              position: relative;
-             left: 300px;
+             left: 340px;
         }   
 
         .control1 , .control2 
@@ -163,6 +214,54 @@
         {
             margin-left: 0px;
         }
+        
+        .main
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main .main-container1
+        {
+            width: 100%;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .main .main-container2
+        {
+            width: 100%;
+            padding: 0 20px 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+                   
+         #page6p2
+        {
+            position: absolute;
+            bottom: 0;
+            color: #ffffff;
+            font-size: 20px;
+            left: 20px;
+        }
+
+        .text , .text2
+        {
+            padding: 35px 0px;
+            font-size: 20px;
+        }
+
+        
+        .icons
+        {
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+            color: red;
+        }
+        
+
 
     }
 @media (min-width:769px) and (max-width: 992px) 

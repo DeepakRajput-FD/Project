@@ -330,7 +330,7 @@ a:active
 span
 {
     font-size: 25px;
-    color: black;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -489,6 +489,7 @@ h2
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: 100;
+    position: relative;
 }
 
 .page6menu
@@ -511,6 +512,7 @@ h2
 }
 
 
+
 .page6menu a:hover
 {
     color: #5225b5;
@@ -520,6 +522,7 @@ h2
 {
     width: 55%;
     padding-left: 20px;
+    position: relative;
 }
 
 .page6container
@@ -533,7 +536,7 @@ h2
 .page6text
 {
     /* border: 5px solid teal ; */
-    /* width: 45%; */
+    position: relative;
     padding: 40px 50px;
 }
 
@@ -557,6 +560,23 @@ h2
  padding-top: 20px;
 }
 
+.right #rightarrow
+{
+  position: absolute; 
+  top: 217px;
+  left: 560px;
+  font-size: 30px;
+  color: #5225b5;
+}
+
+#leftarrow
+{
+    position: absolute;
+    top: 210px;
+    left: 0;
+    font-size: 30px;
+    color: #5225b5;
+}
 
 #page6p4
 {
@@ -576,6 +596,20 @@ h2
 {
     width: 80%;
     margin: 0 auto;
+}
+
+.arrow
+{
+    font-size: 30px;
+    right: 50px;
+    position: absolute;
+    bottom: 140px;
+}
+
+#left1
+{
+    position: absolute;
+    right: 100px;
 }
 
 .page7text h2
@@ -643,6 +677,7 @@ progress::-webkit-progress-value {
 .progress-container
 {
     padding: 100px 0px;
+    position: relative;
 }
 
 .page8container
