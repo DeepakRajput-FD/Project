@@ -635,15 +635,377 @@ p
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (min-width: 992px)and(max-width:1199) {  }
+@media (max-width: 992px) {
+    
+.page2container
+{
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.page2img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.page2img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.page2content
+{
+    width: 100%;
+    padding: 30px;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#page2content2 , #page2content1
+{
+    padding: 20px 0px;
+}
+
+#b1
+{
+    padding-top: 10px;
+    width: 200px;
+    display: flex;
+}
+
+
+.page3content1
+{
+    width: 100%;
+    padding:  0px;
+    color: black;
+}
+
+
+.maincard
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+
+.maincard2
+{
+    /* flex-direction: column; */
+    color: white;
+    align-content: center;
+    padding-bottom: 50px;
+    color: black;
+}
+
+
+
+.page4container
+{
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+.page4img , .page4text
+{
+    width: 100%;
+    height: 100%;
+}
+
+.page4text
+{
+    padding-top: 20px;
+}
+
+.page4img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.page5cards
+{
+    padding-top: 30px;
+    display: flex;  
+    flex-direction: column; 
+}
+
+
+.page6container
+{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+
+
+.page6img
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.page6img img
+{
+   width: 100%;
+   height: 100%;
+}
+
+
+.page6text
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px 50px;
+}
+
+
+
+.page7cards
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+
+.page8container2 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.page8img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.page9container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    color: white;
+    font-family: Drlcircular,sans-serif;
+    /* border: 1px solid yellow; */
+}
+
+
+.flex1
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.page9container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    text-align: center;
+    color: white;
+    font-family: Drlcircular,sans-serif;
+    /* border: 1px solid yellow; */
+}
+
+
+.last-menu1
+{
+    display: flex;
+    justify-content: right;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.last-menu1 li
+{
+    padding: 10px;
+}
+
+
+.page9main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.icons
+{
+    font-size: 25px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+  }
 
 /* // Large devices (desktops, less than 1200px) */
-@media (min-width: 1200px)and(max-width:1400px) { 
+@media (max-width: 1200px) 
+{ 
 
- }
+    .page2container
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .page2img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .page2img img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+.page4container
+{
+    width: 80%;
+    display: flex;
+}
+
+.page4img
+{
+    width: 50%;
+    height: 50%;
+}
+
+
+.page4img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.page5cards
+{
+    padding-top: 30px;
+    display: flex;
+    column-gap: 30px;   
+}
+
+
+#page5p2
+{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+
+.page6container
+{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+}
+
+
+.page6img
+{
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.page6img img
+{
+   width: 100%;
+   height: 100%;
+}
+
+
+.page6text
+{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    padding: 0px 50px;
+}
+
+
+
+.page7cards
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+
+.page7img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.page8container2 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.flex1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+}
 
 /* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {  }
+@media (max-width: 1400px)
+    {  
+        /* same code are show in css which are write on reddy.css */
+    }
 
 /* // XX-Large devices (larger desktops) */
 /* // No media query since the xxl breakpoint has no upper bound on its width */
