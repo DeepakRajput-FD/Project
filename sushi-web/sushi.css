@@ -10,7 +10,6 @@
     background: url(./image/food-background.png) no-repeat center center/cover;
     width: 100%;
     overflow: hidden;
-    /* height: 796px; */
 }
 .nav-wrapper
 {
@@ -20,19 +19,30 @@
 {
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .menu
 {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
+    gap: 10px;
+}
+
+#bar
+{
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 #check1
 {
     width: 50px;
     height: 50px;
+    display: none;
 }
 
 nav
@@ -41,7 +51,7 @@ nav
     display: flex;
     justify-content: space-around;
     align-items: center;
-    display: none;
+ 
 }
 
 input:checked + nav
@@ -791,10 +801,10 @@ font-family: "Montserrat";
 .table1
 {
     margin-top: 100px;
-    /* height: 0px; */
     padding-bottom: 100px;
     display: flex;
 } 
+
 
 th{
     /* text-align: center; */
