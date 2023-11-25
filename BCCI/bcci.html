@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .images
+        {
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid black; */
+        }
+        .images img
+        {
+            width: 100%;
+            height: 100%;
+        }
+       .nav-wrapper nav
+        {
+            background: #0f235a;
+        }
+        .menus
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu1 
+        {
+            list-style-type: none;
+            display: flex;
+            padding: 10px 0px 0px 50px;
+            align-items: center;
+        }
+        
+        .menu2
+        {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        .text
+        {
+            padding: 10px 0px 0px 50px ;
+            display: flex;
+            font-size: 18px;
+            column-gap: 20px;
+            align-items: center;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        #content1
+        {
+            padding-bottom: 20px;
+            border-bottom: 6px solid #c65142;
+        }
+        #content2
+        {
+            padding-bottom: 22px;
+        }
+
+        #magnifying-glass
+        {
+            padding: 15px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        #wcw
+        {
+            padding: 15px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        #ipl-logo
+        {
+            padding: 15px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        #wpl-logo
+        {
+            padding: 15px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        #hamburger-menu
+        {
+            font-size: 24px;
+            padding: 15px;
+
+        }
+
+        #angle1
+        {
+            font-size: 14px;
+            padding: 18px;
+            color: white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        #angle2
+        {
+            font-size: 14px;
+            padding: 18px;
+            color: white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            display: none;
+        }
+
+        #cross
+        {
+            font-size: 14px;
+            padding: 18px;
+            color: white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            display: none;
+        }
+
+        .icons
+        {
+            display: flex;
+        }
+
+        .icons:hover #angle2
+        {
+            display: block;
+        }
+
+        .icons:hover #cross
+        {
+            display: block;
+        }
+
+        .navbar2
+        {
+            display: flex;
+            font-family: sans-serif;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 400;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        .navbar2 a
+        {
+            text-decoration: none;
+        }
+
+        .hoverablemenu a
+        {
+            color: rgba(0,0,0,.5);
+            font-size: 14px;
+        }
+
+        #men
+        {
+            padding: 12px 30px 12px 30px;
+            background: url(./Images/active.svg) no-repeat center/cover;
+            color: white;
+            font-weight: 500;
+            width: 140px;
+            height: 45px;
+        }
+
+       #women
+       {
+        padding: 12px 30px 12px 0px;
+        width: 120px;
+        height: 45px;
+        color: white;
+        font-weight: 500;
+       }
+
+       #videos ,#fixtures,#results,#news,#players,#rankings,#stats,#series,#archive
+       {
+        padding: 12px 15px 12px 10px;
+        border-right: 1px solid rgb(188, 185, 185);
+        font-weight: 500;
+        /* color: rgba(0,0,0,.5); */
+        text-transform: capitalize;
+       }
+       
+       .hoverablemenu
+       {
+        display: flex;
+       }
+
+       .hoverablemenu a:hover
+       {
+        background: linear-gradient(180deg, rgba(240, 216, 213, 0) 0%, rgb(240, 216, 213) 100%);
+        color: #c65142;
+        cursor: pointer;
+       }
+
+       .menu3
+       {
+        display: flex;
+        padding: 10px;
+        font-family: sans-serif;
+       }
+
+       .menu3 li
+       {
+        list-style-type: none;
+        padding: 0px 20px;
+       }
+
+       .menu3 a
+       {
+        font-size: 13px;
+        text-decoration: none;
+        color: #133f7E;
+        font-weight: 600;
+       }
+
+     .menu3 a .fa-angle-right
+     {
+        color: rgb(188, 185, 185);
+     }
+
+     #one
+     {
+        padding: 5px 20px;
+        border-radius: 8px ;
+        background: #a0c7ff;
+        font-weight: 600;
+     }
+
+     .images2
+     {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        background: url(./Images/image1.jpg)no-repeat center/cover ;
+        animation: changeimage 12s ease-in-out 1s infinite;
+        border-radius: 10px;
+     }
+
+     @keyframes changeimage {
+        0%
+        {
+            background: url(./Images/image2.jpg)no-repeat center/cover ;
+        }
+        40%
+        {
+            background: url(./Images/image3.jpg)no-repeat center/cover ;
+        }
+        60%
+        {
+            background: url(./Images/image4.jpg)no-repeat center/cover ;
+        }
+        80%
+        {
+            background: url(./Images/image5.jpg)no-repeat center/cover ;
+        }
+        100%
+        {
+            background: url(./Images/image6.jpg)no-repeat center/cover ;
+        }
+     }
+
+     .page1
+     {
+        /* padding-bottom: 50px; */
+        width: 100%;
+        height: 640px;
+        margin-top: 10px;
+     }
+
+     .page2
+     {
+        padding: 50px 30px;
+     }
+
+     .page2 .page2title
+     {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: sans-serif;
+     }
+
+     .page2titles
+     {
+        display: flex; 
+        align-items: center;
+        padding-left: 10px;
+     }
+
+     .page2titles h2
+     {
+        font-size: 34px;
+        font-weight: 700;
+        padding-right: 50px;
+     }
+
+     .page2titles #p1,#p2
+     {
+        font-size: 18px;
+        color: #2255A4;
+        font-weight: 700;
+        padding-bottom: 8px;
+    }
+    
+    #p1
+    {
+         margin-left: 50px;
+        border-bottom: 4px solid #2255A4;
+     }
+
+     #p2
+     {
+        padding-left: 30px;
+     }
+
+     .fa-arrow-right
+     {
+        font-size: px;
+     }
+
+     .icons2
+     {
+        color: rgba(50, 49, 48, 0.6);
+        text-transform: uppercase;
+     }
+
+     .icons2 #right1
+     {
+        margin-left: 20px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+     }
+
+     .cards
+     {
+        padding: 30px;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+     }
+
+     .top-text
+     {
+        display: flex;
+        border: 1px solid black;
+     }
+
+     .card1imgtext
+     {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        margin: 20px 5px;
+        align-items: center;
+        column-gap: 10px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: white;
+        text-transform: uppercase;
+     }
+
+     .card1imgtext img
+     {
+        width: 100%;
+        height: 100%;
+     }
+
+     #vs
+     {
+        width: 24px;
+        height: 38px;
+     }
+
+     .card1
+     {
+        border: 1px solid black;
+        background: #262d41;
+        position: relative;
+     }
+
+     .date
+     {
+        padding: 10px 0px;
+        text-align: center;
+        color: white;
+     }
+
+     .card-inform 
+     {
+        background: rgba(159,159, 159, 0.2);
+        display: flex;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: white;
+        align-items: center;
+     }
+
+     .top-text
+     {
+        padding: 10px 16px;
+        display: flex;
+        justify-content: space-between;
+     }
+
+     .top-text h5
+     {
+        color: #fffffff7;
+     }
+
+     .top-text p
+     {
+        color: #B0C8E1;
+    font-style: normal;
+    text-transform: uppercase;
+     }
+
+     #img1
+     {
+        margin-left: 20px;
+     }
+
+     #matchinfo
+     {
+      font-size: 14px;
+        font-weight: 700;
+        display: flex;
+     }
+
+     .left-text
+     {
+        font-size: 14px;
+        color: #ffffff;
+        text-transform: capitalize;
+        
+     }
+
+     .left-text p
+     {
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: right;
+    background: #133F7E;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    top: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+     }
+
+     .menu-cards
+     {
+        background-image: url(./Images/latest-Video-BG.png);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 2;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% 415px;
+     }
+
+     .menu-list
+     {
+        display: flex;
+        justify-content: space-between;
+        font-family: sans-serif;
+     }
+
+     .menu-list1
+     {
+        display: flex;
+        padding: 40px 0px;
+        align-items: center;
+        list-style-type: none;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #fff;
+
+     }
+
+     .menu-list2
+     {
+        list-style-type: none;
+        display: flex;
+        padding: 40px 0px;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(255,255,255,.5);
+     }
+
+     .menu-list2 li
+     {
+        padding: 0px 20px;
+     }
+
+     .menu-list2 i
+     {
+        font-size: 20px;
+     }
+
+     .menu-list2 #r2
+     {
+        color: white;
+     }
+
+     .menu-list1 a
+     {
+        text-decoration: none;
+        background-color: rgba(0,0,0,0);
+        color: #a5a8b0;
+        padding-bottom: 10px;
+     }
+
+     #latest
+     {
+        border-bottom: 3px solid #c65142;
+     }
+
+     .menu-list1 h2
+     {
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 40px;
+     }
+
+     .menu-list2
+     {
+        display: flex;
+     }
+
+     .list
+     {
+        display: flex;
+        padding-left: 100px;
+     }
+
+     .list li
+     {
+      padding: 0px 20px;  
+     }
+
+     .vid-cards
+     {
+        width: 95%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding: 0px 0px 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+     }
+
+     .vidcardimg1 
+     {
+        width: 340px;
+        height: 270px;
+    }
+    
+    .vidcardimg1 img
+    {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+     }
+
+     #time
+     {
+        font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgba(255,255,255,.6);
+    padding: 10px;
+     }
+
+     .view
+     {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 10px;
+     }
+
+     .data #name
+     {
+     font-size: 16px;
+    font-weight: 800;
+    color: rgba(255,255,255,.8);
+    line-height: 24px;
+    text-align: left;
+    padding: 0px 0px 20px 10px;
+    border-bottom:1px solid #1d4783;
+     }
+
+     .vidcard1
+     {
+        border-radius: 10px; 
+        background-color: #133F7E;
+     }
+
+     .view1
+     {
+        display: flex;
+     }
+
+     #minutes
+     {
+        padding-left: 50px;
+     }
+
+     #eye span
+     {
+        padding-left: 10px;
+     }
+
+     .page3
+     {
+        width: 98%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding-bottom: 50px;
+     }
+
+     .page3title
+     {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .page3title h2
+     {
+        font-size: 30px;
+        font-weight: 800;
+     }
+
+     .page3wrapper
+     {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+     }
+
+     .page3image
+     {
+        width: 70%;
+     }
+
+     .page3image img
+     {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+     }
+
+     .page3content
+     {
+        margin-left: 30px;
+        margin-top: 10px;
+     }
+
+     .page3card1
+     {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px;
+        border-bottom: 1px solid bisque;
+     }
+
+     .page3cardimg1
+     {
+        width: 160px;
+        height: 100px;
+    }
+    
+    
+    .page3cardimg1 img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+     }
+
+     .page3cardtitle1
+     {
+        padding: 5px 0px 0px 10px;
+     }
+
+     #page3date
+     {
+        font-size: 14px;
+        font-weight: 500;
+        color: #7a7a7a;
+    }
+
+    #page3name
+     {
+        font-size: 16px;
+        font-weight: 800;
+        color: rgba(0,0,0,.8);
+        padding-top: 10px;
+    }
+
+    .page3flexcards
+    {
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    .shareicon
+    {
+        text-align: right;
+        color: #7f7f7f;
+    }
+
+    .page4
+    {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        font-family: sans-serif;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 40px 0px;
+    }
+    
+    .page4image
+    {
+        width: 50%;
+    }
+    
+    .page4content
+    {
+        
+        width: 50%;
+        padding-top: 100px;
+    }
+
+    .page4content h2
+    {
+        color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 20px;
+    }
+
+    .page4image img
+    {
+        width: 100%;
+        height: 100%;
+        padding: 20px 16px 50px 16px;
+    }
+
+    .page4content p
+    {
+    padding: 40px 0px 30px;
+     color: rgb(51 51 51);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    }
+
+    .company-logo 
+    {
+        padding: 20px 0px 0px;   
+    }
+
+    .page5wrapper
+    {
+        display: flex;
+        font-family: sans-serif;
+    }
+
+    .page5content
+    {
+        width: 20%;
+    }
+
+    .page5flex
+    {
+        width: 80%;
+        display: flex;
+    }
+
+    .content-wrapper
+    {
+        display: flex;
+    }
+
+    .page5flexcard1
+    {
+        background-color: #1a4fa0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .content1
+    {
+        padding: 80px 13px 20px;
+        border-right: 1px solid #416db0;
+        border-bottom: 1px solid #416db0;
+    }
+
+    .content1 p
+    {
+        font-size: 50px;
+        color: white;
+    }
+
+    .content1 sub
+    {
+        color: #e0e7f2;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .content2
+    {
+        padding: 50px 13px 0px;
+        color: white;
+        display: flex;
+        /* border: 1px solid #416db0; */
+    }
+
+    .content2 p
+    {
+        font-size: 80px;
+    }
+
+    .content2 sub
+    {
+        font-size: 12px;
+        color: #e0e7f2;
+        text-transform: uppercase;
+    }
+
+    .content2img
+    {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 180px;
+        left: 180px;
+    }
+
+    .content2img img
+    {
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+    }
+
+    .page5flexcard2, .page5flexcard3
+    {
+        padding: 50px 0px 0px 20px;
+        position: relative;
+        overflow: hidden;
+        background-color: #3e4856;
+        color: white;
+    }
+
+    .page5flexcard3
+    {
+        background-color: rgb(32 41 58);
+    }
+    
+    .flexcard2text h6
+    {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom:5px ;
+    }
+
+    .flexcard2text span , p
+    {
+        font-size: 14px;
+    }
+
+    .flexcard2img img
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .flexcard2img 
+    {
+        width: 150px;
+        height: 164px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .flexcard2num p
+    {
+        font-size: 176px;
+        color: rgb(77 84 97);
+        position: absolute;
+        top: 170px;
+        left: -30px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <nav>
+                <div class="menus">
+
+                <ul class="menu1">
+                    <li class="images"><img src="./Images/bcci-logo.svg" alt=""> </li>
+
+                    <div class="text">
+                    <li id="content1">International </li>
+
+                    <li id="content2"> Domestic</li>
+                    </div>
+
+                </ul>
+
+                <ul class="menu2">
+                    <li id="magnifying-glass">
+                        <img src="./Images/search-icon.svg" ></li>
+                    <li id="wcw"><img src="./Images/wcw.png" ></li>
+                    <li id="ipl-logo"><img src="./Images/ipl-logo.svg" ></li>
+                    <li id="ipl-logo"><img src="./Images/wpl-logo.svg" ></li>
+                    <li id="hamburger-menu"><img src="./Images/hamburger-menu.svg" ></li>
+                        
+
+                    <div class="icons">
+                    <li id="angle1">EN <i class="fa-solid fa-angle-down"></i></li>
+
+                    <li id="angle2">
+                        select language <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                  
+                    <li id="cross">
+                        <i class="fa-solid fa-x"></i>
+                    </li>
+                    </div>
+                </ul>
+
+                </div>
+            </nav>
+
+
+        </div>
+
+        <nav>
+            <ul class="navbar2">
+                <li id="men"><a href="#23">MEN</a> </li>
+                <li id="women"><a href="#23">WOMEN</a> </li>
+                <div class="hoverablemenu">
+                <li> <a href="#23" id="videos">videos</a></li>
+                <li> <a href="#23" id="fixtures">fixtures</a></li>
+                <li> <a href="#23" id="results">results</a></li>
+                <li> <a href="#23" id="news">news</a></li>
+                <li><a href="#23" id="players"> players</a></li>
+                <li><a href="#23" id="rankings"> rankings</a></li>
+                <li><a href="#23" id="stats"> stats</a></li>
+                <li><a href="#23" id="series"> series and tournaments</a></li>
+                <li><a href="#23" id="archive"> archive</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="menu3">
+                <li><a href="#23" id="one">QuickLinks </a></li>
+                <li><a href="#23" >DOMESTIC 2023-24 SCHEDULE <i class="fa-solid fa-angle-right"></i></a> </li>
+                <li><a href="#23" >INTERNATIONAL RESULTS <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="#23" >BCCI DOCUMENTATION <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="#23" >TENDER AND RFP <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="#23" >JOBS <i class="fa-solid fa-angle-right"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="page1">
+        <div class="images2">
+        </div>
+        </div>
+
+    </header>
+
+    <header id="header2">
+        <div class="page2">
+
+            <div class="page2title">
+
+                <div class="page2titles">
+                <h2>Matches</h2>
+                
+                <p id="p1">Fixtures</p>
+                <p id="p2">Results</p>
+                </div>
+
+                <div class="icons2">
+                    <p>see all <span id="right1"><i class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+            </div>
+
+
+            <div class="cards">
+                
+                <div class="card1">
+                    
+                    <div class="top-text">
+                        <h5>
+                            AUSTRALIA TOUR OF INDIA 2023-24
+                        </h5>
+                        <p>
+                            2 days to go
+                        </p>
+                    </div>
+
+                    <div class="createb">
+                    <div class="card1imgtext">
+                        <img src="./Images/bcci-logo.svg" alt="" id="img1">
+                        <p>INDIA</p>
+                        <img src="./Images/vs.png" alt="" id="vs">
+                        <img src="./Images/austrailia.png" alt="">
+                        <p>AUSTRALIA</p>
+                    </div>
+                    </div>
+
+                    <div class="date">
+                        23 November, 2023| 7:00 PM IST
+                    </div>
+
+                    <div class="card-inform">
+                        <p>
+                            Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium,
+                            <span class="ng-binding"> Visakhapatnam</span>
+                        </p>
+
+                        <p id="matchinfo">
+                            Match info <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </p>
+                    </div>
+
+                    <div class="left-text">
+                        <p>
+                            1st T20I
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="top-text">
+                        <h5>
+                            QUADRANGULAR MENS U19 ONE DAY SERIES
+                        </h5>
+                        <p>
+                            2 days to go
+                        </p>
+                    </div>
+
+                    <div class="createb">
+                    <div class="card1imgtext">
+                        <img src="./Images/england.png" alt="" id="img1">
+                        <p>england</p>
+                        <img src="./Images/vs.png" alt="" id="vs">
+                        <img src="./Images/bangladesh.png" alt="">
+                        <p>bangladesh u-19</p>
+                    </div>
+                    </div>
+
+                    <div class="date">
+                        23 November, 2023| 7:00 PM IST
+                    </div>
+
+                    <div class="card-inform">
+                        <p>
+                            Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium,
+                            <span class="ng-binding"> Visakhapatnam</span>
+                        </p>
+
+                        <p id="matchinfo">
+                            Match info <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </p>
+                    </div>
+
+                    <div class="left-text">
+                        <p>
+                            1st T20I
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="top-text">
+                        <h5>
+                            QUADRANGULAR MENS U19 ONE DAY SERIES
+                        </h5>
+                        <p>
+                            2 days to go
+                        </p>
+                    </div>
+
+                    <div class="createb">
+                    <div class="card1imgtext">
+                        <img src="./Images/india-19.png" alt="" id="img1">
+                        <p>INDIAu19a</p>
+                        <img src="./Images/vs.png" alt="" id="vs">
+                        <img src="./Images/india-b.png" alt="">
+                        <p>INDIAu19b</p>
+                    </div>
+                    </div>
+
+                    <div class="date">
+                        23 November, 2023| 7:00 PM IST
+                    </div>
+
+                    <div class="card-inform">
+                        <p>
+                            Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium,
+                            <span class="ng-binding"> Visakhapatnam</span>
+                        </p>
+
+                        <p id="matchinfo">
+                            Match info <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </p>
+                    </div>
+
+                    <div class="left-text">
+                        <p>
+                            1st T20I
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+            <div class="menu-cards">
+                
+                <div class="menu-list">
+                    
+                    <ul class="menu-list1">
+                        
+                        <li><h2>videos</h2> </li>
+
+                        <div class="list">
+                        <li><a href="" id="latest">latest </a></li>
+                        <li><a href="">highlights </a></li>
+                        <li><a href=""> featured </a></li>
+                        <li><a href=""> Interviews </a></li>
+                        <li><a href=""> Press Conferences </a></li>
+                        </div>
+                    
+                    </ul>
+
+                    <ul class="menu-list2">
+                        <li><i class="fa-solid fa-angle-left"></i></li>
+                        <li><i class="fa-solid fa-angle-right" id="r2"></i></li>
+                        <li>see all</li>
+                        <li><span id="right1"><i class="fa-solid fa-arrow-right"></i></span></li>
+                    </ul>
+                </div>
+
+                <div class="vid-cards">
+                    
+                    <div class="vidcard1">
+                        <div class="vidcardimg1">
+                        <img src="./Images/image7.jpg" alt="">
+                        </div>
+                        <div class="data">
+
+                            <p id="time">
+                                24th Nov, 2023
+                            </p>
+
+                            <p id="name">
+                                Stat Check with Suryakumar Yadav
+                            </p>
+                        </div>
+
+                        <div class="view">
+
+                            <div class="view1">
+                            <p id="eye">
+                                <i class="fa-solid fa-eye"></i>
+                                    <span>542</span>
+                            </p>
+                            
+                            <p id="minutes">
+                                02:11 mins
+                            </p>
+                            </div>
+
+                            <p id="share">
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                            </p>
+                        </div>
+                        </div>
+
+                    <div class="vidcard1">
+                            <div class="vidcardimg1">
+                            <img src="./Images/image8.jpg" alt="">
+                            </div>
+                            <div class="data">
+    
+                                <p id="time">
+                                    24th Nov, 2023
+                                </p>
+    
+                                <p id="name">
+                                    Rinku Recaps India's last-ball finish in 20.8k
+                                </p>
+                            </div>
+    
+                            <div class="view">
+    
+                                <div class="view1">
+                                <p id="eye">
+                                    <i class="fa-solid fa-eye"></i>
+                                        <span>20.8k</span>
+                                </p>
+                                
+                                <p id="minutes">
+                                    01:27 mins
+                                </p>
+                                </div>
+    
+                                <p id="share">
+                                    <i class="fa-solid fa-square-share-nodes"></i>
+                                </p>
+                            </div>
+                    </div>
+
+                    <div class="vidcard1">
+                                <div class="vidcardimg1">
+                                <img src="./Images/image9.jpg" alt="">
+                                </div>
+                                <div class="data">
+        
+                                    <p id="time">
+                                        23rd Nov, 2023
+                                    </p>
+        
+                                    <p id="name">
+                                        I had to take my chances and I believed in myself: Ishan Kishan
+                                    </p>
+                                </div>
+        
+                                <div class="view">
+        
+                                    <div class="view1">
+                                    <p id="eye">
+                                        <i class="fa-solid fa-eye"></i>
+                                            <span>12.2k</span>
+                                    </p>
+                                    
+                                    <p id="minutes">
+                                        03:59 mins
+                                    </p>
+                                    </div>
+        
+                                    <p id="share">
+                                        <i class="fa-solid fa-square-share-nodes"></i>
+                                    </p>
+                                </div>
+                    </div>
+
+                     <div class="vidcard1">
+                                    <div class="vidcardimg1">
+                                    <img src="./Images/image10.jpg" alt="">
+                                    </div>
+                                    <div class="data">
+            
+                                        <p id="time">
+                                            23rd Nov, 2023
+                                        </p>
+            
+                                        <p id="name">
+                                            IND vs AUS 2023-24, 1ST T20I: Match Presentation
+                                        </p>
+                                    </div>
+            
+                                    <div class="view">
+            
+                                        <div class="view1">
+                                        <p id="eye">
+                                            <i class="fa-solid fa-eye"></i>
+                                                <span>18.9k</span>
+                                        </p>
+                                        
+                                        <p id="minutes">
+                                            08:05 mins
+                                        </p>
+                                        </div>
+            
+                                        <p id="share">
+                                            <i class="fa-solid fa-square-share-nodes"></i>
+                                        </p>
+                                    </div>
+                    </div>
+    
+                    </div>
+            
+
+        </div>
+    </header>
+
+    <header id="header3">
+        <div class="page3">
+
+            <div class="page3title">
+
+                 <h2>Latest News</h2>
+                 <div class="icons2">
+                    <p>see all <span id="right1"><i class="fa-solid fa-arrow-right"></i></span></p>
+                    </div>
+            </div>
+
+            <div class="page3wrapper">
+                
+                <div class="page3image">
+                    <img src="./Images/crickteam.webp" alt="">
+                </div>
+                <div class="page3content">
+
+                    <div class="page3flexcards">
+                        
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/image11.jpg" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                    <i class="fa-solid fa-square-share-nodes"></i>
+                               
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/image12.jpg" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/img13.webp" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/img14.webp" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/img15.webp" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/img16.webp" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="page3card1">
+                        <div class="page3cardimg1">
+                            <img src="./Images/image11.jpg" alt="">
+                        </div>
+                        <div class="page3cardtitle1">
+
+                            <p id="page3date">
+                                09th November, 2023 
+                            </p>
+
+                            <h2 id="page3name">
+                                Squads and fixtures for U19 Men’s Quadrangular Series announced
+                            </h2>
+
+                            <div class="shareicon">
+                                
+                                <i class="fa-solid fa-square-share-nodes"></i>
+                           
+                        </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <header id="header4">
+        <div class="page4">
+
+            <div class="page4image">
+                <img src="./Images/official-mob.png" alt="">
+            </div>
+
+            <div class="page4content">
+
+                <h2>Get the Official BCCI App</h2>
+
+                <p>Get the latest scores on the go. Find the latest content, including match highlights,
+                    press conferences and recap all at your fingertips by downloading the official BCCI app.
+                </p>
+
+                <div class="company-logo">
+
+                    <img src="./Images/dark2.png" alt="">
+
+                    <img src="./Images/dark1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <header id="header5">
+
+        <div class="page5wrapper">
+            
+            <div class="page5content">
+            <h2>
+                The Game in Numbers
+            </h2>
+
+            <p>
+                A look at the Current cricket rankings
+            </p>
+            </div>
+
+            <div class="page5flex">
+
+                <div class="page5flexcard1">
+                    
+                    <div class="contentall">
+                        
+                        <div class="content-wrapper">
+                    <div class="content1">
+                      
+
+                        <p>
+                            #01 
+                            <sub>
+                                Test
+                            </sub>
+                        </p>
+
+                    </div>
+
+                    <div class="content1">
+
+                        <p>
+                            #01 
+                            <sub>
+                                odi
+                            </sub>
+                        </p>
+
+                    </div>
+                    </div>
+
+                    <div class="content2">
+                        <p>
+                            #01 
+                            <sub>
+                                t20
+                            </sub>
+                        </p>
+
+                        <div class="content2img">
+                            <img src="./Images/bcci-logo.svg" alt="">
+                        </div>
+                    </div>                    
+
+                    </div>
+
+                </div>
+
+                <div class="page5flexcard2">
+
+                    <div class="flexcard2text">
+                        
+                        <h6>Ravichandran Ashwin</h6>
+
+                        <span>Bowler</span>
+
+                        <p>Rank:#01</p>
+
+                    </div>
+
+                    <div class="flexcard2img">
+                        <img src="./Images/8_compress.png" alt="" id="actor">
+                    </div>
+
+                    <div class="flexcard2num">
+                        <p>01</p>
+                    </div>
+                   
+                </div>
+
+                <div class="page5flexcard3">
+
+                    <div class="flexcard2text">
+                        
+                        <h6>Ravichandran Ashwin</h6>
+
+                        <span>Bowler</span>
+
+                        <p>Rank:#01</p>
+
+                    </div>
+
+                    <div class="flexcard2img">
+                        <img src="./Images/8_compress.png" alt="" id="actor">
+                    </div>
+
+                    <div class="flexcard2num">
+                        <p>01</p>
+                    </div>
+                   
+                </div>
+
+                <div class="page5flexcard3">
+
+                    <div class="flexcard2text">
+                        
+                        <h6>Ravichandran Ashwin</h6>
+
+                        <span>Bowler</span>
+
+                        <p>Rank:#01</p>
+
+                    </div>
+
+                    <div class="flexcard2img">
+                        <img src="./Images/8_compress.png" alt="" id="actor">
+                    </div>
+
+                    <div class="flexcard2num">
+                        <p>01</p>
+                    </div>
+                   
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </header>
+    
+</body>
+</html>
