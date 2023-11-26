@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navwrapper1
+        {
+            display: flex;
+            list-style-type: none;
+            background-color: #131921;
+            color: white;
+            padding: 5px 0px 0px;
+            align-items: center;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            justify-content: space-between;
+        }
+        #amzon-logo
+        {
+            width: 128px;
+            height: 50px;
+            object-fit: cover;
+            filter: invert(100%);
+            margin:  1px 8px 0 6px;
+        }
+
+        .address
+        {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        #deliever
+        {
+            color: #ccc;
+            font-size: 12px;
+        }
+
+        #ahmedabad
+        {
+            padding-top:2px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        #locate
+        {
+            color: #dadbdc;
+            padding-right: 5px;
+        }
+
+        .lists
+        {
+            display: none;
+            position: absolute;
+            color: black;
+            list-style-type: none;
+        }
+
+        .lists > li
+        {
+            padding: 10px 0px 0px;
+        }
+
+        #b1
+        {
+            position: relative;
+            padding: 10px 20px  ;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: left;
+            color: #0F1111;
+            width: 150px;
+            border: 0;
+        }
+
+        .parent1:hover #b1+.lists
+        {
+            width: 200px;
+            display: block;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        .lists li:hover
+        {
+            background-color: blue;
+            color: white;
+        }
+
+        #joint
+        {
+            display: flex;
+            position: relative;
+        }
+
+        #search
+        {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            border-radius: 5px;
+            width: 500px;
+            padding: 10px 5px;
+            border: 0px;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header id="header1">
+        
+        <nav>
+        
+        <ul class="navwrapper1">
+            
+            <li><img src="./Images/amzon-logo.png" id="amzon-logo"></li>
+
+            <li>
+                <div class="address">
+                <span id="locate"><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="address2">
+                        <p id="deliever">deliever to rajput</p>
+                        <p id="ahmedabad">ahmedabad 382415</p>
+                    </div>
+                </div>
+            </li>
+
+            <li id="joint">
+                <div class="parent1">
+                <button id="b1">All <i class="fa-solid fa-angle-down"></i></button>
+                <ul class="lists">
+                    <li>ALL cateogries</li>
+                    <li>alexa skills</li>
+                    <li>amazon devices</li>
+                    <li>amazon fashion</li>
+                    <li>amazon pharmacy</li>
+                    <li>appliance</li>
+                    <li>apps & games</li>
+                    <li>audible audiobooks</li>
+                    <li>baby</li>
+                    <li>beauty</li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" name="" id="search" placeholder="search amazon.in">
+                
+                <span id="glass1"><i class="fa-solid fa-house"></i></span>
+                </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+
+        </nav>
+
+    </header>
+</body>
+</html>
