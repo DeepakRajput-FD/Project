@@ -12,17 +12,20 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
         .navwrapper1
         {
+            width: 100%;
             display: flex;
             list-style-type: none;
             background-color: #131921;
             color: white;
-            padding: 5px 0px 0px;
+            padding: 10px;
             align-items: center;
             font-family: sans-serif;
             text-transform: capitalize;
             justify-content: space-between;
+
         }
         #amzon-logo
         {
@@ -75,13 +78,14 @@
         #b1
         {
             position: relative;
-            padding: 10px 20px  ;
+            padding: 20px 20px;
             border-radius: 5px;
             font-size: 14px;
             text-align: left;
             color: #0F1111;
-            width: 150px;
+            /* width: 150px; */
             border: 0;
+            left: 70px;
         }
 
         .parent1:hover #b1+.lists
@@ -106,19 +110,199 @@
 
         #search
         {
-            position: absolute;
-            top: 0px;
-            left: 60px;
             border-radius: 5px;
             width: 500px;
-            padding: 10px 5px;
+            padding: 20px 5px 20px 80px;
             border: 0px;
-            font-size: 14px;
+            font-size: 15px;
             text-transform: capitalize;
             font-weight: 500;
         }
 
+        #glass1
+        {
+            padding: 18px 20px;
+            background-color: #febd69;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-radius: 5px;
+        }
         
+        #magnifying-glass
+        {
+            font-size: 20px;
+            color: black;
+        }
+
+        .indian-flag
+        {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .list2
+        {
+            display: none;
+            list-style-type: none;
+            position: absolute;
+        }
+
+        .list2 li
+        {
+            color: black;
+            padding: 5px 0px;
+
+        }  
+
+        .list2 li:hover
+        {
+            color: orange;
+            text-decoration: underline 2px solid orange;
+        }
+        
+        .parent2:hover .indian-flag+.list2
+        {
+            width: 150px;
+            display: block;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        #radio1
+        {
+            accent-color: orange;
+        }
+
+        #hello,#orders
+        {
+            font-size: 12px;
+        }
+
+        #account
+        {
+            font-size: 14px;
+        }
+
+        .main-parent
+        {
+            background-color: white;
+            color: black;
+            padding: 0px 20px 5px;
+            display: none;
+            position: absolute;
+        }
+
+        .main-list
+        {
+            display: flex;
+            /* justify-content: space-between; */
+            column-gap: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .main-list li
+        {
+            list-style-type: none;
+            padding: 5px 0px;
+        }
+
+        #b2
+        {
+            padding: 5px 100px;
+            color: #111;
+            background-color: #febd69;
+            border-radius: 5px;
+            border: 0;
+        }
+
+        .sign-in
+        {
+            padding: 20px 0px;
+            margin: 0px 100px;
+        }
+
+        #customer
+        {
+            padding-top: 10px;
+        }
+
+        #customer span
+        {
+            color: #05a;
+        }
+
+        .main-list2
+        {
+            border-left: 1px solid #eee;
+            padding-left: 20px;
+        }
+
+        .account-data
+        {
+            position: relative;
+        }
+
+        .connect:hover .account-data+.main-parent
+        {
+            display: block;
+            width: 330px;
+            display: block;
+            height: 500px;
+            overflow: scroll;
+        }
+
+        #order span
+        {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+        }
+
+        #cart
+        {
+            font-size: 25px;
+        }
+
+        #num
+        {
+            color: #febd69;
+            font-size: 25px;
+            font-weight: 400;
+            position: absolute;
+            top: -12px;
+            left: 8px;
+        }
+
+        .shopping
+        {
+            position: relative;
+            padding-right: 10px;
+        }
+
+        .shopping span
+        {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .navwrapper2
+        {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #232f3e;
+            color: white;
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
     </style>
 </head>
 <body>
@@ -159,15 +343,127 @@
             <div class="search-box">
                 <input type="text" name="" id="search" placeholder="search amazon.in">
                 
-                <span id="glass1"><i class="fa-solid fa-house"></i></span>
+                <span id="glass1"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></span>
                 </div>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+            <li> 
+                <div class="parent2">
+                    <div class="indian-flag">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/india.png" alt="india"/>
+                <span>EN<i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <ul class="list2">
+                    <li><input type="radio" id="radio1" name="language">हिन्दी-Hi</li>
+                    <li><input type="radio" id="radio1" name="language">தமிழ்-Ta</li>
+                    <li><input type="radio" id="radio1" name="language">తెలుగు-Te</li>
+                    <li><input type="radio" id="radio1" name="language">ಕನ್ನಡ-Kn</li>
+                    <li><input type="radio" id="radio1" name="language">മലയാളം-ML</li>
+                    <li><input type="radio" id="radio1" name="language">বাংলা-BN</li>
+                    <li><input type="radio" id="radio1" name="language">मराठी-MR</li>
+                </ul>
+                </div>
+
+            </li>
+            <li>
+                
+                <div class="connect">
+                    
+                    <div class="account-data">
+                    <p id="hello">hello,sign in</p>
+                    <p id="account">account & lists</p>
+                    </div>
+
+                    <div class="main-parent">
+                        
+                        <div class="sign-in">
+                            
+                            <button id="b2">
+                                Sign in
+                            </button>
+                            <p id="customer">
+                                New customer? <span>Start here.</span> 
+                            </p>
+                        </div>
+
+                        <div class="main-list">
+
+                        <ul class="main-list1">
+                            <li>Your Lists</li>
+                            <li>Create a Wish List</li>
+                            <li>Wish from Any Website</li>
+                            <li>Baby Wishlist</li>
+                            <li>Discover Your Style</li>
+                            <li>Explore Showroom</li>
+                        </ul>
+
+                        <ul class="main-list2">
+
+                            <li>Your Account</li>
+                            <li>Your Account</li>
+                            <li>Your Orders</li>
+                            <li>Your Wish List</li>
+                            <li>Your Recommendations</li>
+                            <li>Your Wallet</li>
+                            <li>Your Prime Membership</li>
+                            <li>Your Prime Video</li>
+                            <li>Your Subscribe & Save Items</li>
+                            <li>Memberships & Subscriptions</li>
+                            <li>Your Seller Account</li>
+                            <li>Manage Your Content and Devices</li>
+                            <li>Your Free Amazon Business Account</li>
+
+                        </ul>
+                        
+                        </div>
+                        
+
+                    </div>
+                    </div>
+            </li>
+            <li id="orders">
+                <p id="order">
+                returns <span>& orders</span>
+                </p>
+            </li>
+
+            <li>
+                <div class="shopping">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                <span>cart</span>
+
+                 <p id="num">
+                    0
+                </p>
+                
+                </div>
+            </li>
+
+        </ul>
+
+        </nav>
+
+        <nav>
+
+        <ul class="navwrapper2">
+            
+            <li>
+                    <i class="fa-solid fa-bars"></i>
+                    <span>ALL</span>
+            </li>
+            
+            <li>Amazon minitv </li>
+            <li> sell</li>
+            <li> best sellers</li>
+            <li> today's deals</li>
+            <li> mobiles</li>
+            <li> customer service</li>
+            <li> electronics</li>
+            <li> new release</li>
+            <li> prime <span><i class="fa-solid fa-caret-down"></i></span></li>
+            <li> home&kitchen</li>
+            <li> gift ideas</li>
+            <li><a href="#23"> <img src="./Images/crushed.jpg" alt=""></a></li>
 
         </ul>
 
