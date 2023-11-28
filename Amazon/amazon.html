@@ -5,361 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        *
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .navwrapper1
-        {
-            width: 100%;
-            display: flex;
-            list-style-type: none;
-            background-color: #131921;
-            color: white;
-            padding: 10px;
-            align-items: center;
-            font-family: sans-serif;
-            text-transform: capitalize;
-            justify-content: space-between;
-
-        }
-        #amzon-logo
-        {
-            width: 128px;
-            height: 50px;
-            object-fit: cover;
-            filter: invert(100%);
-            margin:  1px 8px 0 6px;
-        }
-
-        .address
-        {
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-
-        #deliever
-        {
-            color: #ccc;
-            font-size: 12px;
-        }
-
-        #ahmedabad
-        {
-            padding-top:2px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        #locate
-        {
-            color: #dadbdc;
-            padding-right: 5px;
-        }
-
-        .lists
-        {
-            display: none;
-            position: absolute;
-            color: black;
-            list-style-type: none;
-        }
-
-        .lists > li
-        {
-            padding: 10px 0px 0px;
-        }
-
-        #b1
-        {
-            position: relative;
-            padding: 20px 20px;
-            border-radius: 5px;
-            font-size: 14px;
-            text-align: left;
-            color: #0F1111;
-            /* width: 150px; */
-            border: 0;
-            left: 70px;
-        }
-
-        .parent1:hover #b1+.lists
-        {
-            width: 200px;
-            display: block;
-            height: 200px;
-            overflow: scroll;
-        }
-
-        .lists li:hover
-        {
-            background-color: blue;
-            color: white;
-        }
-
-        #joint
-        {
-            display: flex;
-            position: relative;
-        }
-
-        #search
-        {
-            border-radius: 5px;
-            width: 500px;
-            padding: 20px 5px 20px 80px;
-            border: 0px;
-            font-size: 15px;
-            text-transform: capitalize;
-            font-weight: 500;
-        }
-
-        #glass1
-        {
-            padding: 18px 20px;
-            background-color: #febd69;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            border-radius: 5px;
-        }
-        
-        #magnifying-glass
-        {
-            font-size: 20px;
-            color: black;
-        }
-
-        .indian-flag
-        {
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .list2
-        {
-            display: none;
-            list-style-type: none;
-            position: absolute;
-        }
-
-        .list2 li
-        {
-            color: black;
-            padding: 5px 0px;
-
-        }  
-
-        .list2 li:hover
-        {
-            color: orange;
-            text-decoration: underline 2px solid orange;
-        }
-        
-        .parent2:hover .indian-flag+.list2
-        {
-            width: 150px;
-            display: block;
-            height: 200px;
-            overflow: scroll;
-        }
-
-        #radio1
-        {
-            accent-color: orange;
-        }
-
-        #hello,#orders
-        {
-            font-size: 12px;
-        }
-
-        #account
-        {
-            font-size: 14px;
-        }
-
-        .main-parent
-        {
-            background-color: white;
-            color: black;
-            padding: 0px 20px 5px;
-            display: none;
-            position: absolute;
-        }
-
-        .main-list
-        {
-            display: flex;
-            /* justify-content: space-between; */
-            column-gap: 40px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        .main-list li
-        {
-            list-style-type: none;
-            padding: 5px 0px;
-        }
-
-        #b2
-        {
-            padding: 5px 100px;
-            color: #111;
-            background-color: #febd69;
-            border-radius: 5px;
-            border: 0;
-        }
-
-        .sign-in
-        {
-            padding: 20px 0px;
-            margin: 0px 100px;
-        }
-
-        #customer
-        {
-            padding-top: 10px;
-        }
-
-        #customer span
-        {
-            color: #05a;
-        }
-
-        .main-list2
-        {
-            border-left: 1px solid #eee;
-            padding-left: 20px;
-        }
-
-        .account-data
-        {
-            position: relative;
-        }
-
-        .connect:hover .account-data+.main-parent
-        {
-            display: block;
-            width: 330px;
-            display: block;
-            height: 500px;
-            overflow: scroll;
-        }
-
-        #order span
-        {
-            font-size: 14px;
-            font-weight: 600;
-            display: flex;
-        }
-
-        #cart
-        {
-            font-size: 25px;
-        }
-
-        #num
-        {
-            color: #febd69;
-            font-size: 25px;
-            font-weight: 400;
-            position: absolute;
-            top: -12px;
-            left: 8px;
-        }
-
-        .shopping
-        {
-            position: relative;
-            padding-right: 10px;
-        }
-
-        .shopping span
-        {
-            font-size: 17px;
-            font-weight: 600;
-        }
-
-        .navwrapper2
-        {
-            display: flex;
-            list-style-type: none;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #232f3e;
-            color: white;
-            padding: 10px;
-            font-family: sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-
-        .page1img
-        {
-            background: url(./Images/bg1.jpg)no-repeat center/cover;
-            padding-top: 100px;
-            font-family: sans-serif;
-        }
-
-        .col-100
-        {
-            padding-top: 100px;
-        }
-
-        .cards
-        {
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        .card1images1
-        {
-            display: flex;
-        }
-
-        .card1images1 .card1img1
-        {
-            padding: 10px;
-        }
-
-        .card1 h4
-        {
-            padding: 20px 10px;
-            color: #007185;
-        }
-
-        .card1 
-        {
-            background-color: white;
-            padding: 15px 15px 0px;
-            border: 1px solid black;
-          
-        }
-
-        .cards
-        {
-            display: flex;
-            justify-content: space-between;
-            column-gap: 20px;
-        }
-
-        #img2
-        {
-            width: 140px;
-            /* height: 115px; */
-            object-fit: cover;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./amazon.css">
+    
 </head>
 <body>
     <header id="header1">
@@ -598,7 +245,7 @@
                         <div class="card1">
                             
                             <div class="card1title">
-                                <h2>Up to 75% off | Headphones</h2>
+                                <h2>Up to 60% off | Styles for men</h2>
                             </div>
                             
 
@@ -606,7 +253,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/Boat.jpg" alt="" id="img2">
+                                <img src="./Images/clothing.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -617,7 +264,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/boult.jpg" alt="" id="img2">
+                                <img src="./Images/footwear.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -631,7 +278,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/noise.jpg" alt="" id="img2">
+                                <img src="./Images/watches.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -642,7 +289,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/Zebronics.jpg" alt="" id="img2">
+                                <img src="./Images/bags.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -661,7 +308,7 @@
                         <div class="card1">
                             
                             <div class="card1title">
-                                <h2>Up to 75% off | Headphones</h2>
+                                <h2>Appliances for your home | Up to 55% off</h2>
                             </div>
                             
 
@@ -669,7 +316,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/Boat.jpg" alt="" id="img2">
+                                <img src="./Images/AC.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -680,7 +327,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/boult.jpg" alt="" id="img2">
+                                <img src="./Images/Refrigerator.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -694,7 +341,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/noise.jpg" alt="" id="img2">
+                                <img src="./Images/Microwaves.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -705,7 +352,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/Zebronics.jpg" alt="" id="img2">
+                                <img src="./Images/Washing-machine.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -716,7 +363,7 @@
                             </div>
 
                             <h4>
-                                see all offers
+                                see more
                             </h4>
 
                         </div>
@@ -724,7 +371,7 @@
                         <div class="card1">
                             
                             <div class="card1title">
-                                <h2>Up to 75% off | Headphones</h2>
+                                <h2>Up to 65% off | Amazon Brands & more</h2>
                             </div>
                             
 
@@ -732,7 +379,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/Boat.jpg" alt="" id="img2">
+                                <img src="./Images/kitchen-tools.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -743,7 +390,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/boult.jpg" alt="" id="img2">
+                                <img src="./Images/box-powder.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -757,7 +404,7 @@
                             
                                 <div class="card1img1">
 
-                                <img src="./Images/noise.jpg" alt="" id="img2">
+                                <img src="./Images/Cookwares.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -768,7 +415,7 @@
 
                             <div class="card1img1">
 
-                                <img src="./Images/Zebronics.jpg" alt="" id="img2">
+                                <img src="./Images/water-bottles.jpg" alt="" id="img2">
                                 <div class="card1img1content1">
                                     <p>
                                         up to 75% off | boat
@@ -779,17 +426,930 @@
                             </div>
 
                             <h4>
-                                see all offers
+                                Shop now
                             </h4>
 
                         </div>
 
                     </div>
+
                 </div>
 
             </div>
         </div>
 
     </header>
+
+    <header id="header2">
+
+        <div class="page2">
+
+            <div class="cards">
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Starting ₹109 | Premium diapers</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/diaper1.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/baby-rocker.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/indoor-toys.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/bikes.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <h4>
+                        see all offers
+                    </h4>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Revamp your home in style</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/bedsheet.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/home-decoration.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/home-storage.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/lighting.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <h4>
+                        see all offers
+                    </h4>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Appliances for your home | Up to 55% off</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/home-clothing.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/handbags.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/watches2.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/fashion-jewellery.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <h4>
+                        see more
+                    </h4>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Up to 65% off | Amazon Brands & more</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/cleaning-accessories.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/box-powder.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/helmet.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/vaccumm-cleaner.jpg" alt="" id="img2">
+                        <div class="card1img1content1">
+                            <p>
+                                up to 75% off | boat
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <h4>
+                        Shop now
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    
+    <header id="header3">
+        
+        <div class="page3">
+            
+            <div class="page3title">
+                <h2>
+                    Today’s Deals
+                    <span>See all deals</span>
+                </h2>
+
+            </div>
+
+            <div class="cards2">
+                
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/protine-powder.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/cookware2.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/travel-adapters.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/wallpaper.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/wallpaper-starting.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/bullmer.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/pillow.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/office-bag.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/bath-accessories.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+                    
+                    <div class="card2-img">
+                        <img src="./Images/office-bag2.jpg" alt="">
+                    </div>
+
+                    <div class="card2-content">
+                        
+                        <p id="offer1">
+                            up to 25% off 
+                        </p>
+                        
+                        <span>
+                            deal of the day 
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="second-wrapper">
+        
+            <div class="page3title">
+                <h2>
+                    Up to 60% off | Car & bike accessories & more
+                    <span>See all offers</span>
+                </h2>
+
+            </div>
+            <div class="cards3">
+                <div class="cards3img">
+                    <img src="./Images/machine1.jpg" alt="">
+                    <img src="./Images/machine2.jpg" alt="">
+                    <img src="./Images/machine3.jpg" alt="">
+                    <img src="./Images/helmet2.jpg" alt="">
+                    <img src="./Images/machine4.jpg" alt="">
+                    <img src="./Images/machine5.jpg" alt="">
+                    <img src="./Images/machine6.jpg" alt="">
+                    <img src="./Images/machine7.jpg" alt="">
+                    <img src="./Images/machine8.jpg" alt="">
+                    <img src="./Images/machine9.jpg" alt="">
+                    <img src="./Images/machine10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="second-wrapper">
+        
+            <div class="page3title">
+                <h2>
+                    Best Sellers in Computers & Accessories
+                </h2>
+
+            </div>
+            <div class="cards3">
+                <div class="cards3img">
+                    <img src="./Images/sketchboard1.jpg" alt="">
+                    <img src="./Images/cable.jpg" alt="">
+                    <img src="./Images/cable2.jpg" alt="">
+                    <img src="./Images/cable3.jpg" alt="">
+                    <img src="./Images/mouse-pad.jpg" alt="">
+                    <img src="./Images/mouse.jpg" alt="">
+                    <img src="./Images/mouse2.jpg" alt="">
+                    <img src="./Images/mouse3.jpg" alt="">
+                    <img src="./Images/pendrive.jpg" alt="">
+                    <img src="./Images/pendrive2.jpg" alt="">
+                    <img src="./Images/sketchboard2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header4">
+
+        <div class="page4">
+
+            <div class="cards4">
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Under ₹499 | Pocket-friendly fashion</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/clothing2.jpg" alt="" id="img3">
+                        <div class="card1img1content1">
+                            <p>
+                                clothing
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/backpacks.jpg" alt="" id="img3">
+                        <div class="card1img1content1">
+                            <p>
+                                backpacks
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/footwear2.jpg" alt="" id="img3">
+                        <div class="card1img1content1">
+                            <p>
+                                footwear
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/brand-clothing.jpg" alt="" id="img3">
+                        <div class="card1img1content1">
+                            <p>
+                                view all
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <h4>
+                        see all offers
+                    </h4>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Bestsellers in Women's Indian Clothing</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/female1.jpg" alt="" id="img4">
+                        
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/female2.jpg" alt="" id="img4">
+                       
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/female3.jpg" alt="" id="img4">
+                       
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/female4.jpg" alt="" id="img4">
+                        
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Customers’ Most-Loved Fashion for you</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/female5.jpg" alt="" id="img4">
+                      
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/meter.jpg" alt="" id="img4">
+                      
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/shoes.jpg" alt="" id="img4">
+                       
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/cloth1.jpg" alt="" id="img4">
+                       
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="card1">
+                    
+                    <div class="card1title">
+                        <h2>Essentials for Expecting Mothers</h2>
+                    </div>
+                    
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/pregnency14.jpg" alt="" id="img4">
+                       
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/pregnency2.jpg" alt="" id="img4">
+                       
+
+                    </div>
+                    </div>
+
+                    <div class="card1images1">
+                    
+                        <div class="card1img1">
+
+                        <img src="./Images/material-pillows.jpg" alt="" id="img4">
+                       
+
+                    </div>
+
+                    <div class="card1img1">
+
+                        <img src="./Images/skin-care.jpg" alt="" id="img4">
+                      
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="second-wrapper">
+        
+                <div class="page4title">
+                    <h2>
+                        Kitchen & dining products
+                    </h2>
+
+                    <span>See all offers</span>
+    
+                </div>
+                <div class="cards3">
+                    <div class="cards3img">
+                        <img src="./Images/spoons.jpg" alt="">
+                        <img src="./Images/internation-place.jpg" alt="">
+                        <img src="./Images/weight-scale.jpg" alt="">
+                        <img src="./Images/tray4.jpg" alt="">
+                        <img src="./Images/torch.jpg" alt="">
+                        <img src="./Images/garlic-crusher.jpg" alt="">
+                        <img src="./Images/bat.jpg" alt="">
+                        <img src="./Images/brush.jpg" alt="">
+                        <img src="./Images/tiffin.jpg" alt="">
+                        <img src="./Images/gas.jpg" alt="">
+                        <img src="./Images/grip-handle.jpg" alt="">
+                        <img src="./Images/bath-accessories.jpg" alt="">
+                        <img src="./Images/box-powder.jpg" alt="">
+                        <img src="./Images/fridge-storage.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+    </header>
+
+    <footer id="footer1">
+
+        <div class="footer-wrapper">
+            
+            <div class="col-60">
+
+                <ul class="one">
+                    <li><a href="" id="l1">Get to Know Us</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press Releases</a></li>
+                    <li><a href="">Amazon Science</a></li>
+                </ul>
+
+                <ul class="two">
+                    <li><a href="" id="l1">Connect with Us</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+
+                <ul class="three">
+                    <li><a href="" id="l1">Make Money with Us</a></li>
+                    <li><a href="">Sell on Amazon</a></a></li>
+                    <li><a href="">Sell under Amazon Acceleratora></a></li>
+                    <li><a href="">Protect and Build Youra></a></li>
+                    <li><a href="">Amazon Global Selling</a></a></li>
+                    <li><a href="">Become an Affiliate</a></a></li>
+                    <li><a href="">Fulfilment by Amazon</a></a></li>
+                    <li><a href="">Advertise Your Products</a></a></li>
+                    <li><a href="">Amazon Pay on Merchantsa></a></li>
+                </ul>
+
+                <ul class="four">
+                    <li><a href="" id="l1">Let Us Help You</a></li>
+                    <li><a href="">COVID-19 and Amazon</a></li>
+                    <li><a href="">Your Account</a></li>
+                    <li><a href="">Returns Centre</a></li>
+                    <li><a href="">100% Purchase Protection</a></li>
+                    <li><a href="">Amazon App Download</a></li>
+                    <li><a href="">Help</li></a></li>
+                </ul>
+
+            </div>
+
+            <div class="logo-language">
+
+                <div class="footerline">
+
+                <img src="./Images/amzon-logo.png" id="amzon-logo">
+
+                <p id="language2">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>English <span><i class="fa-solid fa-up-down"></i></span></span>
+                </p>
+                </div>
+
+            </div>
+
+            <ul class="countries-name">
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>China</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherlands</li>
+                <li>Poland</li>
+                <li>Singapore</li>
+                <li>Spain</li>
+                <li>Turkey</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+            </ul>
+
+        </div>
+
+            <div class="second-footer">
+                
+                <ul>
+                    <li><a href="" id="l2">AbeBooks</a></li>
+                    <li><a href="">Books, art</a></li>
+                    <li><a href="">& collectibles</a></li>
+
+                    <ul id="inner-list">
+                        <li><a href="" id="l2">Shopbop</a></li>
+                        <li><a href="">Designer</a></li>
+                        <li><a href="">Fashion Brands</a></li>
+                    </ul>
+
+                </ul>
+
+                <ul>
+                    <li><a href="" id="l2">Amazon Web Services</a></li>
+                    <li><a href="">Scalable Cloud</a></li>
+                    <li><a href="">Computing Services </a></li>
+
+                    <ul id="inner-list">
+                        <li><a href="" id="l2">Amazon Business</a></li>
+                        <li><a href="">Everything For</a></li>
+                        <li><a href="">Your Business</a></li>
+                    </ul>
+
+                </ul>
+
+                  <ul>
+                    <li><a href="" id="l2">Audible</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Audio Books</a></li>
+
+                    <ul id="inner-list">
+                        <li><a href="" id="l2">Prime Now</a></li>
+                        <li><a href="">2-Hour Delivery</a></li>
+                        <li><a href="">on Everyday Items</a></li>
+                    </ul>
+
+                </ul>
+
+                  <ul>
+                    <li><a href="" id="l2">IMDb</a></li>
+                    <li><a href="">Movies, TV</a></li>
+                    <li><a href="">& Celebrities</a></li>
+
+                    <ul id="inner-list">
+                        <li><a href="" id="l2">Amazon Prime Music</a></li>
+                        <li><a href="">100 million songs, ad-free</a></li>
+                        <li><a href="">Over 15 million podcast episodes</a></li>
+                    </ul>
+
+                </ul>
+
+            </div>
+
+            <ul class="last-letter">
+                
+                <li> <span><a href="">Conditions of Use & Sale</a></span>
+                   <span><a href="">Privacy Notice</a></span> 
+                  <span><a href="">Interest-Based Ads</a></span>  
+                </li>
+                <li>© 1996-2023, Amazon.com, Inc. or its affiliates</li>
+                </ul>
+        
+    </footer>
+
 </body>
 </html>
