@@ -23,7 +23,7 @@
             font-family: sans-serif;
             text-transform: capitalize;
             justify-content: space-between;
-            /* position: fixed; */
+            position: fixed;
         }
         #amzon-logo
         {
@@ -92,6 +92,8 @@
             display: block;
             height: 200px;
             overflow: scroll;
+            background: white;
+            padding-top: 10px;
         }
 
         .lists li:hover
@@ -166,6 +168,7 @@
             display: block;
             height: 200px;
             overflow: scroll;
+            background: white;
         }
 
         #radio1
@@ -299,6 +302,7 @@
             font-size: 14px;
             font-weight: 600;
             text-transform: capitalize;
+            padding-top: 90px;
         }
 
         .page1img
@@ -563,7 +567,7 @@
             color: white;
             flex-wrap: wrap;
             justify-content: center;
-            width: 982px;
+            width: 70%;
             margin: 0 auto;
             
         }
@@ -632,6 +636,7 @@
             color: #DDD;
           text-align: center;
           padding-bottom: 30px;
+          list-style-type: none;
         }
 
         .last-letter li
