@@ -1,0 +1,110 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navwrapper
+    {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 20px; */
+        border: 1px solid black;
+        align-items: center;
+        background-color: blue;
+        font-family: sans-serif;
+    }
+    .menus
+    {
+        text-transform: capitalize;
+        font-weight: 600;
+        color: white;
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .menus>h2
+    {
+        display: flex;
+    }
+
+    button
+    {
+        padding: 5px;
+        background-color: white;
+    }
+    button h2
+    {
+        font-size: 16px;
+        color: blue;
+    }
+    .images
+    {
+        width: 95px;
+        margin-left: 20px;
+    }
+    .images img
+    {
+        width: 100%;
+    }
+
+    .navwrapper h2
+    {
+        padding:0px  10px ;
+    }
+
+    .second-menu 
+    {
+        display: none;
+    }
+
+    .second-menu h2
+    {
+        font-size: 20px;
+    }
+
+    .third-menu 
+    {
+        font-size: 20px;
+        display: none;
+    }
+
+    #services,#more
+    {
+        position: relative;
+    }
+
+    .parent1:hover #services , .parent2:hover #more
+    {
+        background-color: darkblue;
+    }
+
+    .parent1:hover #services+.second-menu
+    {
+        display: block;
+        color: white;
+        width: 200px;
+        background-color: blue;
+        padding-top: 5px;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .parent1:hover #services+.second-menu h2
+    {
+        border-bottom: 1px solid #DDD;
+    }
+    
+    .parent2:hover #more+.third-menu
+    {
+        display: block;
+        color: white;
+        width: 200px;
+        padding-top: 5px;
+        background-color: blue;
+        margin-left: 20px;
+    }
+
+    .second-menu,.third-menu
+    {
+        position: absolute;
+    }
