@@ -266,64 +266,69 @@
     }
 @media (min-width:769px) and (max-width: 992px) 
     {
+        
+    .main-content1
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    
+    #Drinks
+    {
+        width: 80px;
+        position: absolute;
+        top: 340px;
+        right: 100px;
+    }
+       #Burger
+       {
+        width: 200px;
+        position: absolute;
+        top: 385px;
+        right: 140px;
+        z-index: 2;
+       }
+
+       #Fries
+       {
+        width: 200px;
+        position: absolute;
+        top: 305px;
+        right: 226px
+       }
+
+       #Ellipse
+       {
+        width: 100px;
+        position: absolute;
+        top: 466px;
+        right: 295px;
+        z-index: 3;
+       }
+
+       #Price
+       {
+        width: 40px;
+        position: absolute;
+        top: 495px;
+        right: 326px;
+        z-index: 3;
+       }
+
+       #Shadow
+       {
+        width: 400px;
+        position: absolute;
+        top: 550px;
+        right: 26px;
+       }
+
         .text2
         {
             /* padding-right: 50px; */
             padding-left: 0px;
-        }
-
-
-
-        #Drinks
-        {
-             position: absolute;
-             top: 400px;
-             right: 100px;
-             border: 5px solid black;
-             width: 150px;
-        }
- 
-        #Burger
-        {
-         position: absolute;
-         top: 440px;
-         right: 140px;
-         z-index: 2;
-         width: 400px;
-        }
- 
-        #Fries
-        {
-         position: absolute;
-         top: 405px;
-         right: 430px;
-         width: 204px;
-        }
- 
-        #Ellipse
-        {
-         position: absolute;
-         top: 660px;
-         right: 460px;
-         z-index: 3;
-         width: 140px;
-        }
- 
-        #Price
-        {
-         position: absolute;
-         top: 693px;
-         right: 505px;
-         z-index: 4;
-         width: 54px;
-        }
- 
-        #Shadow
-        {
-         position: absolute;
-         top: 655px;
-         right: 0;
-         /* z-index: 4; */
         }
 
         #title1
@@ -478,6 +483,66 @@
     }
 @media (min-width: 993px) and (max-width: 1200px) 
     {
+
+        
+    .main-content1
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    
+    #Drinks
+    {
+        width: 107px;
+        position: absolute;
+        top: 353px;
+        right: 100px;
+    }
+       #Burger
+       {
+        width: 255px;
+        position: absolute;
+        top: 424px;
+        right: 140px;
+        z-index: 2;
+       }
+
+       #Fries
+       {
+        width: 230px;
+        position: absolute;
+        top: 362px;
+        right: 257px
+       }
+
+       #Ellipse
+       {
+        width: 100px;
+        position: absolute;
+        top: 537px;
+        right: 345px;
+        z-index: 3;
+       }
+
+       #Price
+       {
+        width: 41px;
+        position: absolute;
+        top: 565px;
+        right: 373px;
+        z-index: 3;
+       }
+
+       #Shadow
+       {
+        width: 400px;
+        position: absolute;
+        top: 644px;
+        right: 42px;
+       }
+       
         #page2p1
         {
             position: absolute;
@@ -596,6 +661,65 @@
     }
 @media (min-width: 1200px) and (max-width: 1400px)
     {
+
+        .main-content1
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 50px;
+        }
+        
+        #Drinks
+        {
+            width: 132px;
+            position: absolute;
+            top: 265px;
+            right: 100px;
+        }
+           #Burger
+           {
+            width: 295px;
+            position: absolute;
+            top: 366px;
+            right: 140px;
+            z-index: 2;
+           }
+    
+           #Fries
+           {
+            width: 255px;
+            position: absolute;
+            top: 317px;
+            right: 279px;
+        }
+    
+           #Ellipse
+           {
+            width: 122px;
+            position: absolute;
+            top: 500px;
+            right: 383px;
+            z-index: 3;
+           }
+    
+           #Price
+           {
+            width: 51px;
+            position: absolute;
+            top: 532px;
+            right: 417px;
+            z-index: 3
+           }
+    
+           #Shadow
+           {
+            width: 400px;
+            position: absolute;
+            top: 630px;
+            right: 60px;
+           }
+       
         #page2p1
         {
             position: absolute;

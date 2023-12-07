@@ -25,6 +25,7 @@
             justify-content: space-between;
             position: fixed;
         }
+
         #amzon-logo
         {
             width: 128px;
@@ -291,6 +292,7 @@
 
         .navwrapper2
         {
+            width: 100%;
             display: flex;
             list-style-type: none;
             justify-content: space-around;
@@ -305,12 +307,18 @@
             padding-top: 90px;
         }
 
+        #nav2img
+        {
+            width: 100%;
+        }
+
         .page1img
         {
             background: url(./Images/bg1.jpg)no-repeat center/cover;
             padding-top: 100px;
             height: 600px;
             font-family: sans-serif;
+            width: 100%;
         }
 
         .col-100
@@ -336,6 +344,11 @@
         .card1images1 .card1img1
         {
             padding: 10px;
+        }
+
+        #sell-all-offer
+        {
+            margin-top: 20px;
         }
 
         .card1 h4
@@ -600,11 +613,19 @@
 
         #footer1
         {
-            background-color: #131a22;
+            margin-top: 20px;
+            background-color: #37475a;
+            text-align: center;
         }
 
-        .second-footer a
+        #footer1 h4
         {
+            padding: 15px 0px;
+        }
+
+        h4 a
+        {
+            color: white;
             text-decoration: none;
         }
 
@@ -612,6 +633,7 @@
         {
             color: #DDD;
             font-size: 12px;
+            text-decoration: none;
         }
 
         .second-footer a:hover
@@ -659,5 +681,10 @@
         .last-letter a:hover
         {
             text-decoration: underline #DDD;
+        }
+
+        .background
+        {
+            background-color: #131a22;
         }
 
