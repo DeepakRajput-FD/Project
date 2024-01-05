@@ -1,0 +1,414 @@
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        #header1
+        {
+            background: url(./Image/netflix-background.jpg)no-repeat center/cover;
+            border-bottom: 10px solid rgb(35 35 35);
+            padding-bottom: 80px;
+        }
+        .images
+        {
+            padding-top: 20px;
+            width: 148px;
+            color: rgb(229,9,20);
+            fill:currentColor;
+        }
+        img
+        {
+            width: 100%;
+        }
+        #button3
+        {
+            border-radius: 5px;
+            padding: 5px 50px;
+            background: rgb(229,9,20);
+            color: white;
+            font-size: 20px;
+        }
+        nav
+        {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 80px;
+        }
+        .inputes2
+        {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        #select2
+        {
+            background: transparent;
+            padding:5px 10px ;
+            color: white;
+            font-size: 20px;
+            border:1px solid #616060;
+            border-radius: 5px;
+        }
+        #button2
+        {
+            border-radius: 5px;
+            padding: 15px 50px;
+            background: rgb(229,9,20);
+            color: white;
+            font-size: 20px;
+        }
+        .nav-wrapper
+        {
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+        }
+        .pagewrapper1
+        {
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .pagewrapper1 h2
+        {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 900;
+            
+        }
+        .page1title
+        {
+            text-align: center;
+            color: white;
+            padding-bottom: 100px;
+        }
+        #Watch-anywhere
+        {
+            padding: 20px 0px;
+        }
+         h3
+      {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 25px;
+      }
+      #button1
+      {
+        background: rgb(229 9 20);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 10px 50px;
+        border-radius: 5px;
+      }
+      #input2
+      {
+        padding: 15px 50px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+        background: rgb(32 29 27);
+      }
+      .page2
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .page2wrapper
+      {
+        padding: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header2
+      {
+        border-bottom: 10px solid rgb(35 35 35);
+        background: rgb(0 0 0);
+        padding: 50px 0px;
+      }
+      .text
+      {
+        /* border: 5px solid white; */
+        /* padding-top: 20px; */
+        padding: 100px 0px;
+      }
+      .page2-images
+      {
+        width: 50%;
+      }
+      
+      .text h2
+      {
+        color: white;
+        font-size: 48px;
+        font-weight: 800;
+      }
+      
+      .text h3
+      {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400;
+      }
+
+      .text2 h2
+        {
+          color: white;
+          font-size: 40px;
+          font-weight: 800;
+        }
+
+        .text2 h3
+      {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400; 
+      }
+
+      .page3wrapper
+      {
+        padding: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+      #header3,#header4,#header5
+      {
+        border-bottom: 10px solid rgb(35 35 35);
+        background: rgb(0 0 0);
+        padding: 50px 0px; 
+      }
+      .text2
+      {
+        padding-top: 20px;
+        width: 50%;
+      }
+      .page3
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .page3-images
+      {
+        width: 50%;
+      }
+      /* .page3-images img
+      {
+        width: 100%;
+      } */
+      .page4,.page5
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .text3
+      {
+        width: 50%;
+      }
+
+      .text3 h2
+        {
+          color: white;
+          font-size: 45px;
+          font-weight: 800;
+        }
+
+        .text3 h3
+       {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400; 
+       }
+
+      .page4wrapper,.page5wrapper
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .page5wrapper
+      {
+        flex-direction: row-reverse;
+        column-gap: 20px;
+      }
+      .page5 h2
+      {
+        font-size: 40px;
+        font-weight: 900; 
+        /* we are additionally change the h2 font size */
+      }
+
+      #header6
+        {
+            background: rgb(0 0 0);
+           border-top: 10px solid rgb(35 35 35);
+           border-bottom: 10px solid rgb(35 35 35);
+        }
+        h1
+        {
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+            padding: 100px 0px 40px;
+            text-align: center;
+        }
+        h2
+        {
+            color: white;
+        }
+        .block1
+        {
+            border: 1px solid white;
+        }
+        .wrapper,.wrapper-last
+        {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .block2
+        {
+            background: rgb(45 45 45);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            border: 1px solid black;
+
+        }
+        i
+        {
+            font-size: 30px;
+            padding-right: 10px;
+            color: white;
+            /* transform: rotateX(0deg); */
+        }
+        .smallblock
+        {
+            background: rgb(45 45 45);
+        }
+        p
+        {
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+        }
+      .title-wrapper
+      {
+        padding: 0px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      #input1
+      {
+        padding: 15px 50px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+        background: rgb(45 45 45);
+      }
+      #button1
+      {
+        background: rgb(229 9 20);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 15px 50px;
+        border-radius: 5px;
+      }
+      .inputes
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        /* padding: 0px ; */
+      }
+      .wrapper2 h3
+      {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 25px;
+      }
+      button i
+      {
+        font-size: 20px;
+      }
+      .wrapper2
+      {
+        padding-bottom: 100px;
+      }
+      footer
+      {
+        background: rgb(0 0 0);
+        color: white;
+      }
+      footer ul
+      {
+        list-style: none;
+      }
+      .lists
+      {
+        display: flex;
+        justify-content: space-around;
+      }
+      .wrapper-last
+      {
+        padding: 50px 0px 70px;
+        color: rgba(255,255,255,0.7);
+      }
+      .wrapper-last h4
+      {
+        padding-bottom: 20px;
+        font-size: 17px;
+        
+        padding-left: 60px;
+      }
+
+      .lists li
+      {
+        padding: 10px 0px;        
+      }
+      #select1
+      {
+        padding: 5px 20px;
+        margin: 20px 0px 20px 60px;
+        background: transparent;
+        color: white;
+      }
+      #select1+#p1
+      {
+        padding-left: 60px;
+        font-size: 15px;
+      }
+      
+      .wrapper-last a
+      {
+          color: rgba(255,255,255,0.7);
+    }
+    a:active
+    {
+        color: red;
+      }
+
+
+    
