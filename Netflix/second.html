@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        #header1
+        {
+            background: url(./Image/netflix-background.jpg)no-repeat center/cover;
+            border-bottom: 10px solid rgb(35 35 35);
+            padding-bottom: 80px;
+        }
+        .images
+        {
+            padding-top: 20px;
+            width: 148px;
+            color: rgb(229,9,20);
+            fill:currentColor;
+        }
+        img
+        {
+            width: 100%;
+        }
+        nav
+        {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 80px;
+        }
+        .inputes2
+        {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        #select2
+        {
+            background: transparent;
+            padding:5px 10px ;
+            color: white;
+            font-size: 20px;
+            border:1px solid #616060;
+            border-radius: 5px;
+        }
+        #button2
+        {
+            border-radius: 5px;
+            padding: 5px 35px;
+            background: rgb(229,9,20);
+            color: white;
+            font-size: 20px;
+        }
+        .nav-wrapper
+        {
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+        }
+        .pagewrapper1
+        {
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .pagewrapper1 h2
+        {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 900;
+            
+        }
+        .page1title
+        {
+            text-align: center;
+            color: white;
+            padding-bottom: 100px;
+        }
+        #Watch-anywhere
+        {
+            padding: 20px 0px;
+        }
+         h3
+      {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 25px;
+      }
+      #button1
+      {
+        background: rgb(229 9 20);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 15px 50px;
+        border-radius: 5px;
+      }
+      #input2
+      {
+        padding: 15px 50px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+        background: rgb(32 29 27);
+      }
+      .page2
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .page2wrapper
+      {
+        padding: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header2
+      {
+        border-bottom: 10px solid rgb(35 35 35);
+        background: rgb(0 0 0);
+        padding: 50px 0px;
+      }
+      .text
+      {
+        /* border: 5px solid white; */
+        /* padding-top: 20px; */
+        padding: 100px 0px;
+      }
+      .page2-images
+      {
+        width: 50%;
+      }
+      
+      .text h2
+      {
+        color: white;
+        font-size: 48px;
+        font-weight: 800;
+      }
+      
+      .text h3
+      {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400;
+      }
+
+      .text2 h2
+        {
+          color: white;
+          font-size: 40px;
+          font-weight: 800;
+        }
+
+        .text2 h3
+      {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400; 
+      }
+
+      .page3wrapper
+      {
+        padding: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+      #header3,#header4,#header5
+      {
+        border-bottom: 10px solid rgb(35 35 35);
+        background: rgb(0 0 0);
+        padding: 50px 0px; 
+      }
+      .text2
+      {
+        padding-top: 20px;
+        width: 50%;
+      }
+      .page3
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .page3-images
+      {
+        width: 50%;
+      }
+      /* .page3-images img
+      {
+        width: 100%;
+      } */
+      .page4,.page5
+      {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .text3
+      {
+        width: 50%;
+      }
+
+      .text3 h2
+        {
+          color: white;
+          font-size: 45px;
+          font-weight: 800;
+        }
+
+        .text3 h3
+       {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400; 
+       }
+
+      .page4wrapper,.page5wrapper
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .page5wrapper
+      {
+        flex-direction: row-reverse;
+        column-gap: 20px;
+      }
+      .page5 h2
+      {
+        font-size: 40px;
+        font-weight: 900; 
+        /* we are additionally change the h2 font size */
+      }
+
+      #header6
+        {
+            background: rgb(0 0 0);
+           border-top: 10px solid rgb(35 35 35);
+           border-bottom: 10px solid rgb(35 35 35);
+        }
+        h1
+        {
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+            padding: 100px 0px 40px;
+            text-align: center;
+        }
+        h2
+        {
+            color: white;
+        }
+        .block1
+        {
+            border: 1px solid white;
+        }
+        .wrapper,.wrapper-last
+        {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .block2
+        {
+            background: rgb(45 45 45);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            border: 1px solid black;
+
+        }
+        i
+        {
+            font-size: 30px;
+            padding-right: 10px;
+            color: white;
+            /* transform: rotateX(0deg); */
+        }
+        .smallblock
+        {
+            background: rgb(45 45 45);
+        }
+        p
+        {
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+        }
+      .title-wrapper
+      {
+        padding: 0px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      #input1
+      {
+        padding: 15px 50px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+      }
+      #button1
+      {
+        background: rgb(229 9 20);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 15px 50px;
+        border-radius: 5px;
+      }
+      .inputes
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        /* padding: 0px ; */
+      }
+      .wrapper2 h3
+      {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 25px;
+      }
+      button i
+      {
+        font-size: 20px;
+      }
+      .wrapper2
+      {
+        padding-bottom: 100px;
+      }
+      footer
+      {
+        background: rgb(0 0 0);
+        color: white;
+      }
+      footer ul
+      {
+        list-style: none;
+      }
+      .lists
+      {
+        display: flex;
+        justify-content: space-around;
+      }
+      .wrapper-last
+      {
+        padding: 50px 0px 70px;
+        color: rgba(255,255,255,0.7);
+      }
+      .wrapper-last h4
+      {
+        padding-bottom: 20px;
+        font-size: 17px;
+        
+        padding-left: 60px;
+      }
+
+      .lists li
+      {
+        padding: 10px 0px;        
+      }
+      #select1
+      {
+        padding: 5px 20px;
+        margin: 20px 0px 20px 60px;
+        background: transparent;
+        color: white;
+      }
+      #select1+#p1
+      {
+        padding-left: 60px;
+        font-size: 15px;
+      }
+      
+      .wrapper-last a
+      {
+          color: rgba(255,255,255,0.7);
+    }
+    a:active
+    {
+        color: red;
+      }
+
+
+    </style>
+    <header id="header1">
+        <div class="nav-wrapper">
+        <nav>
+        <div class="images">
+            <!-- <img src="./Image/Netflix.png" alt=""> -->
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"  role="img" class="default-ltr-cache-1d568uk ev1dnif2"><g><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path></g></svg>
+        </div>
+        
+        <div class="inputes2">
+        <select id="select2">
+            <option value="">English</option>
+            <option value="">हिंदी</option></select>
+        
+            <button id="button2">
+            sign in
+            </button>  
+        </div>
+        </nav>
+        </div>
+        
+        <div class="pagewrapper1">
+            <div class="page1title">
+            
+                <h2>
+                Unlimited movies, TV shows and more
+                </h2>
+                <p id="Watch-anywhere">
+                    Watch anywhere. Cancel anytime.
+                </p>
+
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                
+                <div class="inputes">
+                    <input type="email" placeholder="Email address" id="input2">
+                    <button id="button1">
+                        Get started
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header2">
+
+        <div class="page2">
+            
+            <div class="page2wrapper">
+
+                <div class="text">
+                    <h2>Enjoy on your TV</h2>
+                    <h3>
+                        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                    </h3>
+                </div>
+
+                <div class="page2-images">
+                    <img src="./Image/netflix-tv.png" alt="">
+                </div>
+        
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header3">
+        <div class="page3">
+              
+            <div class="page3wrapper">
+
+                <div class="text2">
+                    <h2>Download your shows to watch offline</h2>
+                    <h3>
+                        Save your favourites easily and always have something to watch.                    
+                    </h3>
+                </div>
+
+                <div class="page3-images">
+                    <img src="./Image/Stranger-things.jpg" alt="">
+                </div>
+        
+            </div>
+        </div>
+    </header>
+
+    <header id="header4">
+        <div class="page4">
+            
+            <div class="page4wrapper">
+                
+                <div class="text3">
+                    <h2>Watch everywhere</h2>
+                    <h3>
+                        Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </h3>
+                </div>
+
+                <div class="page3-images">
+                    <img src="./Image/devices.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <header id="header5">
+
+        <div class="page5">
+            
+            <div class="page5wrapper">
+                
+                <div class="text3">
+                    <h2>Create profiles for kids</h2>
+                    <h3>
+                        Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+                    </h3>
+                </div>
+
+                <div class="page3-images">
+                    <img src="./Image/children.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <header id="header6">
+
+        <div class="wrapper">
+
+            <h1>
+                Frequently Asked Questions
+            </h1>
+
+            <div class="title-wrapper">
+
+                <div class="block1">
+                    <div class="block2" id="title1">
+                    <h2>What is Netflix?</h2>
+                    <span>
+                        <i class="fa-solid fa-plus" id="plus1"></i>
+                        <!-- <i class="fa-solid fa-xmark" id="close"></i> -->
+                    </span>
+                    
+                    </div>
+                    <div class="smallblock" id="one">
+
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p>
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block1">
+
+                    <div class="block2" id="title2">
+                    <h2>How much does Netflix cost?</h2>
+                    <i class="fa-solid fa-plus" id="plus2"></i>
+                    </div>
+
+                    <div class="smallblock" id="two" >
+
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                    </div>
+                </div>
+
+                <div class="block1">
+                    <div class="block2" id="title3">
+                    <h2>Where can I watch?</h2>
+                    <span><i class="fa-solid fa-plus" id="plus3"></i>
+                    </span>
+                    </div>
+                    <div class="smallblock" id="three">
+
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                        <p>
+                            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </p>
+                    </div>
+                </div>
+                <div class="block1">
+                    <div class="block2" id="title4">
+                        <h2>How do I cancel?</h2>
+                    <span><i class="fa-solid fa-plus" id="plus4"></i>
+                    </span>
+                    </div>
+                    <div class="smallblock" id="four">
+
+                        <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                       
+                    </div>
+                </div>
+                <div class="block1">
+                    <div class="block2" id="title5">
+                        <h2>What can I watch on Netflix?</h2>
+                        <span>
+                    <i class="fa-solid fa-plus" id="plus5"></i>
+                        </span>
+                    </div>
+                    <div class="smallblock" id="five">
+
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                     
+                    </div>
+                </div>
+                <div class="block1">
+                    <div class="block2" id="title6">
+                        <h2>Is Netflix good for kids?</h2>
+                        <span>
+                    <i class="fa-solid fa-plus" id="plus6"></i>
+                        </span>
+                    </div>
+                    <div class="smallblock" id="six">
+
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
+                        <p>
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wrapper2">
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="inputes">
+                    <input type="email" placeholder="Email address" id="input1">
+                    <button id="button1">
+                        Get started
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    
+    <footer>
+        
+        <div class="wrapper-last">
+            
+            <h4>
+                Questions? Call <a href="">000-800-919-1694</a>
+            </h4>
+
+            <div class="lists">
+                <ul>
+                <a href="#23"><li>FAQ</li></a>
+                <a href="#23"><li>Investor Relations</li></a>
+                <a href="#23"><li>Privacy</li></a>
+                <a href="#23"><li>Speed Test</li></a>
+                    </ul>
+                
+                <ul>
+                <a href="#23"><li>Help Centre</li></a>
+                <a href="#23"><li>Jobs</li></a>
+                <a href="#23"><li>Cookie Preferences</li></a>
+                <a href="#23"><li>Legal Notices</li></a>
+                </ul>
+
+                <ul>
+                <a href="#23"><li>Account</li></a>
+                <a href="#23"><li>Ways to Watch</li></a>
+                <a href="#23"><li>Corporate Information</li></a>
+                <a href="#23"><li>Only on Netflix</li></a>
+                </ul>
+
+                <ul>
+                <a href="#23"><li>Media Centre</li></a>
+                <a href="#23"><li>Terms of Use</li></a>
+                <a href="#23"><li>Contact Us</li></a>
+                    </ul>
+
+            </div>
+            
+            <select id="select1">
+                <option value=""> English  </option>
+                <option value="">हिंदी</option>
+            </select>
+            
+            <p id="p1">
+                Netflix India
+            </p>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js    "></script>
+  
+    <script>
+        $(document).ready(function ()
+         {
+            // $('i').css({'transform': 'rotate(0deg)'});
+
+             $('.smallblock').css({'display':'none'});
+            
+             $('#title1').click(function ()
+             {           
+            $('#plus1').css({'transform': 'rotate(44deg)'});
+                
+               $('#one').slideToggle(1000); 
+            }); 
+
+            $('#title2').click(function ()
+             {
+            $('#plus2').css({'transform': 'rotate(44deg)'});
+               $('#two').slideToggle(1000); 
+
+                 
+            });    
+            $('#title3').click(function ()
+             {           
+            $('#plus3').css({'transform': 'rotate(44deg)'});
+                
+               $('#three').slideToggle(1000); 
+            }); 
+
+            $('#title4').click(function ()
+             {
+            $('#plus4').css({'transform': 'rotate(44deg)'});
+               $('#four').slideToggle(1000); 
+
+                
+            });    
+            $('#title5').click(function ()
+             {           
+            $('#plus5').css({'transform': 'rotate(44deg)'});
+                
+               $('#five').slideToggle(1000); 
+            }); 
+
+            $('#title6').click(function ()
+             {
+            $('#plus6').css({'transform': 'rotate(44deg)'});
+               $('#six').slideToggle(1000); 
+
+            
+            });   
+           
+
+        });  
+        
+        
+       
+    </script>
+
+</body>
+</html>
