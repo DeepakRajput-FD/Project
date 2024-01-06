@@ -5,177 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./netflix.js"> -->
-    
-    <!-- <script src="..//..//JQuery/jQuery/jquery-3.7.1.min.js"></script> -->
-    <style>
-        *
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        #header6
-        {
-            background: rgb(0 0 0);
-           border-top: 10px solid rgb(35 35 35);
-           border-bottom: 10px solid rgb(35 35 35);
-        }
-        h1
-        {
-            color: white;
-            font-size: 48px;
-            font-weight: 500;
-            padding: 100px 0px 40px;
-            text-align: center;
-        }
-        h2
-        {
-            color: white;
-        }
-        .block1
-        {
-            border: 1px solid white;
-        }
-        .wrapper,.wrapper-last
-        {
-            width: 70%;
-            margin: 0 auto;
-        }
-        .block2
-        {
-            background: rgb(45 45 45);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 20px;
-            border: 1px solid black;
-
-        }
-        i
-        {
-            font-size: 30px;
-            padding-right: 10px;
-            color: white;
-            /* transform: rotateX(0deg); */
-        }
-        .smallblock
-        {
-            background: rgb(45 45 45);
-        }
-        p
-        {
-            font-size: 24px;
-            padding: 10px;
-            color: white;
-        }
-      .title-wrapper
-      {
-        padding: 0px 0px 50px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-      }
-      #input1
-      {
-        padding: 15px 50px;
-        background: transparent;
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-        border-radius: 5px;
-      }
-      #button1
-      {
-        background: rgb(229 9 20);
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-        padding: 15px 50px;
-        border-radius: 5px;
-      }
-      .inputes
-      {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 10px;
-        /* padding: 0px ; */
-      }
-      .wrapper2 h3
-      {
-        color: white;
-        text-align: center;
-        padding-bottom: 20px;
-        font-weight: 400;
-        font-size: 25px;
-      }
-      button i
-      {
-        font-size: 20px;
-      }
-      .wrapper2
-      {
-        padding-bottom: 100px;
-      }
-      footer
-      {
-        background: rgb(0 0 0);
-        color: white;
-      }
-      footer ul
-      {
-        list-style: none;
-      }
-      .lists
-      {
-        display: flex;
-        justify-content: space-around;
-      }
-      .wrapper-last
-      {
-        padding: 50px 0px 70px;
-        color: rgba(255,255,255,0.7);
-      }
-      .wrapper-last h4
-      {
-        padding-bottom: 20px;
-        font-size: 17px;
-        
-        padding-left: 60px;
-      }
-
-      .lists li
-      {
-        padding: 10px 0px;        
-      }
-      #select1
-      {
-        padding: 5px 20px;
-        margin: 20px 0px 20px 60px;
-        background: transparent;
-        color: white;
-      }
-      #select1+#p1
-      {
-        padding-left: 60px;
-        font-size: 15px;
-      }
-      
-      .wrapper-last a
-      {
-          color: rgba(255,255,255,0.7);
-    }
-    a:active
-    {
-        color: red;
-      }
-      
-    </style>
-
+    <link rel="stylesheet" href="./Netflix.css">
+    <script src="./netflix.js"></script>
+    <link rel="stylesheet" href="./Responsive.css">
+    <link rel="shortcut icon" href="./Image/netflix-logo-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
+    <header id="header1">
+        <div class="nav-wrapper">
+        <nav>
+        <div class="images">
+            <!-- <img src="./Image/Netflix.png" alt=""> -->
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"  role="img" class="default-ltr-cache-1d568uk ev1dnif2"><g><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path></g></svg>
+        </div>
+        
+        <div class="inputes2">
+        <select id="select2">
+            <option value="">English</option>
+            <option value="">हिंदी</option></select>
+        
+            <button id="button3">
+            sign in
+            </button>  
+
+        </div>
+        </nav>
+        </div>
+        
+        <div class="pagewrapper1">
+            <div class="page1title">
+            
+                <h2>
+                Unlimited movies, TV shows and more
+                </h2>
+                <p id="Watch-anywhere">
+                    Watch anywhere. Cancel anytime.
+                </p>
+
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                
+                <div class="inputes">
+                    <input type="email" placeholder="Email address" id="input1">
+                    <button id="button1" onclick="functioninput()">
+                        Get started
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header2">
+
+        <div class="page2">
+            
+            <div class="page2wrapper">
+
+                <div class="text">
+                    <h2>Enjoy on your TV</h2>
+                    <h3>
+                        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                    </h3>
+                </div>
+
+                <div class="page2-images">
+                    <img src="./Image/netflix-tv.png" alt="">
+                </div>
+        
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header3">
+        <div class="page3">
+              
+            <div class="page3wrapper">
+
+                <div class="text2">
+                    <h2>Download your shows to watch offline</h2>
+                    <h3>
+                        Save your favourites easily and always have something to watch.                    
+                    </h3>
+                </div>
+
+                <div class="page3-images">
+                    <img src="./Image/Stranger-things.jpg" alt="">
+                </div>
+        
+            </div>
+        </div>
+    </header>
+
+    <header id="header4">
+        <div class="page4">
+            
+            <div class="page4wrapper">
+                
+                <div class="text3">
+                    <h2>Watch everywhere</h2>
+                    <h3>
+                        Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </h3>
+                </div>
+
+                <div class="page3-images">
+                    <img src="./Image/devices.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <header id="header5">
+
+        <div class="page5">
+            
+            <div class="page5wrapper">
+                
+                <div class="text4">
+                    <h2>Create profiles for kids</h2>
+                    <h3>
+                        Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+                    </h3>
+                </div>
+
+                <div class="page5-images">
+                    <img src="./Image/children.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
     <header id="header6">
 
         <div class="wrapper">
@@ -277,8 +244,8 @@
             <div class="wrapper2">
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                 <div class="inputes">
-                    <input type="email" placeholder="Email address" id="input1">
-                    <button id="button1">
+                    <input type="email" placeholder="Email address" id="input2">
+                    <button id="button2" onclick="functioninput2(this)">
                         Get started
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
@@ -337,11 +304,8 @@
             </p>
             
         </div>
-
     </footer>
 
-    <!-- <script src="..//..//JQuery/jQuery/jquery-3.7.1.min.js"></script> -->
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js    "></script>
   
     <script>
@@ -393,12 +357,7 @@
 
             
             });   
-           
-
-        });  
-        
-        
-       
+        });        
     </script>
 
 </body>

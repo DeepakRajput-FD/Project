@@ -1,0 +1,993 @@
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) 
+  { 
+    #select2 {
+      background: transparent;
+      padding: 15px 20px;
+      color: white;
+      font-size: 20px;
+      border: 1px solid #616060;
+      border-radius: 10px;
+  }
+    
+    #button3 {
+      border-radius: 10px;
+      padding: 15px 25px;
+      background: rgb(229,9,20);
+      color: white;
+      font-size: 20px;
+  }
+  .pagewrapper1 h2 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+  }
+      #Watch-anywhere { 
+        padding: 20px 0px;
+      font-size: 28px;
+        }
+  
+        h3 {
+          color: white;
+          text-align: center;
+          padding-bottom: 20px;
+          font-weight: 300;
+          font-size: 30px;
+      }
+      #input1 {
+        padding: 20px 50px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+        background: rgb(45 45 45);
+            }
+  
+       #button1 {
+         background: rgb(229 9 20);
+         font-size: 20px;
+         font-weight: 600;
+         color: white;
+         padding: 20px 50px;
+         border-radius: 5px;
+          }
+          .fa-angle-right:before {
+            content: "\f105";
+            font-size: 18px;
+        }
+  
+        .text h2 {
+          color: white;
+          font-size: 40px;
+          font-weight: 900;
+      }
+      .text h3 {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+  
+    .text2 h2 {
+      color: white;
+      font-size: 40px;
+      font-weight: 800;
+    }
+    .text2 h3 {
+      text-align: left;
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 30px;
+    }
+    .page3-images img
+    {
+      width: 100%;
+    }
+    .text3 h2 {
+      color: white;
+      font-size: 40px;
+      font-weight: 600;
+  }
+  .text3 h3 {
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 30px;
+  }
+    .page5 h2
+      {
+        font-size: 40px;
+        font-weight: 700; 
+        /* we are additionally change the h2 font size */
+      }
+      .page5 h3
+      {
+        font-size: 25px;
+        padding-top: 20px;
+        text-align: left;
+      }
+  
+      .page5-images
+      {
+        width: 50%;
+      }
+      .page5-images img
+      {
+        width: 100%;
+      }
+      h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 500;
+        padding: 50px 0px 40px;
+        text-align: center;
+    }
+    .block2 {
+      background: rgb(45 45 45);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border: 1px solid black;
+      }
+      
+      .block2 h2
+      {
+        font-size: 30px;
+        font-weight: 300;
+      }
+  
+      .fa-plus:before
+      {
+        font-size: 30px;
+      }
+      .smallblock p
+      {
+        font-size: 25px;
+        padding: 5px;
+      }
+  
+      .wrapper2 h3 {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 25px;
+    }
+    #input2 {
+      padding: 20px 50px;
+      background: transparent;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      background: rgb(32 29 27);
+    }
+    #button2 {
+      border-radius: 5px;
+      padding: 20px 50px;
+      background: rgb(229,9,20);
+      color: white;
+      font-size: 20px;
+  }
+  
+  
+  .wrapper-last h4
+   {
+    padding-bottom: 20px;
+    font-size: 22px;
+    padding-left: 0px;
+    }
+    .lists li {
+      padding: 10px 0px;
+      font-size: 20px;
+  }
+  #select1 {
+    padding: 5px 20px;
+    margin:  10px 0px ;
+    background: transparent;
+    color: white;
+    }
+  #select1+#p1 {
+    padding-left: 0px;
+    font-size: 18px;
+  }
+
+ }
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px)
+ { 
+  #select2 {
+    background: transparent;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #616060;
+    border-radius: 10px;
+}
+  
+  #button3 {
+    border-radius: 10px;
+    padding: 15px 25px;
+    background: rgb(229,9,20);
+    color: white;
+    font-size: 20px;
+}
+.pagewrapper1 h2 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+}
+    #Watch-anywhere { 
+      padding: 20px 0px;
+    font-size: 28px;
+      }
+
+      h3 {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    #input1 {
+      padding: 20px 50px;
+      background: transparent;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      border-radius: 5px;
+      background: rgb(45 45 45);
+          }
+
+     #button1 {
+       background: rgb(229 9 20);
+       font-size: 20px;
+       font-weight: 600;
+       color: white;
+       padding: 20px 50px;
+       border-radius: 5px;
+        }
+        .fa-angle-right:before {
+          content: "\f105";
+          font-size: 18px;
+      }
+
+      .text h2 {
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .text h3 {
+      text-align: left;
+      padding-top: 20px;
+      font-weight: 500;
+      font-size: 30px;
+  }
+
+  .text2 h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .text2 h3 {
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .page3-images img
+  {
+    width: 100%;
+  }
+  .text3 h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.text3 h3 {
+  text-align: left;
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 30px;
+}
+  .page5 h2
+    {
+      font-size: 40px;
+      font-weight: 700; 
+      /* we are additionally change the h2 font size */
+    }
+    .page5 h3
+    {
+      font-size: 25px;
+      padding-top: 20px;
+      text-align: left;
+    }
+
+    .page5-images
+    {
+      width: 50%;
+    }
+    .page5-images img
+    {
+      width: 100%;
+    }
+    h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: 500;
+      padding: 50px 0px 40px;
+      text-align: center;
+  }
+  .block2 {
+    background: rgb(45 45 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid black;
+    }
+    
+    .block2 h2
+    {
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    .fa-plus:before
+    {
+      font-size: 30px;
+    }
+    .smallblock p
+    {
+      font-size: 25px;
+      padding: 5px;
+    }
+
+    .wrapper2 h3 {
+      color: white;
+      text-align: center;
+      padding-bottom: 20px;
+      font-weight: 400;
+      font-size: 25px;
+  }
+  #input2 {
+    padding: 20px 50px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    background: rgb(32 29 27);
+  }
+  #button2 {
+    border-radius: 5px;
+    padding: 20px 50px;
+    background: rgb(229,9,20);
+    color: white;
+    font-size: 20px;
+}
+
+
+.wrapper-last h4
+ {
+  padding-bottom: 20px;
+  font-size: 22px;
+  padding-left: 0px;
+  }
+  .lists li {
+    padding: 10px 0px;
+    font-size: 20px;
+}
+#select1 {
+  padding: 5px 20px;
+  margin:  10px 0px ;
+  background: transparent;
+  color: white;
+  }
+#select1+#p1 {
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+
+  }
+
+  
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px)
+{
+
+ #select2 {
+   background: transparent;
+   padding: 10px 20px;
+   color: white;
+   font-size: 20px;
+   border: 1px solid #616060;
+   border-radius: 5px;
+}
+ 
+ #button3 {
+   border-radius: 5px;
+   padding: 10px 20px;
+   background: rgb(229,9,20);
+   color: white;
+   font-size: 20px;
+}
+.pagewrapper1 h2 {
+ text-align: center;
+ color: white;
+ font-size: 40px;
+ font-weight: 900;
+}
+   #Watch-anywhere { 
+     padding: 20px 0px;
+   font-size: 25px;
+     }
+
+     h3 {
+       color: white;
+       text-align: center;
+       padding-bottom: 20px;
+       font-weight: 300;
+       font-size: 25px;
+   }
+   #input1 {
+     padding: 20px 50px;
+     background: transparent;
+     font-size: 20px;
+     font-weight: 600;
+     color: white;
+     border-radius: 5px;
+     background: rgb(45 45 45);
+         }
+
+    #button1 {
+      background: rgb(229 9 20);
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      padding: 20px 50px;
+      border-radius: 5px;
+       }
+       .fa-angle-right:before {
+         content: "\f105";
+         font-size: 18px;
+     }
+
+     .text h2 {
+       color: white;
+       font-size: 40px;
+       font-weight: 900;
+   }
+   .text h3 {
+     text-align: left;
+     padding-top: 20px;
+     font-weight: 400;
+     font-size: 22px;
+ }
+
+ .text2 h2 {
+   color: white;
+   font-size: 35px;
+   font-weight: 800;
+ }
+ .text2 h3 {
+   text-align: left;
+   padding-top: 20px;
+   font-weight: 400;
+   font-size: 25px;
+ }
+ .page3-images img
+ {
+   width: 100%;
+ }
+ .text3 h2 {
+   color: white;
+   font-size: 35px;
+   font-weight: 600;
+}
+.text3 h3 {
+ text-align: left;
+ padding-top: 20px;
+ font-weight: 300;
+ font-size: 25px;
+}
+ .page5 h2
+   {
+     font-size: 35px;
+     font-weight: 700; 
+     /* we are additionally change the h2 font size */
+   }
+   .page5 h3
+   {
+     font-size: 22px;
+     padding-top: 20px;
+     text-align: left;
+   }
+
+   .page5-images
+   {
+     width: 50%;
+   }
+   .page5-images img
+   {
+     width: 100%;
+   }
+   h1 {
+     color: white;
+     font-size: 40px;
+     font-weight: 500;
+     padding: 50px 0px 40px;
+     text-align: center;
+ }
+ .block2 {
+   background: rgb(45 45 45);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 20px;
+   border: 1px solid black;
+   }
+   
+   .block2 h2
+   {
+     font-size: 30px;
+     font-weight: 300;
+   }
+
+   .fa-plus:before
+   {
+     font-size: 30px;
+   }
+   .smallblock p
+   {
+     font-size: 25px;
+     padding: 5px;
+   }
+
+   .wrapper2 h3 {
+     color: white;
+     text-align: center;
+     padding-bottom: 20px;
+     font-weight: 400;
+     font-size: 25px;
+ }
+ #input2 {
+   padding: 20px 50px;
+   background: transparent;
+   font-size: 20px;
+   font-weight: 500;
+   color: white;
+   border-radius: 5px;
+   background: rgb(32 29 27);
+ }
+ #button2 {
+   border-radius: 5px;
+   padding: 20px 50px;
+   background: rgb(229,9,20);
+   color: white;
+   font-size: 20px;
+}
+
+
+.wrapper-last h4
+{
+ padding-bottom: 20px;
+ font-size: 18px;
+ padding-left: 0px;
+ }
+ .lists li {
+   padding: 10px 0px;
+   font-size: 15px;
+}
+#select1 {
+ padding: 5px 20px;
+ margin:  10px 0px ;
+ background: transparent;
+ color: white;
+ }
+#select1+#p1 {
+ padding-left: 0px;
+ font-size: 15px;
+}
+
+ }
+
+
+/*  */
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px)
+ 
+{
+
+  #button3 {
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: rgb(229,9,20);
+    color: white;
+    font-size: 20px;
+}
+.pagewrapper1 h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+#Watch-anywhere {
+  padding: 20px 0px;
+  font-size: 22px;
+      }
+      h3 {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 23px;
+    }
+    #input1 {
+      padding: 15px 23px;
+      background: transparent;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      border-radius: 5px;
+      background: rgb(45 45 45);
+          }
+
+     #button1 {
+       background: rgb(229 9 20);
+       font-size: 18px;
+       font-weight: 600;
+       color: white;
+       padding: 14px 40px;
+       border-radius: 5px;
+        }
+        .fa-angle-right:before {
+          content: "\f105";
+          font-size: 18px;
+      }
+
+      .text h2 {
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .text h3 {
+      text-align: left;
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 20px;
+  }
+
+
+  .text2 h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .text2 h3 {
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .page3-images img
+  {
+    width: 100%;
+  }
+  .text3 h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.text3 h3 {
+  text-align: left;
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 22px;
+}
+  .page5 h2
+    {
+      font-size: 35px;
+      font-weight: 700; 
+      /* we are additionally change the h2 font size */
+    }
+    .page5 h3
+    {
+      font-size: 20px;
+      padding-top: 20px;
+      text-align: left;
+    }
+
+    .page5-images
+    {
+      width: 50%;
+    }
+    .page5-images img
+    {
+      width: 100%;
+    }
+    h1 {
+      color: white;
+      font-size: 35px;
+      font-weight: 500;
+      padding: 50px 0px 40px;
+      text-align: center;
+  }
+  .block2 {
+    background: rgb(45 45 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid black;
+    }
+    
+    .block2 h2
+    {
+      font-size: 25px;
+      font-weight: 300;
+    }
+
+    .fa-plus:before
+    {
+      font-size: 25px;
+    }
+    .smallblock p
+    {
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    .wrapper2 h3 {
+      color: white;
+      text-align: center;
+      padding-bottom: 20px;
+      font-weight: 400;
+      font-size: 22px;
+  }
+  #input2 {
+    padding: 15px 23px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    background: rgb(32 29 27);
+  }
+  #button2 {
+    border-radius: 5px;
+    padding: 14px 40px;
+    background: rgb(229,9,20);
+    color: white;
+    font-size: 18px;
+}
+
+
+.wrapper-last h4
+ {
+  padding-bottom: 20px;
+  font-size: 17px;
+  padding-left: 0px;
+  }
+  .lists li {
+    padding: 10px 0px;
+    font-size: 15px;
+}
+#select1 {
+  padding: 5px 20px;
+  margin:  10px 0px ;
+  background: transparent;
+  color: white;
+  }
+#select1+#p1 {
+  padding-left: 0px;
+  font-size: 15px;
+}
+  
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px)
+    {
+      #button3
+      {
+        border-radius: 5px;
+    padding: 5px 10px;
+    background: rgb(229,9,20);
+    color: white;
+    font-size: 20px;
+      }
+      #select2 {
+        background: transparent;
+        padding: 5px 10px;
+        color: white;
+        font-size: 20px;
+        border: 1px solid #616060;
+        border-radius: 5px;
+    }
+    .pagewrapper1 h2 {
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: 900;
+  }
+    #Watch-anywhere {
+    padding: 10px 0px;
+    font-size: 18px;
+        }
+        h3 {
+          color: white;
+          text-align: center;
+          padding-bottom: 20px;
+          font-weight: 300;
+          font-size: 18px;
+      }
+      #input1 {
+        padding: 10px;
+        background: transparent;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        border-radius: 5px;
+        background: rgb(45 45 45);
+            }
+
+       #button1 {
+         background: rgb(229 9 20);
+         font-size: 15px;
+         font-weight: 600;
+         color: white;
+         padding: 10px;
+         border-radius: 5px;
+          }
+          .fa-angle-right:before {
+            content: "\f105";
+            font-size: 15px;
+        }
+
+        .text h2 {
+          color: white;
+          font-size: 30px;
+          font-weight: 600;
+      }
+      .text h3 {
+        text-align: left;
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .text2 h2 {
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .text2 h3 {
+      text-align: left;
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .page3-images img
+    {
+      width: 100%;
+    }
+    .text3 h2 {
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+  }
+  .text3 h3 {
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+    .page5 h2
+      {
+        font-size: 25px;
+        font-weight: 700; 
+        /* we are additionally change the h2 font size */
+      }
+      .page5 h3
+      {
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: left;
+      }
+
+      .page5-images
+      {
+        width: 50%;
+      }
+      .page5-images img
+      {
+        width: 100%;
+      }
+      h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 50px 0px 40px;
+        text-align: center;
+    }
+    .block2 {
+      background: rgb(45 45 45);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border: 1px solid black;
+      }
+      
+      .block2 h2
+      {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      .fa-plus:before
+      {
+        font-size: 20px;
+      }
+      .smallblock p
+      {
+        font-size: 15px;
+        padding: 5px;
+      }
+
+      .wrapper2 h3 {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    #input2 {
+      padding: 10px;
+      background: transparent;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      background: rgb(32 29 27);
+    }
+    #button2 {
+      border-radius: 5px;
+      padding: 10px;
+      background: rgb(229,9,20);
+      color: white;
+      font-size: 15px;
+  }
+  .wrapper-last h4
+   {
+    padding-bottom: 20px;
+    font-size: 15px;
+    padding-left: 0px;
+    }
+    .lists li {
+      padding: 10px 0px;
+      font-size: 12px;
+  }
+  #select1 {
+    padding: 5px 20px;
+    margin:  10px 0px ;
+    background: transparent;
+    color: white;
+    }
+  #select1+#p1 {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+
+      }
