@@ -146,6 +146,48 @@
         /* padding-top: 20px; */
         padding: 100px 0px;
       }
+
+      #img1
+      {
+        width: 58px;
+        height: 80px;
+      }
+
+      #img2
+      {
+        width: 48px;
+        height: 60px;
+      }
+
+      .magic
+      {
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(53 53 53);
+        border-radius: 5px;
+        position: absolute;
+        top: 290px;
+        left: 123px;
+        background-color: black;
+        padding: 0px 20px;
+      }
+
+      .magic img
+      {
+        object-fit: cover;
+        margin: 5px 0px;
+      }
+
+      .magic p
+      {
+        font-size: 15px;
+        padding: 2px 15px 2px 15px;
+      }
+
+      #p3
+      {
+        color: blue;
+      }
      
       .page2-images img
         {
@@ -207,6 +249,7 @@
       .page3-images
       {
         width: 50%;
+        position: relative;
       }
       /* .page3-images img
       {
