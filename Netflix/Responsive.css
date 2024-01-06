@@ -3,6 +3,24 @@
   { 
 
     
+    #video1
+    {
+      position: absolute;
+      top: 115px;
+      right:60px;
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    #video2
+    {
+      position: absolute;
+      top: 40px;
+      right: 120px;
+      width: 320px;
+    }
+
     .magic
     {
       display: flex;
@@ -228,6 +246,24 @@
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px)
  { 
+
+  #video1
+  {
+    position: absolute;
+    top: 160px;
+    right:60px;
+    width: 304px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  #video2
+  {
+    position: absolute;
+    top: 40px;
+    right: 84px;
+    width: 258px;
+  }
 
   .magic
     {
@@ -455,6 +491,25 @@
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px)
 {
+
+  #video1
+  {
+    position: absolute;
+    top: 160px;
+    right:50px;
+    width: 270px;
+    height: 175px;
+    object-fit: cover;
+  }
+
+  #video2
+  {
+    position: absolute;
+    top: 28px;
+    right: 68px;
+    width: 220px;
+  }
+
 
   .magic
   {
@@ -684,6 +739,24 @@
  
 {
 
+  #video1
+  {
+    position: absolute;
+    top: 160px;
+    right:39px;
+    width: 196px;
+    height: 175px;
+    object-fit: cover;
+  }
+
+  #video2
+  {
+    position: absolute;
+    top: 17px;
+    right: 50px;
+    width: 170px;
+  }
+
   .magic
   {
     display: flex;
@@ -908,6 +981,26 @@
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px)
     {
+
+      
+  #video1
+  {
+    position: absolute;
+    top: 194px;
+    right:28px;
+    width: 148px;
+    height: 83px;
+    object-fit: cover;
+  }
+
+  #video2
+  {
+    position: absolute;
+    top: 14px;
+    right: 37px;
+    width: 130px;
+  }
+
 
       .magic
   {
