@@ -172,6 +172,7 @@
         left: 123px;
         background-color: black;
         padding: 0px 20px;
+        z-index: 1;
       }
 
       .magic img
