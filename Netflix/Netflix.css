@@ -8,7 +8,7 @@
         }
         #header1
         {
-            background: url(./Image/netflix-background.jpg)no-repeat center/cover;
+            background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./Image/netflix-background.jpg)no-repeat center/cover;
             border-bottom: 10px solid rgb(35 35 35);
             padding-bottom: 80px;
             width: 100%;
