@@ -7,7 +7,7 @@
 
             if (b.test(a.value))
              {
-                alert("Please enter a valid email address.");
+                alert("email address is matched");
             }
             else if (a.value=='')
              {
@@ -28,7 +28,7 @@
              let a=document.getElementById('input2');  
              if (b.test(a.value))
              {
-                alert("Please enter a valid email address.");
+                alert("email address is matched");
             }
             else if (a.value=='')
              {
