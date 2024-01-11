@@ -1,0 +1,31 @@
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .parent
+    {
+        width: fit-content;
+        border: 5px solid;
+        border-radius: 10px;
+        margin: 20px 10px;
+        display: flex;
+        column-gap: 10px;
+        background: linear-gradient(rgb(78, 228, 100),yellow,pink);
+        color: green;
+        font-size: 50px;
+    }
+    .Main-parent
+    {
+        width: fit-content;
+        border: 5px solid black;
+        font-size: 30px;
+        color: black;
+        display: flex;
+        column-gap: 10px;
+        background: linear-gradient(teal,aliceblue);
+        margin: 20px 10px;
+    }
