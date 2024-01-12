@@ -30,13 +30,13 @@
             let second=date.getSeconds();
 
             
-            if (hours>=12)
+            if (hours==13)
             {
-                // hours=0;
+                hours=1;
                 // document.getElementById('p3').innerHTML+'pm';
                 document.getElementById('p3').innerHTML=second+' PM';
             }
-            else if (hours<=12)
+            else 
              {
               document.getElementById('p3').innerHTML=second+' AM';  
             }
