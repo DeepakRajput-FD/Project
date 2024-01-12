@@ -1,0 +1,344 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.col-100
+{
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+}
+
+.col-20
+{
+    border: 2px solid black;
+    background: #040b14;
+    width: 20%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-attachment: fixed; */
+}
+    #img1
+    {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border: 5px solid black;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .icons i
+    {
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #212431;
+        color: red;
+        font-size: 20px;
+        color:  white;
+        margin: 20px 5px;
+    }
+   .menus li
+    {
+        display: flex;
+        column-gap: 10px;
+        color: #a8a9b4;
+        font-size: 15px;
+        padding: 20px;
+        align-items: center;
+    }
+    .changes
+    {
+        /* padding-left: 40px; */
+        text-align: center;
+    }
+    .copyright
+    {
+        padding: 100px 0px 96px 40px;
+        /* padding-left: 40px; */
+    }
+    .copyright p
+    {
+        padding: 5px 0px ;
+    }
+    .menus i
+    {
+        font-size: 24px ;
+    }
+    .menus
+    {
+        align-items: center;
+        list-style: none;
+    }
+
+    .icons i:hover
+    {
+        background-color: #149ddd;
+        color: white;
+    }
+
+.col-80
+{
+    
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.images2 img
+{
+    width: 100%;
+}
+.images2 
+{
+    padding-bottom: 50px;
+}
+
+#about h2
+{
+    color: #173b6c;
+    font-size: 32px;
+    padding: 20px 0px 10px;
+}
+
+#p2
+{
+   font-size: 16px;
+   padding-bottom: 20px; 
+}
+
+#div2
+{
+    width: 50px;
+    border-bottom: 5px solid #149ddd;
+    margin-bottom: 10px;
+}
+#about
+{
+    padding: 0px 20px;
+}
+.images3
+{
+    width: 30%;
+    /* width: 320px; */
+}
+.images3 img
+{
+    width: 100%;
+}
+.division
+{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.info
+{
+    width: 70%;
+}
+
+.main-userinfo
+{
+    padding: 10px 0px 20px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.main-userinfo i
+{
+    color: #5ebce8;
+}
+
+li
+{
+    list-style: none;
+    padding:10px 0px;
+}
+.main-userinfo span
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+#p3
+{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.Facts
+{
+    padding: 0px 20px 50px;
+}
+.Facts h3
+{
+    color: #173b6c;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+#p4
+{
+    font-size: 16px;
+    padding: 20px 0px 40px;
+}
+.emoji i
+{
+    font-size: 44px;
+    color: #149ddd;
+    padding-top: 5px;
+}
+.facts-card-text span
+{
+    font-size: 48px;
+    font-weight: 700;
+}
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.min-card1
+{
+    display: flex;
+    column-gap: 15px;
+}
+#Happy
+{
+    padding-top: 10px;
+    font-weight: bold;
+}
+#consectetur
+{
+    padding-top: 5px;
+    font-size: 14px;
+    color: #122f57;
+}
+.Skills
+{
+    background: #f5f8fd;
+    padding: 0px 20px 20px;
+}
+.Skills h3
+{
+    color: #173b6c;
+    font-size: 32px;
+    padding: 40px 0px 10px;
+    padding-bottom: 10px;   
+}
+#progress-bar-html
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #149ddd;
+}
+
+#progress-bar-css
+{
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px 0px;
+    background-color: #149ddd;
+}
+
+#progress-bar-js
+{
+   margin-top: 10px;
+   width: 70%;
+   padding: 10px 0px;
+   background-color: #149ddd; 
+}
+
+#progress-bar-jquery
+{
+    padding: 10px 0px;
+    margin-top: 10px;
+    width: 70%;
+    background-color: #149ddd;  
+}
+
+#card2-p1
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.cards2
+{
+    padding-bottom: 50px;
+}
+#resume
+{
+    padding: 50px 20px;
+    
+}
+#resume h3
+{
+    color: #173b6c;
+    font-size: 32px;
+    padding: 40px 0px 10px;
+    padding-bottom: 10px; 
+}
+
+.menus a:hover li
+{
+    color: white;
+}
+.menus a:hover i
+{
+    color: #149ddd;
+}
+.deepak-rajput h4,p
+{
+    padding: 10px 0px;
+}
+.Education h4
+{
+    padding: 10px 0px;
+    color: skyblue;
+    font-size: px;
+}
+.Education h5
+{
+    font-size: 20px;
+    color: gold;
+}
+.self-info h4,.Education h4
+{
+    font-size: 22px;
+    color: #050d18;
+}
+.deepak-rajput p
+{
+    font-size: 17px;
+}
+.Education p
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+#portfolio
+{
+    padding: 0px 20px;
+}
+#portfolio h3
+{
+    color: #173b6c;
+    font-size: 32px;
+    padding: 40px 0px 10px;
+    padding-bottom: 10px; 
+}
