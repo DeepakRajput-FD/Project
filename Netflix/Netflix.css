@@ -6,6 +6,34 @@
             box-sizing: border-box;
             font-family: sans-serif;
         }
+
+        .bg-mini-wrapper
+        {
+          position: absolute;
+          display: none;
+        }
+
+        #white-theme
+        {
+          position: relative;
+          padding: 5px 10px;
+        }
+
+        .bg-mini-wrapper button
+        {
+          width: 100%;
+        }
+
+        .bg-wrapper:hover #white-theme+.bg-mini-wrapper
+        {
+          display: block;
+          width: 80px;
+          /* height: 300px; */
+          flex-wrap: wrap;
+          padding: 5px 0px;
+          border: 2px solid blanchedalmond;
+        }
+
         #header1
         {
             background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./Image/netflix-background.jpg)no-repeat center/cover;
@@ -187,14 +215,20 @@
         z-index: 1;
       }
 
-      #video1
+      .video1-parent
       {
         position: absolute;
-        top: 115px;
-        right:60px;
-        width: 400px;
-        height: 250px;
+        top: 135px;
+        right:75px;
+        width: 390px;
+        height: 210px;
         object-fit: cover;
+      }
+
+      #video1
+      {
+        width: 100% ; 
+        height: 100%;
       }
 
       #video2

@@ -1,4 +1,6 @@
 
+
+
         //it is page1 of input
         function functioninput()
          {
@@ -40,7 +42,17 @@
                 alert('sorry your email id is wrong,please try after some time');
             }
         }
-        
-        
+
+        // function function_white() 
+        // {
+        //     // let white=document.getElementById('header1');
+        //     let one=document.getElementById('header2');
+        //     one.style.background='white';
+        //     one.style.color='red';  
+        //     // let two=document.getElementsByClassName('page1title');
+            
+        // }
+
+      
         
        

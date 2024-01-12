@@ -3,22 +3,22 @@
   { 
 
     
-    #video1
+    .video1-parent
     {
       position: absolute;
-      top: 115px;
-      right:60px;
-      width: 400px;
-      height: 250px;
+      top: 140px;
+      right:68px;
+      width: 360px;
+      height: 190px;
       object-fit: cover;
     }
 
     #video2
     {
       position: absolute;
-      top: 40px;
-      right: 120px;
-      width: 320px;
+      top: 38px;
+      right: 90px;
+      width: 315px;
     }
 
     .magic
@@ -247,15 +247,16 @@
 @media (max-width: 1200px)
  { 
 
-  #video1
+  .video1-parent
   {
     position: absolute;
-    top: 160px;
-    right:60px;
-    width: 304px;
-    height: 250px;
+    top: 170px;
+    right:58px;
+    width: 307px;
+    height: 170px;
     object-fit: cover;
   }
+
 
   #video2
   {
@@ -492,15 +493,16 @@
 @media (max-width: 992px)
 {
 
-  #video1
+  .video1-parent
   {
     position: absolute;
-    top: 160px;
-    right:50px;
-    width: 270px;
-    height: 175px;
+    top: 185px;
+    right:49px;
+    width: 255px;
+    height: 140px;
     object-fit: cover;
   }
+
 
   #video2
   {
@@ -739,13 +741,13 @@
  
 {
 
-  #video1
+  .video1-parent
   {
     position: absolute;
-    top: 160px;
-    right:39px;
-    width: 196px;
-    height: 175px;
+    top: 195px;
+    right:37px;
+    width: 197px;
+    height: 111px;
     object-fit: cover;
   }
 
@@ -982,13 +984,13 @@
 @media (max-width: 576px)
     {
 
-      
-  #video1
+    
+  .video1-parent
   {
     position: absolute;
-    top: 194px;
+    top: 193px;
     right:28px;
-    width: 148px;
+    width: 147px;
     height: 83px;
     object-fit: cover;
   }

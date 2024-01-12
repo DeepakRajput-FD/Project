@@ -28,6 +28,16 @@
             sign in
             </button>  
 
+            <div class="bg-wrapper">
+                <button id="white-theme" >White</button>
+                <div class="bg-mini-wrapper">
+                <button id="IndianRed">IndianRed</button>
+                <button id="Crimson">Crimson</button>
+                <button id="Red">Red</button>
+                <button id="Lavender">Lavender</button>
+                </div>
+            </div>
+
         </div>
         </nav>
         </div>
@@ -72,7 +82,10 @@
 
                 <div class="page2-images">
                     <img src="./Image/netflix-tv.png" alt="" id="page2img">
-                    <video src="./Video/video2.mp4" id="video1" controls autoplay muted ></video>
+                    <div class="video1-parent">
+
+                        <video src="./Video/video2.mp4" id="video1" controls autoplay muted ></video>
+                    </div>
                 </div>
         
             </div>
@@ -369,7 +382,109 @@
                $('#six').slideToggle(1000); 
 
             
-            });   
+            });
+            
+            $('#white-theme').click(function ()
+            {
+                $('#header2').css({'background':'white'});
+                $('#header3').css({'background':'white'});
+                $('#header4').css({'background':'white'});
+                $('#header5').css({'background':'white'});
+                $('#header6').css({'background':'white'});
+                $('footer').css({'background':'white'});
+
+                $('h1').css({color:'black'});
+                $('h2').css({color:'black'});
+                $('h3').css({color:'black'});
+                $('h4').css({color:'black'});
+                $('a').css({"color":'black'});
+                $('#select1').css({"color":'black'});
+                $('#p1').css({"color":'black'});
+                $('.magic ').css({'background':'white','color':'black'});
+                // $('#Watch-anywhere').css({'color':'black'});
+
+            });
+
+            $('#IndianRed').click(function ()
+             {
+                $('#header2').css({'background':'IndianRed'});
+                $('#header3').css({'background':'IndianRed'});
+                $('#header4').css({'background':'IndianRed'});
+                $('#header5').css({'background':'IndianRed'});
+                $('#header6').css({'background':'IndianRed'});
+                $('footer').css({'background':'IndianRed'});
+
+                $('.magic ').css({'background':'IndianRed','color':'white'});
+
+                $('h1').css({color:'white'});
+                $('h2').css({color:'white'});
+                $('h3').css({color:'white'});
+                $('h4').css({color:'white'});
+                $('a').css({"color":'white'});
+                $('#select1').css({"color":'white'});
+                $('#p1').css({"color":'white'});
+            });
+
+            $('#Crimson').click(function ()
+             {
+                $('#header2').css({'background':'Crimson'});
+                $('#header3').css({'background':'Crimson'});
+                $('#header4').css({'background':'Crimson'});
+                $('#header5').css({'background':'Crimson'});
+                $('#header6').css({'background':'Crimson'});
+                $('footer').css({'background':'Crimson'});
+
+                $('.magic ').css({'background':'Crimson'});
+
+                $('h1').css({color:'white'});
+                $('h2').css({color:'white'});
+                $('h3').css({color:'white'});
+                $('h4').css({color:'white'});
+                $('a').css({"color":'white'});
+                $('#select1').css({"color":'white'});
+                $('#p1').css({"color":'white'});  
+            });
+
+            $('#Red').click(function ()
+             {
+                $('#header2').css({'background':'Red'});
+                $('#header3').css({'background':'Red'});
+                $('#header4').css({'background':'Red'});
+                $('#header5').css({'background':'Red'});
+                $('#header6').css({'background':'Red'});
+                $('footer').css({'background':'Red'});
+
+                $('.magic ').css({'background':'Red'});
+
+                $('h1').css({color:'black'});
+                $('h2').css({color:'black'});
+                $('h3').css({color:'black'});
+                $('h4').css({color:'black'});
+                $('a').css({"color":'black'});
+                $('#select1').css({"color":'black'});
+                $('#p1').css({"color":'black'});        
+            });
+
+            $('#Lavender').click(function ()
+             {
+                $('#header2').css({'background':'Lavender'});
+                $('#header3').css({'background':'Lavender'});
+                $('#header4').css({'background':'Lavender'});
+                $('#header5').css({'background':'Lavender'});
+                $('#header6').css({'background':'Lavender'});
+                $('footer').css({'background':'Lavender'});
+
+                $('.magic ').css({'background':'Lavender'});
+
+                $('h1').css({color:'black'});
+                $('h2').css({color:'black'});
+                $('h3').css({color:'black'});
+                $('h4').css({color:'black'});
+                $('a').css({"color":'black'});
+                $('#select1').css({"color":'black'});
+                $('#p1').css({"color":'black'});      
+            });
+
         });        
     </script>
 
