@@ -1,17 +1,786 @@
-/* // X-Small devices (portrait phones, less than 576px) */
-/* // No media query for `xs` since this is the default in Bootstrap */
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (max-width: 1400px) { }   
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (max-width: 1200px)
+{
+    
+    .vid-cards
+    {
+        width: 95%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding: 0px 0px 50px 0px;
+        display: flex;
+        column-gap: 20px;
+        overflow-x: scroll;
+    }
+    
+    
+    .flexcard2num p
+    {
+        font-size: 156px;
+        color: rgb(77 84 97);
+        position: absolute;
+        top: 170px;
+        left: 5px;
+}
+
+.flexcard2img img
+{
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 2;
+}
+
+
+.flexcard2img 
+{
+    width: 150px;
+    height: 164px;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+.trophy1
+{
+    padding: 50px 50px 10px;
+    width: 330px;
+    /* z-index: 2; */
+}
+
+.trophy1date p
+{
+    font-size: 90px;
+top: -45px;
+}
+
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (max-width: 992px)
+ {
 
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+    #icct20
+    {
+        left: 26px;
+    }
+
+    #sports-18
+    {
+        margin-left: 20px;
+}
+
+#SBI
+{
+width: 150px;
+height: 43px;
+}
+
+#addidas
+{
+    margin-left: 25px;
+}
+
+.listsofservices
+{
+    row-gap: 10px;
+column-gap: 20px;
+}
+
+.contact1 p
+{
+font-size: 14px;
+padding: 10px 0px;
+color: #9aa8b9;
+padding-left: 15px;
+}
+
+  
+.vid-cards
+{
+width: 95%;
+margin: 0 auto;
+font-family: sans-serif;
+padding: 0px 0px 50px 0px;
+display: flex;
+column-gap: 20px;
+overflow-x: scroll;
+}
+    
+.flexcard2num p
+{
+    font-size: 156px;
+    color: rgb(77 84 97);
+    position: absolute;
+top: 170px;
+left: 5px;
+}
+
+
+.menu-list
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.menu-list1
+{
+    font-size: 15px;
+color: #fff;
+}
+
+.menu-list2
+{
+    font-size: 10px;
+    color: rgba(255,255,255,.5);
+}
+
+#videos ,#fixtures,#results,#news,#players,#rankings,#stats,#series,#archive
+{
+    padding: 12px 5px 12px 10px;
+}
+
+.menu3 li
+{
+    padding: 0px 10px;
+}
+
+.card1imgtext
+{
+    display: flex;
+    margin: 20px 5px;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.page5flexcard1
+ {
+    overflow: scroll;
+ }
+
+
+/* trophies-card */
+
+
+.trophies-card
+{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+
+.gcard1img ,.gcard2img ,.gcard3img ,.gcard4img ,.gcard5img ,.gcard6img 
+{
+    background: url(./Images/gallery1.webp)no-repeat center/cover;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    transition: 1s ease-in-out 0s all;
+}
+
+
+.gcard2img
+{
+    background: url(./Images/gallery2.webp)no-repeat center/cover;
+}
+
+.gcard3img
+{
+    background: url(./Images/gallery3.webp)no-repeat center/cover;
+}
+
+
+.gcard4img
+{
+    background: url(./Images/gallery4.webp)no-repeat center/cover;
+}
+
+.gcard5img
+{
+    background: url(./Images/gallery5.webp)no-repeat center/cover;
+}
+
+.gcard6img
+{
+background: url(./Images/gallery6.webp)no-repeat center/cover;
+}
+
+
+.trophy1date p
+{
+    font-size: 80px;
+    top: -45px;
+    left: 27px;
+}
+
+#countryname
+{
+font-size: 13px;
+}
+
+
+}
+@media (max-width: 768px) 
+{
+
+    .menus
+    {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: scroll;
+    }
+    
+    .menu1 
+    {
+        padding: 10px 0px 0px 0px;
+        align-items: center;
+    }
+
+    #icct20
+    {
+        left: 26px;
+    }
+
+    #sports-18
+    {
+        margin-left: 20px;
+}
+
+#SBI
+{
+width: 150px;
+height: 43px;
+}
+
+#addidas
+{
+    margin-left: 25px;
+}
+
+.listsofservices
+{
+    row-gap: 10px;
+column-gap: 20px;
+}
+
+.contact1 p
+{
+font-size: 14px;
+padding: 10px 0px;
+color: #9aa8b9;
+padding-left: 15px;
+}
+
+  
+.vid-cards
+{
+width: 95%;
+margin: 0 auto;
+font-family: sans-serif;
+padding: 0px 0px 50px 0px;
+display: flex;
+column-gap: 20px;
+overflow-x: scroll;
+}
+    
+.flexcard2num p
+{
+    font-size: 156px;
+    color: rgb(77 84 97);
+    position: absolute;
+top: 170px;
+left: 5px;
+}
+
+
+.menu-list
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.menu-list1
+{
+    font-size: 15px;
+color: #fff;
+}
+
+.menu-list2
+{
+    font-size: 10px;
+    color: rgba(255,255,255,.5);
+}
+
+#videos ,#fixtures,#results,#news,#players,#rankings,#stats,#series,#archive
+{
+    padding: 12px 5px 12px 10px;
+}
+
+.menu3 li
+{
+    padding: 0px 10px;
+}
+
+.card1imgtext
+{
+    display: flex;
+    margin: 20px 5px;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.page5flexcard1,.page5flexcard2,.page5flexcard3
+ {
+    overflow: scroll;
+ }
+
+ .page6content img
+{
+width: 100%;
+}
+
+#page6p
+{
+font-size: 18px;
+padding-right: 0px;
+}
+
+
+
+.trophies-card
+{
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gcard1img ,.gcard2img ,.gcard3img ,.gcard4img ,.gcard5img ,.gcard6img 
+{
+    background: url(./Images/gallery1.webp)no-repeat center/cover;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    transition: 1s ease-in-out 0s all;
+}
+
+.gcard2img
+{
+    background: url(./Images/gallery2.webp)no-repeat center/cover;
+}
+
+.gcard3img
+{
+    background: url(./Images/gallery3.webp)no-repeat center/cover;
+}
+
+.gcard4img
+{
+    background: url(./Images/gallery4.webp)no-repeat center/cover;
+}
+
+.gcard5img
+{
+    background: url(./Images/gallery5.webp)no-repeat center/cover;
+}
+
+.gcard6img
+{
+background: url(./Images/gallery6.webp)no-repeat center/cover;
+}
+
+.trophy1date p
+{
+    font-size: 80px;
+    top: -45px;
+    left: 27px;
+}
+
+#countryname
+{
+font-size: 13px;
+}
+
+.page3wrapper
+{
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+align-items: center;
+}
+
+.page9cards
+{
+width: 95%;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+  }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+    @media (max-width: 576px) 
+    {   
+    .page2titles h2
+    {
+    font-size: 30px;
+    }
+    
+    .list
+    {
+    display: flex;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    }
+    
+    .list li
+    {
+    padding: 10px 20px;  
+    }
+
+    .menu3
+    {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    row-gap: 10px;
+    }
+    
+    .hoverablemenu
+    {
+    display: flex;
+    flex-wrap: wrap
+    }
+
+    .hoverablemenu li
+    {
+        padding: 10px 0px;
+    }
+
+    #men,#women
+    {
+        margin: 0px 0px 50px 12px;
+    }
+        
+    .menus
+    {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: scroll;
+    }
+    
+    .menu1 
+    {
+        padding: 10px 0px 0px 0px;
+        align-items: center;
+    }
+
+    #icct20
+    {
+        left: 26px;
+    }
+
+    #sports-18
+    {
+        margin-left: 20px;
+}
+
+#SBI
+{
+width: 150px;
+height: 43px;
+}
+
+#addidas
+{
+    margin-left: 25px;
+}
+
+.listsofservices
+{
+    row-gap: 10px;
+column-gap: 20px;
+}
+
+.contact1 p
+{
+font-size: 14px;
+padding: 10px 0px;
+color: #9aa8b9;
+padding-left: 15px;
+}
+
+  
+.vid-cards
+{
+width: 95%;
+margin: 0 auto;
+font-family: sans-serif;
+padding: 0px 0px 50px 0px;
+display: flex;
+column-gap: 20px;
+overflow-x: scroll;
+}
+    
+.flexcard2num p
+{
+    font-size: 156px;
+    color: rgb(77 84 97);
+    position: absolute;
+top: 170px;
+left: 5px;
+}
+
+
+.menu-list
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.menu-list1
+{
+    font-size: 15px;
+color: #fff;
+}
+
+.menu-list2
+{
+    font-size: 10px;
+    color: rgba(255,255,255,.5);
+}
+
+#videos ,#fixtures,#results,#news,#players,#rankings,#stats,#series,#archive
+{
+    padding: 12px 5px 12px 10px;
+}
+
+.menu3 li
+{
+    padding: 0px 10px;
+}
+
+.card1imgtext
+{
+    display: flex;
+    margin: 20px 5px;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.page5flexcard1,.page5flexcard2,.page5flexcard3
+ {
+    overflow: scroll;
+ }
+
+ .page6content img
+{
+width: 100%;
+}
+
+#page6p
+{
+font-size: 18px;
+padding-right: 0px;
+}
+
+
+/* trophies-card */
+
+
+.trophies-card
+{
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.gcard1img ,.gcard2img ,.gcard3img ,.gcard4img ,.gcard5img ,.gcard6img 
+{
+    background: url(./Images/gallery1.webp)no-repeat center/cover;
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    transition: 1s ease-in-out 0s all;
+}
+
+.gcard2img
+{
+    background: url(./Images/gallery2.webp)no-repeat center/cover;
+}
+
+.gcard3img
+{
+    background: url(./Images/gallery3.webp)no-repeat center/cover;
+}
+
+.gcard4img
+{
+    background: url(./Images/gallery4.webp)no-repeat center/cover;
+}
+
+.gcard5img
+{
+    background: url(./Images/gallery5.webp)no-repeat center/cover;
+}
+
+.gcard6img
+{
+background: url(./Images/gallery6.webp)no-repeat center/cover;
+}
+
+.trophy1date p
+{
+    font-size: 50px;
+    top: -35px;
+    left: 27px;
+}
+
+#countryname
+{
+font-size: 13px;
+}
+
+.page3wrapper
+{
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+align-items: center;
+}
+
+
+.page4
+{
+width: 80%;
+flex-direction: column;
+padding: 40px 0px;
+}
+
+.page4image
+{
+width: 100%;
+}
+
+.page4content
+{
+width: 100%;
+padding-top: 10px;
+}
+
+.page5wrapper
+{
+display: flex;
+font-family: sans-serif;
+padding-bottom: 50px;
+flex-direction: column;
+}
+
+.icons3
+{
+    padding: 50px 0px 0px;
+}
+
+.page5content
+{
+width: 100%;
+}
+
+.page5flex
+{
+    width: 100%;
+}
+
+.icons3
+{
+    position: absolute;
+    top: 45px;
+    right: 0px;
+}
+
+.icons3 p
+{
+    font-size: 12px;
+}
+
+#header5
+{
+    position: relative;
+}
+
+
+
+#dream11 
+{
+width: 150px;
+height: 33px;
+margin-top: 20px;
+}
+
+#SBI
+{
+width: 150px;
+height: 43px;
+margin-top: 20px;
+}
+
+#addidas
+{
+width: 75px;
+}
+
+#sports-18
+{
+width: 70px;
+}
+
+#jio-cinema
+{
+width: 58px;
+}
+
+.page9cards
+{
+width: 95%;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.listsofservices
+{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+}
