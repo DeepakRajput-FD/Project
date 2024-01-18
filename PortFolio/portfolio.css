@@ -344,3 +344,41 @@ li
     padding: 40px 0px 10px;
     padding-bottom: 10px; 
 }
+
+#card1img
+{
+    width: 364px;
+    height: 273px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    /* object-fit: cover; */
+}
+
+.web-cards
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.web-card1
+{
+    overflow: hidden;
+    /* border: 2px solid skyblue; */
+}
+#card1img:hover
+{
+    transform: scale(1.1);
+}
+
+#web-card-name
+{
+text-align: center;
+color: yellow;
+background-color: skyblue;
+}
+
+.Bcci-logo
+{
+    object-fit: cover;
+}
