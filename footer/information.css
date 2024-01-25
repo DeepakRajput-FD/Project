@@ -1,0 +1,33 @@
+@media (max-width: 576px) { 
+    h2
+    {
+        font-size: 15px;
+    }
+    .block1 p
+    {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .title-wrapper i
+        {
+            font-size: 15px;
+            padding: 10px ;
+            border-radius: 50%;
+        }
+ }
+ @media (max-width: 360px) 
+ {
+   .title-wrapper h2
+    {
+        font-size: 12px;
+    }
+    .block1 p
+    {
+        font-size: 12px;
+    }
+    .title-wrapper i
+        {
+            font-size: 12px;
+        }
+
+  }

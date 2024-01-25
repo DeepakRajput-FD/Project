@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrowseInfo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .lists
+        {
+            margin-left: 100px;
+            width: 80%;
+            display: flex;
+            list-style-type: none;
+            border: 2px solid black;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li img
+        {
+            width: 270px;
+            height: 70px;
+            
+        }
+        #Service1
+        {
+            position: relative;
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        .Services-list
+        {
+            display: flex;
+            position: absolute;
+            top: 0;
+            display: none;
+            /* background-color: red; */
+       }
+       #About
+       {
+        position: relative;
+       }
+       #About-us
+       {
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        display: none;
+       }
+      .wrapper1:hover #About+#About-us
+       {
+        display: block;
+        width: 200px;
+        height: 80px;
+        background: black;
+        color: white;
+     }
+     #About-us li
+     {
+        padding: 5px 0px;        
+     }
+
+    </style>
+
+</head>
+<body>
+
+    <header id="header1">
+        <nav>
+            <ul class="lists">
+
+                <div class="wrapper1">
+                <li id="About">About Us </li>
+                
+                <ul id="About-us">
+                    <li>About Us</li>
+                    <li>Odoo Gold Partner</li>
+                </ul>
+                </div>
+
+                <li id="Service1">Services</li>
+
+                <ul class="Services-list">
+
+                    <ul>
+                       <li> Odoo Consultancy</li>
+                       <li>Odoo Integration</li>
+                       <li>Odoo Support</li>
+                       <li>Odoo Development</li>
+                       <li>Odoo App Customization</li>
+                     </ul>
+
+                    <ul>
+                       <li>Odoo Implementation</li>
+                        <li>Odoo Migration</li>
+                        <li>Odoo Training</li>
+                        <li>Hire Odoo Developer</li>
+                    </ul>
+
+                </ul>
+
+                <li>Publication</li>
+                <li>Our Apps</li>
+                <li><img src="./Image/browse_info.jpg" alt=""></li>
+                <li>Support Request</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
