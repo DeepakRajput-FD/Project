@@ -12,6 +12,7 @@
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 li img
 {
@@ -46,8 +47,8 @@ nav
    position: fixed;
    z-index: 5;
    margin: 0 auto;
-   width: 100%;
    background: white;
+   flex-wrap: wrap;
 }   
 button
 {
@@ -199,6 +200,13 @@ content: "\f2b0";
      {
         text-decoration: underline;
      }
+     
+     .header5main-wrapper2 .header5card1
+     {
+        width: 410px;
+        height: 250px;
+     }
+
      .wrap1
      {
         visibility: hidden;
@@ -206,5 +214,298 @@ content: "\f2b0";
      .header5card1:hover .wrap1
      {
         visibility: visible;
+        color: white;
      }
-       
+     #header2
+     {
+         background-color: #f4f4f4;
+     }
+     .cards
+     {
+         display: flex;
+         justify-content: space-between;
+          display: flex;
+         flex-wrap: wrap;
+         row-gap: 10px;
+         /* flex-grow: 2; */
+     }
+     .cards-wrapper
+     {
+         width: 90%;
+         margin: 0 auto;
+         padding: 50px 0px;
+          display: flex;
+          flex-direction: column;
+         flex-wrap: wrap;
+         flex-grow: 1; 
+     }
+     .card1
+     {
+         padding: 50px 100px;
+         text-transform: capitalize;
+         background: #fff;
+         border: 1px solid #e8e8e8;
+         border-radius: 10px;
+         position: relative;
+     }
+     .card1 img
+     {
+         object-fit: cover;
+     }
+    
+      .cards .card1
+     {
+         width: 390px;
+         height: 302px;
+     }
+     
+     .content
+     {
+         position: absolute;
+         top: 0;
+         left: 50px;
+         display: none;
+     }
+     .content h4
+     {
+         font-size: 25px;
+         padding: 30px 0px 20px 0px;
+     }
+     .content p
+     {
+      font-size: 18px;   
+     }
+     #View
+     {
+         font-size: 20px;
+     }
+     .card1:hover .content
+     {
+         display: block;
+     }
+     .card1:hover img
+     {
+         display: none;
+     }
+
+     .card1:hover h2
+     {
+         display: none;
+     }
+     
+     .card1:hover
+     {
+         background-color: #f36d31;
+         color: white;
+     }
+     .content i
+     {
+         font-size: 15px;
+     }
+     #card2:hover
+     {
+         background:rgb(88 140 213);
+     }
+     #card3:hover
+     {
+         background:#0d9c8e;
+     }
+     #card4:hover
+     {
+         background: rgb(240 40 51);
+     }
+     #card5:hover
+     {
+         background:rgb(145 197 43);
+     }
+     #card6:hover
+     {
+         background:rgb(253 226 12);
+     }
+     .header7card1 
+     {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        text-align: center;
+     }
+     .header7card1 p
+     {
+        font-size: 20px;
+     }
+     .header7cards
+     {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+     }
+     .header7cards .header7card1 
+     {
+        width: 300px;
+     }
+     .header7card1
+     {
+        animation: color 3s ease-in-out  infinite alternate ;
+     }
+     .header7card1:hover
+     {
+        transform: rotate(0deg);
+        animation: color2 2s ease-in-out  alternate ;
+     }
+
+     @keyframes color2
+      {
+        100%
+        {
+            transform: rotate(0deg);
+        }   
+     }
+
+     @keyframes color
+      {
+        0%
+        {
+            background: lavender;
+            color: red;
+        }   
+        25%
+        {
+            background: #3B3486;
+            color: white;
+        }
+        50%
+        {
+            background: teal;
+            color: white;
+        }   
+        100%
+        {
+            background: #FF9BD2;
+            color: #3652AD;
+            transform: rotate(360deg);
+
+        }
+     }
+
+     .title-wrapper
+     {
+         width: 90%;
+         margin: 0 auto;
+     }
+     .oddo
+     {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background-color: white;
+         color: black;
+         padding: 20px ;
+         margin: 20px 0px 0px;
+         box-shadow: 0 0 3px black;
+     }
+     .oddo span
+     {
+         display: flex;
+         align-items: center;
+         column-gap: 10px;
+     }
+     
+     .title-wrapper i
+     {
+         font-size: 20px;
+         padding: 12px 12px;
+         border-radius: 50%;
+     }
+     .block1 p
+     {
+         padding: 20px ;
+         background-color:rgb(88, 140, 213);
+         color: white;
+         font-size: 20px;
+         box-shadow: 0 0 5px rgb(88, 140, 213);
+     }
+     .fa-clock-o:before
+     {
+         content: "\f017";
+      }
+      .oddo i
+      {
+          background: rgb(88, 140, 213);
+         color: white;
+      }
+      
+      .oddo i:hover
+      {
+          color: black;
+        }
+
+        footer
+        {
+            background: #051a28;
+        }
+        .wrapper
+        {
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+       .wrapper ul
+        {
+            list-style: none;
+        }
+       .wrapper li
+        {
+            color: #FEFEFF99;
+            padding: 10px 0px;
+        }
+        .info
+        {
+            font-size: 21px;
+            color: white;
+        }
+       .wrapper img
+        {
+            width: 180px;
+            height: 63px;
+        }
+        .wrapper a
+        {
+            color: #FEFEFF99;
+            text-decoration: none;
+        }
+        .wrapper a:hover
+        {
+            color: white;
+        }
+       .icons i
+        {
+            font-size: 25px;
+            color: #FEFEFF99;
+            border-radius: 30px;
+            border: 2px solid #FEFEFF99;
+        }
+        .icons
+        {
+            display: flex;
+            column-gap: 10px;
+        }
+        .icons i:hover
+        {
+            background-color: white;
+            color: black;
+        }
+        .list1
+        {
+            padding: 20px 0px;
+        }
+        .wrapper2{
+            border-top: 2px solid #FEFEFF99;
+        }
+        .wrapper2 p
+        {
+            padding: 20px 30px;
+            color: #FEFEFF99;
+        }
