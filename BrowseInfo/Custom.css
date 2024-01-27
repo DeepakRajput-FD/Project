@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.lists
+{
+    margin-left: 100px;
+    width: 80%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+li img
+{
+    width: 270px;
+    height: 70px;
+    
+}
+#Service1
+{
+    position: relative;
+}
+ul
+{
+    list-style-type: none;
+}
+#About
+{
+position: relative;
+}
+#About-us
+{
+position: absolute;
+top: 50px;
+left: 90px;
+display: none;
+}
+nav
+{
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   position: fixed;
+   z-index: 5;
+   margin: 0 auto;
+   width: 100%;
+   background: white;
+}   
+button
+{
+   border-radius: 5px;
+   padding: 8px 8px;
+   text-transform: capitalize;
+   background: #808080;
+   color: white;
+}
+.wrapper1:hover #About+#About-us
+{
+display: block;
+width: 200px;
+height: 80px;
+background: black;
+color: white;
+box-shadow: 5px 5px 4px white;
+z-index: 2;
+}
+#About-us li
+{
+padding: 5px 0px;        
+}
+.Services-list
+{
+position: absolute;
+top: 50px;
+left: 140px;
+display: none;
+
+}
+.Services-list li
+{
+padding: 10px 20px;
+}
+.main-service-list:hover #Service1+.Services-list
+{
+display: flex;
+width: 400px;
+background: black;
+color: white;
+box-shadow: 5px 5px 4px white;
+padding: 20px 0px;
+z-index: 5;
+}
+
+.carousel-item img
+{
+height: 580px;
+object-fit: cover;
+} 
+.button-wrap button:hover
+{
+background: #000000;
+}
+/* .fa-first-order:before {
+content: "\f2b0";
+} */
+.row
+{
+    box-shadow: 0 0.125rem 0.25rem #00000052 ;
+}
+.row div
+{
+    font-size: 18px;
+}
+
+.image-wrapper img
+{
+    width: fit-content;
+}
+
+        .all-card1
+        {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .all-card1 h3
+        {
+            padding: 10px 0px;
+        }
+        #all-card1-text
+        {
+            display: flex;
+        }
+        #quote
+        {
+            margin: 0px 5px 20px 0px;
+            padding: 10px 10px;
+            background: #685563;
+            color: white;
+            font-size: 20px;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 2px;
+        }
+        .all-card1
+        {
+            font-style: italic;
+            padding: 0px 10px;
+            box-shadow: 0 0.125rem 0.25rem #00000052 ;
+        }
+        #Isha
+        {
+            color: #91989e;
+        }
+        #all-card1-text  a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        #all-card1-text  a:hover
+        {
+            text-decoration: underline;
+        }
+        .all-cards
+        {
+            margin: 20px auto;
+        }
+        .allcards-wrapper
+        {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            padding: 20px 0px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .all-card1:hover
+        {
+            transform: perspective(800px) rotatex(20deg);
+            opacity: 1;
+            /* background: green; */
+        }
+        .all-card1
+        {
+            opacity: 0.5;
+        }
+    
+     .header5card1 p,a
+     {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+     }
+     .header5card1 p a:hover
+     {
+        text-decoration: underline;
+     }
+     .wrap1
+     {
+        visibility: hidden;
+     }
+     .header5card1:hover .wrap1
+     {
+        visibility: visible;
+     }
+       
