@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./Media.css">
 </head>
 <body>
     <div class="col-100">
@@ -31,12 +32,18 @@
         </div>
             
             <ul class="menus">
-                <a href="#Home"><li><span><i class="fa-solid fa-house"></i></span>home</li></a>
-                <a href="#about"><li><span><i class="fa-solid fa-user"></i></span>about</li></a>
-                <a href="#resume"><li><span> <i class="fa-solid fa-file"></i></span>resume</li></a>
-                <a href="#portfolio"><li><span> <i class="fa-solid fa-address-card"></i></span>portfolio</li></a>
-                <a href="#contact"><li><span> <i class="fa-solid fa-envelope"></i></span>contact</li></a>
-                <a href="#23" id="mode"><li><span> <i class="fa-solid fa-circle-half-stroke"></i></span>Mode</li></a>
+                <a href="#Home"><li class="list1"><span><i class="fa-solid fa-house"></i></span>home</li></a>
+                <a href="#about"><li class="list1"><span><i class="fa-solid fa-user"></i></span>about</li></a>
+                <a href="#resume"><li class="list1"><span> <i class="fa-solid fa-file"></i></span>resume</li></a>
+                <a href="#portfolio"><li class="list1"><span> <i class="fa-solid fa-address-card"></i></span>portfolio</li></a>
+                <a href="#contact"><li class="list1"><span> <i class="fa-solid fa-envelope"></i></span>contact</li></a>
+                <a href="#23" id="mode"><li class="list1"><span> <i class="fa-solid fa-circle-half-stroke"></i></span>Mode</li></a>
+               
+               <li> 
+                <button id="b1">
+                <i  class="fa-solid fa-burger"></i>
+                </button>
+                </li>
             </ul>
 
             <div class="copyright">
@@ -46,11 +53,12 @@
                 </p>
             </div>
 
+
         </div>
         <div class="col-80">
 
             <div class="images2" id="Home">
-                <img src="./Images/bg-image.jpg" alt="">
+                <img src="./Images/bg-image.jpg" alt="" id="img3">
             </div>
 
             <div id="about">
@@ -63,9 +71,7 @@
 
                 </div>
                 
-                <p id="p2">
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
+              
 
                 <div class="division">
 
@@ -79,9 +85,6 @@
                             Web Designer
                         </h2>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
 
                         <ul class="main-userinfo">
 
@@ -100,9 +103,7 @@
                         </ul>
                     </ul>
 
-                    <p id="p3">
-                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                    </p>
+                  
 
                     </div>
 
@@ -221,42 +222,40 @@
                 <div id="div2">
 
                 </div>  
-                <p id="p4">
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
+              
 
                 <div class="cards2">
                     
                     <div class="card2">
                         <p id="card2-p1">
                             HTML
-                            <span>100%</span>
+                            <span>80%</span>
                         </p>
-                        <progress value="100" id="progress-bar-html">100%</progress>
+                        <progress value="80" id="progress-bar-html">100%</progress>
                     </div>
 
                     <div class="card2">
                         <p id="card2-p1">
                             CSS
-                            <span>90%</span>
+                            <span>70%</span>
                         </p>
-                        <progress value="100" id="progress-bar-css">90%</progress>
+                        <progress value="70" id="progress-bar-css">70%</progress>
                     </div>
 
                     <div class="card2">
                         <p id="card2-p1">
                             Javascript
-                            <span>70%</span>
+                            <span>50%</span>
                         </p>
-                        <progress value="100" id="progress-bar-js">70%</progress>
+                        <progress value="50" id="progress-bar-js">50%</progress>
                     </div>
 
                     <div class="card2">
                         <p id="card2-p1">
                             Jquery
-                            <span>70%</span>
+                            <span>50%</span>
                         </p>
-                        <progress value="100" id="progress-bar-jquery">70%</progress>
+                        <progress value="50" id="progress-bar-jquery">50%</progress>
                     </div>
                 </div>
             </div>
@@ -271,15 +270,10 @@
 
                 </div>  
 
-                <p id="p4">
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
+              
                 
                 <div class="self-info">
-                    <h4>
-                        Sumary
-                    </h4>
-
+                   
                     <div class="deepak-rajput">
                         <h4>
                         Deepak Rajput
@@ -321,9 +315,7 @@
 
                 </div>  
 
-                <p id="p4">
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
+             
 
                 <div class="projects">
 
@@ -410,6 +402,11 @@
                     <a href="https://www.linkedin.com/in/rajput-deepak-72a406210/"><h4>Linkdin</h4></a>
 
                     <a href="./Latex_Resume_Template (1).pdf"><h4>Resume</h4></a>
+
+                    <button id="b2">
+                        <i  class="fa-solid fa-burger" id="Burger2"></i>
+                        </button>
+
                 </div>
             </div>
 
@@ -428,8 +425,21 @@
                 $('#skill1').css({'background':'black','color':'white'});
                 $('h4').css({'background':'black','color':'white'});
                 $('#p4').css({'background':'black','color':'white'});
-                $('.card2').css({'background':'black','color':'white'});
+                $('.card2').css({'background':'black','color':'white'});               
+                $('.list1').css({'color':'black'});    
             });
+
+            $('#b1').click(function ()
+             {
+                $('.col-20').css({display:'none','width':'0%'});
+                $('.col-80').css({'width':"100%"});
+            });       
+
+            $('#b2').click(function ()
+             {
+                $('.col-20').css({display:'block','width':'20%'});
+                $('.col-80').css({'width':"80%"});
+            });      
         });
     </script>
 </body>

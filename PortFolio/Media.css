@@ -1,0 +1,29 @@
+
+@media (max-width: 1400px) {  }
+
+@media (max-width: 1200px)
+ { 
+
+  }
+
+@media (max-width: 992px) 
+{ 
+    /* .images1
+    {
+        display: none;
+    } */
+ }
+
+@media (max-width: 768px)
+ {
+   
+   }
+
+@media (max-width: 576px) 
+{ 
+    .images1
+    {
+        display: none;
+    }
+ }
+

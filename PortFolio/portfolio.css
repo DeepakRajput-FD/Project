@@ -144,6 +144,7 @@ a{
 .images3 img
 {
     width: 100%;
+    border-radius: 50%;
 }
 .division
 {
@@ -163,6 +164,7 @@ a{
     padding: 10px 0px 20px;
     display: flex;
     column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .main-userinfo i
@@ -304,7 +306,7 @@ li
 
 .menus a:hover li
 {
-    color: white;
+    /* color: black; */
 }
 .menus a:hover i
 {
@@ -365,6 +367,8 @@ li
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .web-card1
@@ -412,4 +416,19 @@ background-color: skyblue;
 .contact-info h4
 {
     font-size: 32px;
+}
+#b1,#b2
+{
+    padding: 5px 15px;
+    background: linear-gradient(orange,white,green);
+}
+.fa-burger
+{
+    color: red;
+    border: 0;
+}
+#Burger2
+{
+    color: blue;
+    font-size: 25px;    
 }
