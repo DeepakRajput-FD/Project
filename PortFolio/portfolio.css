@@ -304,10 +304,6 @@ li
     padding-bottom: 10px; 
 }
 
-.menus a:hover li
-{
-    /* color: black; */
-}
 .menus a:hover i
 {
     color: #149ddd;
