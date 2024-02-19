@@ -42,7 +42,6 @@ z-index: 2;
     position: relative;
 }
 
-
 .trophy1
 {
     padding: 50px 50px 10px;
@@ -56,12 +55,19 @@ z-index: 2;
 top: -45px;
 }
 
+
+.gallerycards
+{
+flex-wrap: wrap;
+}
+
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px)
  {
 
+  
     #icct20
     {
         left: 26px;
@@ -157,14 +163,6 @@ color: #fff;
     text-align: center;
 }
 
-.cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
 .page5flexcard1
  {
     overflow: scroll;
@@ -234,6 +232,12 @@ font-size: 13px;
 }
 @media (max-width: 768px) 
 {
+
+    
+.gallerycards
+{
+flex-wrap: wrap;
+}
 
     .menus
     {
@@ -343,13 +347,6 @@ color: #fff;
     text-align: center;
 }
 
-.cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
 
 .page5flexcard1,.page5flexcard2,.page5flexcard3
  {
@@ -443,6 +440,13 @@ flex-wrap: wrap;
 /* // XX-Large devices (larger desktops, 1400px and up) */
     @media (max-width: 576px) 
     {   
+
+        
+.gallerycards
+{
+flex-wrap: wrap;
+}
+
     .page2titles h2
     {
     font-size: 30px;
@@ -471,7 +475,8 @@ flex-wrap: wrap;
     .hoverablemenu
     {
     display: flex;
-    flex-wrap: wrap
+    overflow-x: scroll;
+    /* flex-wrap: wrap */
     }
 
     .hoverablemenu li
@@ -592,13 +597,6 @@ color: #fff;
     text-align: center;
 }
 
-.cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
 
 .page5flexcard1,.page5flexcard2,.page5flexcard3
  {
