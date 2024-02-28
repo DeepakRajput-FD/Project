@@ -535,10 +535,6 @@
         color: red;
       }
 
-      .fa-x:before 
-      {
-        font-size: 25px;
-      }
-
-
-    
+      .fa-x:before {
+        font-size: 16px;
+    }
