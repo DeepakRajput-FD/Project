@@ -741,13 +741,20 @@
  
 {
 
+  .page2wrapper
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .video1-parent
   {
     position: absolute;
-    top: 195px;
-    right:37px;
-    width: 197px;
-    height: 111px;
+    top: 505px;
+    right:115px;
+    width: 310px;
+    height: 110px;
     object-fit: cover;
   }
 
@@ -947,7 +954,7 @@
   }
   #button2 {
     border-radius: 5px;
-    padding: 14px 40px;
+    padding: 13px 18px;
     background: rgb(229,9,20);
     color: white;
     font-size: 18px;
@@ -984,12 +991,22 @@
 @media (max-width: 576px)
     {
 
+       .text
+      {
+        width: 100%;
+        padding: 0px 0px;
+      }
+
+      .page3wrapper
+      {
+        flex-direction: column;
+      }
     
   .video1-parent
   {
     position: absolute;
-    top: 193px;
-    right:28px;
+    top: 187px;
+    right:130px;
     width: 147px;
     height: 83px;
     object-fit: cover;
@@ -1037,8 +1054,15 @@
 
   .magic p
   {
-    font-size: 10px;
+    font-size: 8px;
     padding: 2px 2px 2px 2px;
+  }
+
+  .page2wrapper
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
       #button3
@@ -1047,7 +1071,7 @@
     padding: 5px 10px;
     background: rgb(229,9,20);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
       }
       #select2 {
         background: transparent;
@@ -1231,5 +1255,47 @@
     padding-left: 0px;
     font-size: 12px;
   }
-
       }
+
+      @media(max-width:375px){
+
+        .video1-parent
+        {
+          position: absolute;
+          top: 197px;
+          right:80px;
+          width: 93px;
+          height: 52px;
+          object-fit: cover;
+        }
+        .page3,.page4,.page5
+        {
+          width: 100%;
+        }
+        .page4wrapper,.page5wrapper
+        {
+          display: flex;
+          flex-direction: column;
+        }  
+
+        .inputes
+        {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+
+      /* @media (min-width: 769px) and (max-width: 992px)
+       {
+        .video1-parent
+  {
+    position: absolute;
+    top: 213px;
+    right:37px;
+    width: 197px;
+    height: px;
+    object-fit: cover;
+  }
+         
+      } */
