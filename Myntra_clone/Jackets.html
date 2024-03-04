@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .t-shirt-wrapper
+        {
+            display: flex;
+        }
+        .t-shirt-cateogry
+        {
+            /* width: 10%; */
+            padding:0px 10px;
+        }
+        .t-shirt-cards
+        {
+            width: 90%;
+        }
+        h4
+        {
+            padding: 10px 0px;
+        }
+        .cateogary1 li
+        {
+            padding: 5px 0px;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+        }
+       .checkbox1
+       {
+        width: 20px;
+        height: 20px;
+       }
+       #t_shirt_cards1
+       {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        align-items: center;
+       }
+       .strike
+       {
+        text-decoration: line-through;
+        color: #7e818c;
+       }
+       p
+       {
+        padding: 5px 0px;
+       }
+       .mincard1
+       {
+        padding: 10px 0px;
+        position: relative;
+       }
+       span
+       {
+        font-size: 15px;
+        text-transform: capitalize;
+       }
+       .wishlist1
+       {
+        text-align: center;
+        position: absolute;
+        padding:0px 20px;
+        width: 100%;
+        bottom: 30px;
+        background-color: white;
+        display: none;
+    }
+       .btnwrapper1
+       {
+        margin: 10px 0px;
+        padding:10px 90px;
+        border-radius: 5px;
+        border-color: #d4d5d9;
+        }
+        .btnwrapper1 i
+        {
+            font-size: 18px;
+        }
+        .mincard1:hover >.wishlist1
+        {
+            display: block;
+        }
+        .mincard1:hover .p1
+        {
+            visibility: hidden;
+        }
+        #p2
+        {
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <div class="t-shirt-wrapper">
+
+        <div class="t-shirt-cateogry">
+            <h4>
+                Price
+            </h4>
+
+            <ul class="cateogary1">
+                <li> <input type="checkbox" class="checkbox1" onclick="price()"> <span>Rs. 124 to Rs. 7743</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span>Rs. 7743 to Rs. 15362</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span> Rs. 15362 to Rs. 22981</span></li>
+            </ul>
+
+            <h4>
+                Brand
+            </h4>
+
+            <ul class="cateogary1">
+                <li> <input type="checkbox" class="checkbox1"> <span>roadster</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span>Friskers</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span> HRX by hritik roshan</span></li>
+            </ul>
+
+            <h4>
+                Size
+            </h4>
+
+            <ul class="cateogary1">
+                <li> <input type="checkbox" class="checkbox1"> <span>M</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span>XL</span></li>
+                <li> <input type="checkbox" class="checkbox1"> <span> XXL</span></li>
+            </ul>
+
+        </div>
+        <div class="t-shirt-cards">
+
+            <div id="t_shirt_cards1">
+               
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+
+        //Image Array
+
+        let arr1img=['jacket1.webp','jacket2.webp','jacket3.webp','jacket4.webp','jacket5.jpg','jacket6.webp','jacket7.webp','jacket8.webp','jacket9.webp','jacket10.webp'];
+        let arrp=['Roadster','ether','roadster','here&now','roadster','powerlook','wrogen','locomotive','powerlook','mast&herbour']
+        let arrp2=['Men Slim Fit Casual Shirt','Men Regular Fit Sustainable Casual Shirt','Men Cotton Casual Shirt','Printed Slim Fit Casual Shirt','Men Cotton Casual Shirt','Men Slim Fit Casual Shirt','Men Regular Fit Sustainable Casual Shirt','Men Cotton Casual Shirt','Printed Slim Fit Casual Shirt','Men Cotton Casual Shirt',];
+       let arrp3=[
+        649,749,1469,899,699,499,1899,669,2400,9999
+       ];
+
+       let size_arr=['S','L','M','S','XL','S','S','S','S','S']
+
+        let count=0;
+        arr1img.forEach(element =>
+        {
+        let t_shirt_cards1=document.getElementById('t_shirt_cards1');
+
+        let element1=document.createElement('div');
+
+             let element2=` 
+             <div class='mincard1'>
+             <img src="${element}" alt="">
+                <p class='p1'>${arrp[count]}</p>
+                <p class='p1'>${arrp2[count]}</p>
+                <p class='p1'>Rs.${arrp3[count]}</p>
+
+                <div class='wishlist1'>
+                    <button class='btnwrapper1' onclick='fun2()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
+                    <p id='p2'>Sizes:${size_arr[count]} </p>
+                    </div>
+
+                </div>`;
+                element1.innerHTML=element2;
+                t_shirt_cards1.appendChild(element1);
+                count++;
+            });
+
+            function fun2()
+             {
+                console.log('hii');  
+                let heart=document.getElementById('heart');
+                heart.style.color='blue';  
+            }
+            
+
+        //    function price()
+        //    {
+
+        //     for (let i = 0; i < arrp3.length; i++) 
+        //     {
+        //         if (arrp3[i]>=124)
+        //          {
+        //             console.log('data is avalible'); 
+        //             t_shirt_cards1.style.color='red';
+        //         }
+        //         else if (arrp3[i]>=7724)
+        //          {
+
+        //         }
+               
+
+        //     }
+          
+        // }
+    </script>
+</body>
+</html>

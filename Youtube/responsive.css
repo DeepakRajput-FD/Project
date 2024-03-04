@@ -135,6 +135,22 @@ display: none;
 
    @media(max-width:360px)
    {
+
+    #input1
+{
+    padding:5px 5px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-color: #cecece;
+    font-size: 14px;
+}
+
+#img2 {
+    width: 122px;
+    height: 56px;
+    object-fit: cover;
+}
+
     
 .list2 li i ,.list2 li
 {
