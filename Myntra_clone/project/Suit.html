@@ -119,9 +119,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1"> <span>Rs. 124 to Rs. 7743</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>Rs. 7743 to Rs. 15362</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> Rs. 15362 to Rs. 22981</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="price()"> <span>Rs. 124 to Rs. 7743</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="price2()"> <span>Rs. 7743 to Rs. 15362</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="price3()"> <span> Rs. 15362 to Rs. 22981</span></li>
             </ul>
 
             <h4>
@@ -129,9 +129,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1"> <span>roadster</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>Friskers</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> HRX by hritik roshan</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth1()"> <span>Allen Solly</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth2()"> <span>Blackberrys</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth3()"> <span>Arrow</span></li>
             </ul>
 
             <h4>
@@ -139,9 +139,10 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1"> <span>M</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>XL</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> XXL</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size1()"> <span>38</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size2()"> <span>40</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size3()"> <span> 44</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size4()"> <span> 46</span></li>
             </ul>
 
         </div>
@@ -224,6 +225,182 @@
                 })
 
             });
+
+             
+            function price()
+           {
+
+            for (let i = 0; i < arr4.length; i++) 
+            {
+                if (arr4[i]>=124&&arr4[i]<=7743)
+                 {
+                    console.log('data is avalible'); 
+                }
+
+            }
+          
+        }
+
+        function price2()
+           {
+
+            for (let i = 0; i < arr4.length; i++) 
+            {
+                if (arr4[i]>=7743&&arr4[i]<=15362)
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible'); 
+                }
+
+            }
+          
+        }
+        
+        function price3()
+           {
+
+            for (let i = 0; i < arr4.length; i++) 
+            {
+                if (arr4[i]>=15362&&arr4[i]<=22981)
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+
+        function cloth1()
+           {
+
+            for (let i = 0; i < arr2.length; i++) 
+            {
+                if (arr2[i]=='Allen Solly')
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+        function cloth2()
+           {
+
+            for (let i = 0; i < arr2.length; i++) 
+            {
+                if (arr2[i]=='Blackberrys')
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+        function cloth3()
+           {
+
+            for (let i = 0; i < arr2.length; i++) 
+            {
+                if (arr2[i]=='Arrow')
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+
+        function size1()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]==38)
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+
+        function size2()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]==40)
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        } 
+        function size3()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]==44)
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        function size4()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]==46)
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        
+
+
     </script>
 </body>
 </html>
