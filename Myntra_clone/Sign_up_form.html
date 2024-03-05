@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra login page</title>
+    <style>
+        body {
+
+            background-color: #fdeeef;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .box {
+            background-color: rgb(247, 247, 247);
+            width: 30%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 90px;
+        }
+
+        input 
+        {
+            padding: 5px 40px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #ff3f6c;
+            border: none;
+            padding: 5px 100px;
+            border-radius: 2PX;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .input_wrap
+        {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        #mob_no
+        {
+            position: absolute;
+            top: 2px;
+        }
+        #spnid1
+        {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        #p2
+        {
+            padding: 10px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="./sign_up_responsive.css">
+</head>
+
+<body>
+    
+    <div class="box">
+
+        <div>
+            <img src="Login_Myntra.webp" alt=""><br><br>
+        </div>
+        <div class="box2">
+            <h2>
+                <p>Login 
+                    <span id="spnid1">or</span>
+                     Signup</p>
+            </h2>
+            <div class="input_wrap">
+                
+                <div id="mob_no">
+                    +91 |
+                </div>
+
+                <input id="bhargavi"  type="text" placeholder="Mobile Number" >
+            </div>
+
+            <span id="madha"></span>
+            
+            <p style="font-size: 12px;" id="p2">By countinuing, I agree to the <b style="color: red; font-size: 12px;">Terms of Use </b>&<b
+                    style="color: red;font-size: 12px;"> Privacy Policy</b></p>
+
+            <button onclick="fun1()">CONTINUE</button>
+            
+            <P id="p2">Have trouble logging in?<em style="color: red;"><b>Get help</b></em></P>
+
+        </div>
+    </div>
+    <script>
+
+       function fun1()
+       {
+        let data1 = document.getElementById("bhargavi").value;
+        let data2 = document.getElementById("madha").value;
+        if(data1==="")
+        {
+         document.getElementById("madha").innerHTML="please enter a valid mobile number (10 digit)";
+         madha.style.color = "red";
+        }
+        else
+        {
+            document.getElementById("madha").innerHTML="";
+            
+            localStorage.setItem('key1',data1)
+
+        }
+       }
+    </script>
+</body>
+
+</html>

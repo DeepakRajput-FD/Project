@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+  .main-menu {
+    gap: 20px;
+  }
+  .main-menu li {
+    font-size: 14px;
+  }
+  .additional {
+    gap: 20px;
+  }
+  .profile {
+    font-size: 14px;
+  }
+  .logo {
+    width: 4%;
+  }
+  .footer-main {
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  .footer-links a,
+  .footer-main p {
+    font-size: 14px;
+  }
+
+  .footer-socials {
+    gap: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .search-bar input {
+    padding: 7px 10px;
+  }
+  .main-menu li {
+    font-size: 12px;
+  }
+  .main-menu {
+    gap: 15px;
+  }
+  .search-bar i {
+    font-size: 15px;
+  }
+  nav {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 7%;
+  }
+}

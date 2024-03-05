@@ -1,0 +1,45 @@
+
+@media (max-width:992px)
+ {
+    .box
+    {
+        width: 50%;
+    }    
+}
+
+
+@media (max-width:768px)
+ {
+    .box
+    {
+        width: 50%;
+    }    
+}
+
+
+
+
+@media (max-width: 360px) { 
+
+    img {
+        width: 100%;
+    }
+    .box {
+        width: 80%;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    input {
+        padding: 5px 30px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #mob_no {
+        position: absolute;
+        top: 4px;
+        font-size: 14px;
+        left: 10px;
+    }
+}

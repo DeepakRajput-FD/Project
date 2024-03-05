@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Shirt</title>
+    <title>Suit</title>
     <style>
         *
         {
@@ -109,7 +109,6 @@
             text-align: left;
         }
     </style>
-    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     <div class="t-shirt-wrapper">
@@ -159,13 +158,13 @@
 
         //Image Array
 
-       let imgarr=[ 't-shirt1.webp','t-shirt2.webp','t-shirt3.webp','t-shirt4.webp','t-shirt5.webp','t-shirt6.webp','t-shirt7.webp','t-shirt8.webp','t-shirt9.webp','t-shirt10.webp', ]
+        let arr1 = ['suit-1.png','suit-2.png','suit-3.png','suit-4.png','suit-5.png','suit-6.png','suit-7.png','suit-8.png','suit-9.png','suit-10.png'];
 
-       let cateogry_name=['The Indian Cargo','mast&herbour','roadster','here&now','roadster','powerlook','wrogen','locomotive','powerlook','mast&herbour']
-        
-       let t_shirt_name=['Polo Collar Cotton Pure Cotton T-shirt','T-shirt with Elbow Patch','Oversized Cotton T-shirt','Oversized Pure Cotton T-shirt','Oversized Pure Cotton T-shirt','Cotton Pure Cotton T-shirt Regular Fit','Solid Polo Collar T-shirt','Slim Rapid Dry Raglan T-shirt','Solid Polo Collar T-shirt','Oversized Pure Cotton T-shirt'];
+        let arr2 = [ 'Peter England Elite','Allen Solly','Blackberrys','sevn suits','HERE&Wintage','Arrow','INVICTUS','TAHVO','hangup trend','Hangup' ];
 
-       let card_price=[341,483,389,209,419,398,389,287,419,549];
+        let arr3 = [ 'Men Suits', 'Men Suits', 'Men Solid Suits','Men Single Breasted Blazer','Single-Breated','Men Slim Fit Tuxedo', 'Men Suits', 'Men Solid Suits','Men Single Breasted Blazer','Single-Breated'];
+
+        let arr4 = [ 8999,7199,7000,9000,8900,9990,7500,8990,7990,7000 ];
 
         let cut_price=[899,1099,1499,699,999,399,1499,899,999,999];
 
@@ -174,7 +173,7 @@
         let size_arr=[40,38,44,38,46,38,46,40,40,46]
 
         let count=0;
-       imgarr.forEach(element =>
+       arr1.forEach(element =>
         {
         let t_shirt_cards1=document.getElementById('t_shirt_cards1');
 
@@ -183,9 +182,9 @@
              let element2=` 
              <div class='mincard1'>
              <img src="${element}" alt="">
-                <p class='p1'>${cateogry_name[count]}</p>
-                <p class='p1'>${t_shirt_name[count]}</p>
-                <p class='p1'>Rs.${card_price[count]} <span class='strike'>${cut_price[count]}</span> <span>(${off_price[count]}%OFF)</span></p>
+                <p class='p1'>${arr2[count]}</p>
+                <p class='p1'>${arr3[count]}</p>
+                <p class='p1'>Rs.${arr4[count]} <span class='strike'>${cut_price[count]}</span> <span>(${off_price[count]}%OFF)</span></p>
 
                 <div class='wishlist1'>
                     <button class='btnwrapper1'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>

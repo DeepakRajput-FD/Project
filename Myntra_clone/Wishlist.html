@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkname2</title>
+    <style>
+        #p1
+        {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+        }
+
+        .wrap
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .wrap p
+        {
+            padding: 0px 2px;
+        }
+        #p7
+        {
+            text-decoration: line-through;
+        }
+
+        img
+        {
+            width: 250px;
+        }
+        p
+        {
+            text-align: center;
+        }
+        button
+        {
+            padding: 5px 65px;
+            color: #ff3e6c;
+            font-size: 15px;
+            border: 0;
+        }
+       
+        #card_button
+        {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="p1">
+
+    </div>
+    <script >
+        function fun2()
+         {  
+            
+             let p1=document.getElementById('p1');
+
+             let data1= localStorage['img1'];
+             let data2= localStorage['t_shirt1'];
+             let card_pricedata= localStorage['card_price1'];
+             let cut_price1data= localStorage['cut_price1'];
+             let off_price1data= localStorage['off_price1'];
+             
+            console.log(data1);
+
+             let div1=document.createElement('div');
+             
+             let element1=`
+             <div class='card_wrap'>
+             <img src="${data1}" alt="">
+             <p>${data2}</p>
+             <div class='wrap'>
+                <p>${card_pricedata}</p>
+                <p id='p7'>${cut_price1data}</p>
+                <p>(${off_price1data}%OFF)</p>
+                </div>
+                <div id='card_button'>
+             <button>Move to Bag</button>
+             <button id='btn2'>Close</button>
+             </div>
+             </div>
+             `;
+             
+             div1.innerHTML=element1;
+
+            p1.appendChild(div1);
+
+            let btn2=document.getElementById('btn2');
+
+            btn2.addEventListener('click',function ()
+             {
+                console.log('hii'); 
+                div1.remove();   
+            })
+            }
+
+            fun2();
+                
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style-type: none;
+  background: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo {
+  width: 5%;
+}
+.logo img {
+  width: 100%;
+}
+.search-bar {
+  display: flex;
+  position: relative;
+}
+.search-bar i {
+  font-size: 20px;
+}
+.search-bar input {
+  padding: 10px 60px;
+  background: #f5f5f6;
+  border-radius: 5px;
+}
+.main-menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.additional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  color: #717288;
+}
+.offer-section {
+  width: 100%;
+}
+.offer-section img {
+  width: 100%;
+}
+.birthday-section {
+  display: flex;
+}
+.birthday-section {
+  width: 50%;
+}
+.birthday-section img {
+  width: 100%;
+}
+.footer-a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  gap: 220px;
+  justify-content: center;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+footer {
+  padding: 30px 0;
+}
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.footer-main p {
+  color: black;
+  opacity: 0.9;
+}
+.poster-container .timeline-poster {
+  background-color: #e0ccbe;
+}
+#sub-menu {
+  list-style-type: none;
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  display: none;
+  padding: 10px 45px;
+}
+#sub-menu li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+#sub-menu-women {
+  list-style-type: none;
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  display: none;
+  padding: 10px 45px;
+}
+#sub-menu-women li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+#sub-menu-kids {
+  list-style-type: none;
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  display: none;
+  padding: 10px 45px;
+}
+#sub-menu-kids li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.wrapper1 li {
+  font-size: 14px;
+}
+#sub-menu-profile {
+  width: 20%;
+  list-style-type: none;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  padding: 10px;
+  display: none;
+}
+#sub-menu-profile li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+a
+{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}

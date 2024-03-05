@@ -114,8 +114,8 @@
 
             <ul class="cateogary1">
                 <li> <input type="checkbox" class="checkbox1" onclick="price()"> <span>Rs. 124 to Rs. 7743</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>Rs. 7743 to Rs. 15362</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> Rs. 15362 to Rs. 22981</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="price2()"> <span>Rs. 7743 to Rs. 15362</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="price3()"> <span> Rs. 15362 to Rs. 22981</span></li>
             </ul>
 
             <h4>
@@ -123,9 +123,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1"> <span>roadster</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>Friskers</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> HRX by hritik roshan</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth1()"> <span>roadster</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth2()"> <span>Friskers</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth3()"> <span> HRX by hritik roshan</span></li>
             </ul>
 
             <h4>
@@ -133,9 +133,10 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1"> <span>M</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span>XL</span></li>
-                <li> <input type="checkbox" class="checkbox1"> <span> XXL</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size1()"> <span>M</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size2()"> <span>XL</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size3()"> <span> XXL</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="size4()"> <span>S</span></li>
             </ul>
 
         </div>
@@ -153,7 +154,7 @@
         //Image Array
 
         let arr1img=['jacket1.webp','jacket2.webp','jacket3.webp','jacket4.webp','jacket5.jpg','jacket6.webp','jacket7.webp','jacket8.webp','jacket9.webp','jacket10.webp'];
-        let arrp=['Roadster','ether','roadster','here&now','roadster','powerlook','wrogen','locomotive','powerlook','mast&herbour']
+        let arrp=['Roadster','ether','Roadster','here&now','Roadster','powerlook','wrogen','locomotive','powerlook','mast&herbour']
         let arrp2=['Men Slim Fit Casual Shirt','Men Regular Fit Sustainable Casual Shirt','Men Cotton Casual Shirt','Printed Slim Fit Casual Shirt','Men Cotton Casual Shirt','Men Slim Fit Casual Shirt','Men Regular Fit Sustainable Casual Shirt','Men Cotton Casual Shirt','Printed Slim Fit Casual Shirt','Men Cotton Casual Shirt',];
        let arrp3=[
         649,749,1469,899,699,499,1899,669,2400,9999
@@ -194,25 +195,176 @@
             }
             
 
-        //    function price()
-        //    {
+           function price()
+           {
 
-        //     for (let i = 0; i < arrp3.length; i++) 
-        //     {
-        //         if (arrp3[i]>=124)
-        //          {
-        //             console.log('data is avalible'); 
-        //             t_shirt_cards1.style.color='red';
-        //         }
-        //         else if (arrp3[i]>=7724)
-        //          {
+            for (let i = 0; i < arrp3.length; i++) 
+            {
+                if (arrp3[i]>=124&&arrp3[i]<=7743)
+                 {
+                    console.log('data is avalible'); 
+                }
 
-        //         }
-               
-
-        //     }
+            }
           
-        // }
+        }
+
+        function price2()
+           {
+
+            for (let i = 0; i < arrp3.length; i++) 
+            {
+                if (arrp[i]>=''&&arrp3[i]<=15362)
+                 {
+                    console.log('data is not avalible'); 
+                }
+
+            }
+          
+        }
+        
+        function price3()
+           {
+
+            for (let i = 0; i < arrp3.length; i++) 
+            {
+                if (arrp3[i]>=15362&&arrp3[i]<=22981)
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+
+        function cloth1()
+           {
+
+            for (let i = 0; i < arrp.length; i++) 
+            {
+                if (arrp[i]=='Roadster')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        function cloth2()
+           {
+
+            for (let i = 0; i < arrp.length; i++) 
+            {
+                if (arrp[i]=='Friskers')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        function cloth3()
+           {
+
+            for (let i = 0; i < arrp.length; i++) 
+            {
+                if (arrp[i]=='HRX By Hritik Roshan')
+                 {
+                    console.log('data is avalible'); 
+                }
+                else
+                {
+                    console.log('data is not avalible');
+                }
+
+            }
+          
+        }
+
+        function size1()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]=='M')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+
+        function size2()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]=='XL')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        } 
+        function size3()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]=='XXL')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        function size4()
+           {
+
+            for (let i = 0; i < size_arr.length; i++) 
+            {
+                if (size_arr[i]=='S')
+                 {
+                    console.log('data is avalible'); 
+                }
+                // else
+                // {
+                //     console.log('data is not avalible');
+                // }
+
+            }
+          
+        }
+        
+
+
     </script>
 </body>
 </html>

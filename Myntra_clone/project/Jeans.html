@@ -159,22 +159,23 @@
 
         //Image Array
 
-       let imgarr=[ 't-shirt1.webp','t-shirt2.webp','t-shirt3.webp','t-shirt4.webp','t-shirt5.webp','t-shirt6.webp','t-shirt7.webp','t-shirt8.webp','t-shirt9.webp','t-shirt10.webp', ]
+        let arr1 = ['pant-1.png','pant-2.png','pant-3.png','pant-4.png','pant-5.png','pant-6.png','pant-7.png','pant-8.png','pant-9.png','pant-10.png'];
 
-       let cateogry_name=['The Indian Cargo','mast&herbour','roadster','here&now','roadster','powerlook','wrogen','locomotive','powerlook','mast&herbour']
-        
-       let t_shirt_name=['Polo Collar Cotton Pure Cotton T-shirt','T-shirt with Elbow Patch','Oversized Cotton T-shirt','Oversized Pure Cotton T-shirt','Oversized Pure Cotton T-shirt','Cotton Pure Cotton T-shirt Regular Fit','Solid Polo Collar T-shirt','Slim Rapid Dry Raglan T-shirt','Solid Polo Collar T-shirt','Oversized Pure Cotton T-shirt'];
+    let arr2 = [ 'HIGHLANDER','Bene Kleed','Roadstar','Bene Kleed','HERE&NOW','Urbano Fashion','HIGHLANDER','Moda Rapido','Mast & Harbour','Bene Kleed' ];
 
-       let card_price=[341,483,389,209,419,398,389,287,419,549];
+    let arr3 = [ 'Men Tapered Fit Jeans', 'Men Relaxed Fit Jeans', 'Men Cotton Straight Fit Jeans','Relaxed Fit Denim Jeans','Men Slim Fit Jeans','Men Tapered Fit Jeans', 'Men Relaxed Fit Jeans', 'Men Cotton Straight Fit Jeans','Relaxed Fit Denim Jeans','Men Slim Fit Jeans'];
 
-        let cut_price=[899,1099,1499,699,999,399,1499,899,999,999];
+    let arr4 = [ 899,719,700,900,890,999,750,899,799,700 ];
 
-        let off_price=[62,56,74,70,85,1,58,45,40]
+    let cut_price=[899,1099,1499,699,999,399,1499,899,999,999];
 
-        let size_arr=[40,38,44,38,46,38,46,40,40,46]
+let off_price=[62,56,74,70,85,1,58,45,40]
+
+let size_arr=[40,38,44,38,46,38,46,40,40,46]
 
         let count=0;
-       imgarr.forEach(element =>
+
+       arr1.forEach(element =>
         {
         let t_shirt_cards1=document.getElementById('t_shirt_cards1');
 
@@ -183,9 +184,9 @@
              let element2=` 
              <div class='mincard1'>
              <img src="${element}" alt="">
-                <p class='p1'>${cateogry_name[count]}</p>
-                <p class='p1'>${t_shirt_name[count]}</p>
-                <p class='p1'>Rs.${card_price[count]} <span class='strike'>${cut_price[count]}</span> <span>(${off_price[count]}%OFF)</span></p>
+                <p class='p1'>${arr2[count]}</p>
+                <p class='p1'>${arr3[count]}</p>
+                <p class='p1'>Rs.${arr4[count]} <span class='strike'>${cut_price[count]}</span> <span>(${off_price[count]}%OFF)</span></p>
 
                 <div class='wishlist1'>
                     <button class='btnwrapper1'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
