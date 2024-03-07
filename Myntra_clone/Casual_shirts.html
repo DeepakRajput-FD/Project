@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casual Shirt</title>
+<link rel="shortcut icon" href="./Images/myntra3.png" type="image/x-icon">
+
     <style>
         *
         {
@@ -170,14 +172,16 @@
 
         let cut_price=[899,1099,1499,699,999,399,1499,899,999,999];
 
-        let off_price=[62,56,74,70,85,1,58,45,40]
+        let off_price=[62,56,74,70,85,1,58,45,40,45]
 
         let size_arr=[40,38,44,38,46,38,46,40,40,46]
 
         let count=0;
+        
+        let t_shirt_cards1=document.getElementById('t_shirt_cards1');
+
        imgarr.forEach(element =>
         {
-        let t_shirt_cards1=document.getElementById('t_shirt_cards1');
 
         let element1=document.createElement('div');
 
@@ -189,7 +193,7 @@
                 <p class='p1'>Rs.${card_price[count]} <span class='strike'>${cut_price[count]}</span> <span>(${off_price[count]}%OFF)</span></p>
 
                 <div class='wishlist1'>
-                    <button class='btnwrapper1'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
+                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
                     <p id='p2'>Sizes:${size_arr[count]} </p>
                     </div>
 
@@ -201,31 +205,37 @@
 
                 let btnwrapper1=document.getElementsByClassName('btnwrapper1');
                 
-                let num=0;
-
-                btnwrapper1[0].addEventListener('click',function name() {
-                    
-                    console.log(this);
-                    
-                    let img1=imgarr[num];
-                    let t_shirt1=t_shirt_name[num];
-                    let card_price1=card_price[num];
-                    let cut_price1=cut_price[num];
-                    let off_price1=off_price[num];
-
-                    console.log(card_price[0]);
-
-                    localStorage.setItem('img1',img1);
-                    localStorage.setItem('t_shirt1',t_shirt1)
-                    localStorage.setItem('card_price1',card_price1)
-                    localStorage.setItem('cut_price1',cut_price1)
-                    localStorage.setItem('off_price1',off_price1)
-                    // localStorage.setItem('cateogry_name',)
-
-                    // num++;
-                })
-
+                
+                
             });
+            
+            let num=0;
+           let num2=1;
+           function buttonfun()
+           {
+                
+                let img1=imgarr[num];
+                let t_shirt1=t_shirt_name[num];
+                let card_price1=card_price[num];
+                let cut_price1=cut_price[num];
+                let off_price1=off_price[num];
+
+                console.log(card_price[num]);
+
+                let count2=num2;
+
+                localStorage.setItem('img1',img1);
+                localStorage.setItem('t_shirt1',t_shirt1)
+                localStorage.setItem('card_price1',card_price1)
+                localStorage.setItem('cut_price1',cut_price1)
+                localStorage.setItem('off_price1',off_price1)
+                localStorage.setItem('count2',count2)
+                // localStorage.setItem('cateogry_name',)
+
+                num++;
+                num2++;
+
+           }
 
             function price()
            {

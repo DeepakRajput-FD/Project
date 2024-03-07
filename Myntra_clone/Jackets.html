@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackets</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="./Images/myntra3.png" type="image/x-icon">
+    
     <style>
         *
         {
@@ -177,7 +179,7 @@
                 <p class='p1'>Rs.${arrp3[count]}</p>
 
                 <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='fun2()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
+                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
                     <p id='p2'>Sizes:${size_arr[count]} </p>
                     </div>
 
@@ -186,6 +188,34 @@
                 t_shirt_cards1.appendChild(element1);
                 count++;
             });
+
+            let num=0;
+            let num2=1;
+            function buttonfun()
+           {
+                
+                let img1=arr1img[num];
+                let t_shirt1=arrp[num];
+                let card_price1=arrp3[num];
+                // let cut_price1=cut_price[num];
+                // let off_price1=off_price[num];
+
+                // console.log(card_price[num]);
+            let count2=num2;
+                localStorage.setItem('img1',img1);
+                localStorage.setItem('t_shirt1',t_shirt1)
+                localStorage.setItem('card_price1',card_price1)
+                localStorage.setItem('count2',count2)
+                // localStorage.setItem('cut_price1',cut_price1)
+                // localStorage.setItem('off_price1',off_price1)
+                // localStorage.setItem('cateogry_name',)
+
+                num2++;
+                num++;
+           }
+
+           
+            
 
             function fun2()
              {

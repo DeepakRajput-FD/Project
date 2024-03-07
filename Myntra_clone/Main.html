@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra</title>
+    <link rel="shortcut icon" href="./Images/myntra3.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -21,7 +22,7 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="images/myntraLogo.jpg" alt="" />
+        <img src="./Images/myntra3.png" alt="" />
       </div>
       <ul class="main-menu">
         <li href="" onclick="dropDown()">
@@ -67,29 +68,35 @@
           <i class="fa-regular fa-user" id="user"></i>
           <span>profile</span>
           <ul id="sub-menu-profile">
-            <li><a href="#" id="name1" > </a></li>
+            <li><a href="#" id="name2" > </a></li>
             <hr />
              <li><a href="./T-shirt_cards.html" target="_blank">tshirt</a></li>
             <li><a href="./Casual_shirts.html" target="_blank"> Casual shirt</a></li>
             <li><a href="./Jackets.html" target="_blank">Jackets</a></li>
             <li><a href="./project/Jeans.html" target="_blank">Jeans</a></li>
             <li><a href="./project/Suit.html" target="_blank">Suit</a></li>
+            <li><a href="./Sign_up_form.html" target="_blank">Log in</a></li>
+            <li onclick="LogOut()">Log Out</li>
           </ul>
         </div>
         <div class="profile">
           <i class="fa-regular fa-heart" id="user"></i>
 
           <span>
-            <a href="./Wishlist.html" target="_blank">
+            <a href="./Wishlist.html" target="_blank" onclick="wishlist()">
             Wishlist
+              <span id="spn2">
 
+              </span>
             </a>
           </span>
         </div>
         <div class="profile">
           <i class="fa-solid fa-bag-shopping" id="user"></i>
+          <a href="./Shopping_bag.html" target="_blank">
 
-          <span>Bag</span>
+            <span>Bag</span>
+          </a>
         </div>
       </div>
     </nav>
@@ -163,9 +170,25 @@
         d = !d;
       }
 
-      let name1=document.getElementById('name1');
+      let name2=document.getElementById('name2');
       let data1=localStorage['key1'];
-      name1.innerHTML=data1;
-    </script>
+      name2.innerHTML=data1;
+
+      function LogOut()
+       {
+          name2.innerHTML='';
+      }
+
+      let spn2=document.getElementById('spn2');
+      let count2=localStorage['count2'];
+        spn2.innerHTML=count2;
+
+        
+        function wishlist()
+        {
+          localStorage.removeItem('count2');
+         
+              spn2.innerHTML==0;      }
+</script>
   </body>
 </html>
