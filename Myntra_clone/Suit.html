@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual_shirt</title>
+    <title>Suits</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="shortcut icon" href="./Images/myntra3.png" type="image/x-icon">
     
@@ -104,7 +104,7 @@
             text-align: left;
         }
     </style>
-    <link rel="stylesheet" href="./responsive.css">
+    <!-- <link rel="stylesheet" href="./responsive.css"> -->
 </head>
 <body>
     <div class="t-shirt-wrapper">
@@ -115,9 +115,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice1()"> <span>Rs. 124 to Rs. 500</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice2()"> <span>Rs. 501 to Rs. 1500</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice3()"> <span> Rs. 1500 to Rs.9999 </span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice1()"> <span>Rs. 1000 to Rs. 5000</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice2()"> <span>Rs. 5001 to Rs. 7000</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice3()"> <span> Rs. 7001 to Rs.10000 </span></li>
             </ul>
 
             <h4>
@@ -125,9 +125,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth1()"> <span>roadster</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth2()"> <span>powerlook</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth3()"> <span> HRX by hritik roshan</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth1()"> <span>Arrow</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth2()"> <span>Peter England Elite</span></li>
+                <li> <input type="checkbox" class="checkbox1" onclick="cloth3()"> <span> INVICTUS</span></li>
             </ul>
 
             <h4>
@@ -151,93 +151,82 @@
 
         </div>
     </div>
-  
     <script>
 
 
         let card_items = [
         {
-            src:"./Casual_shirt/img1.webp",
-          item_name: "Roadster",
-          item_title: "Men Slim Fit Casual Shirt",
-          price: 1400,
-          name:"women",
+            src: "./Suit_images/suit-1.png",
+          item_name: "Peter England Elite",
+          item_title: "Men Suits",
+          price: 6999,
           size:'40'
 
         },
         {
-            src:"./Casual_shirt/img2.webp",
-          item_name: "ether",
-          item_title: "Men Regular Fit Sustainable Casual Shirt",
-          price: 1200,
-          name:"women",
+            src: "./Suit_images/suit-2.png",
+          item_name: "Allen Solly",
+          item_title: "Men Suits",
+          price: 4550,
           size:'38'
         },
         {
-            src:"./Casual_shirt/img3.webp",
-          item_name: "Roadster",
-          item_title: "Men Cotton Casual Shirt",
-          price: 1469,
-          name: "men",
+            src: "./Suit_images/suit-3.png",
+          item_name: "Blackberrys",
+          item_title: "Men Solid Suits",
+          price: 3990,
           size:'44'
         },
         {
-            src:"./Casual_shirt/img4.webp",
-          item_name: "here&now",
-          item_title: "Printed Slim Fit Casual Shirt",
-          price: 699,
-          name: "women",
+            src: "./Suit_images/suit-4.png",
+          item_name: "sevn suits",
+          item_title: "Men Single Breasted Blazer",
+          price: 5500,
           size:'38'
         },
         {
-            src:"./Casual_shirt/img5.webp",
-          item_name: "Roadster",
-          item_title: "Men Cotton Casual Shirt",
-          price: 499,
-          name: "women",
+            src: "./Suit_images/suit-5.png",
+          item_name: "HERE&Wintage",
+          item_title: "Single-Breated",
+          price: 8900,
           size:'46'
         },
         {
-            src:"./Casual_shirt/img6.webp",
-          item_name: "powerlook",
-          item_title: "Men Slim Fit Casual Shirt",
-          price: 1899,
-          name: "women",
+            src: "./Suit_images/suit-6.png",
+          item_name: "Arrow",
+          item_title: "Men Slim Fit Tuxedo",
+          price: 9990,
           size:'38'
 
         },
         {
-            src:"./Casual_shirt/img7.webp",
-          item_name: "wrogen",
-          item_title: "Men Regular Fit Sustainable Casual Shirt",
-          price: 669,
-          name: "men",
-          size:'42'
+            src: "./Suit_images/suit-7.png",
+          item_name: "INVICTUS",
+          item_title: "Men Suits",
+          price: 7500,
+          size:'46'
 
         },
         {
-            src:"./Casual_shirt/img8.webp",
-          item_name: "locomotive",
-          item_title: "Men Cotton Casual Shirt",
-          price: 1200,
-          name: "men",
+            src: "./Suit_images/suit-8.png",
+          item_name: "TAHVO",
+          item_title: "Men Solid Suits",
+          price: 8990,
           size:'40'
 
         },
         {
-            src:"./Casual_shirt/img9.webp",
-          item_name: "powerlook",
-          item_title: "Printed Slim Fit Casual Shirt",
-          price: 2400,
-          name: "men",
+            src: "./Suit_images/suit-9.png",
+          item_name: "hangup trend",
+          item_title: "Men Single Breasted Blazer",
+          price: 6990,
           size:'40'
         },
         {
-            src:"./Casual_shirt/img10.webp",
-          item_name: "mast&herbour",
-          item_title: "Men Cotton Casual Shirt",
-          price: 9999,
-          name: "men",
+            src: "./Suit_images/suit-10.png",
+          item_name: "Hangup",
+          item_title: "Single-Breated",
+          price: 999,
           size:'46'
         }
       ]
@@ -273,8 +262,8 @@
             let num2=1;
             function buttonfun()
            {
-            
-                let img1=card_items[num].src;
+                
+            let img1=card_items[num].src;
                 let t_shirt1=card_items[num].item_title;
                 let card_price1=card_items[num].price;
                 // let cut_price1=cut_price[num];
@@ -288,10 +277,10 @@
                 localStorage.setItem('count2',count2)
                 // localStorage.setItem('cut_price1',cut_price1)
                 // localStorage.setItem('off_price1',off_price1)
+                // localStorage.setItem('cateogry_name',)
 
-                // let btnwrapper1=document.getElementsByClassName['btnwrapper1'];
-                num2++;
                 num++;
+                num2++;
            }
 
            
@@ -309,7 +298,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].price>=124&&card_items[i].price<=500)
+                if (card_items[i].price>=1000&&card_items[i].price<=5000)
                  {
                  let element1=document.createElement('div');
 
@@ -342,7 +331,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].price>=501&&card_items[i].price<=1500)
+                if (card_items[i].price>=5001&&card_items[i].price<=7000)
                  {
                  let element1=document.createElement('div');
 
@@ -376,7 +365,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].price>=1500&&card_items[i].price<=9999)
+                if (card_items[i].price>=7001&&card_items[i].price<=10000)
                  {
                  let element1=document.createElement('div');
 
@@ -410,7 +399,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].item_name=='Roadster')
+                if (card_items[i].item_name=='Arrow')
                  {
                  let element1=document.createElement('div');
 
@@ -444,7 +433,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].item_name=='powerlook')
+                if (card_items[i].item_name=='Peter England Elite')
                  {
                  let element1=document.createElement('div');
 
@@ -478,7 +467,7 @@
 
             for (let i = 0; i <= card_items.length; i++) 
             {
-                if (card_items[i].item_name=='HRX By Hritik Roshan')
+                if (card_items[i].item_name=='INVICTUS')
                  {
                  let element1=document.createElement('div');
 
