@@ -115,9 +115,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice1()"> <span>Rs. 1000 to Rs. 5000</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice2()"> <span>Rs. 5001 to Rs. 7000</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="Clothprice3()"> <span> Rs. 7001 to Rs.10000 </span></li>
+                <li> <input type="radio" class="checkbox1" onclick="Clothprice1()" name="Clothprice"> <span>Rs. 1000 to Rs. 5000</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="Clothprice2()" name="Clothprice"> <span>Rs. 5001 to Rs. 7000</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="Clothprice3()" name="Clothprice"> <span> Rs. 7001 to Rs.10000 </span></li>
             </ul>
 
             <h4>
@@ -125,9 +125,9 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth1()"> <span>Arrow</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth2()"> <span>Peter England Elite</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="cloth3()"> <span> INVICTUS</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="cloth1()" name="suit_name"> <span>Arrow</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="cloth2()" name="suit_name"> <span>Peter England Elite</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="cloth3()" name="suit_name"> <span> INVICTUS</span></li>
             </ul>
 
             <h4>
@@ -135,10 +135,10 @@
             </h4>
 
             <ul class="cateogary1">
-                <li> <input type="checkbox" class="checkbox1" onclick="size1()"> <span>38</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="size2()"> <span>40</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="size3()"> <span> 42</span></li>
-                <li> <input type="checkbox" class="checkbox1" onclick="size4()"> <span>44</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="size1()" name="size"> <span>38</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="size2()" name="size"> <span>40</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="size3()" name="size"> <span> 42</span></li>
+                <li> <input type="radio" class="checkbox1" onclick="size4()" name="size"> <span>44</span></li>
             </ul>
 
         </div>
@@ -235,6 +235,29 @@
 
         let count=0;
 
+        function allelement(i)
+        {
+            let element1=document.createElement('div');
+
+            let element2=` 
+            <div class='mincard1'>
+            <img src="${card_items[i].src}" alt="">
+            <p class='p1'>${card_items[i].item_name}</p>
+            <p class='p1'>${card_items[i].item_title}</p>
+            <p class='p1'>Rs.${card_items[i].price}</p>
+            
+            <div class='wishlist1'>
+            <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
+            <p id='p2'>Sizes:${card_items[i].size} </p>
+            </div>
+
+            </div>`;
+            element1.innerHTML=element2;
+            t_shirt_cards1.appendChild(element1);
+        }
+
+
+
         // card_items.forEach(element =>
         // {
 
@@ -300,23 +323,7 @@
             {
                 if (card_items[i].price>=1000&&card_items[i].price<=5000)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
@@ -333,24 +340,7 @@
             {
                 if (card_items[i].price>=5001&&card_items[i].price<=7000)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
-    
+                    allelement(i)
                 }
                
                 
@@ -367,23 +357,7 @@
             {
                 if (card_items[i].price>=7001&&card_items[i].price<=10000)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
@@ -401,23 +375,7 @@
             {
                 if (card_items[i].item_name=='Arrow')
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
@@ -435,23 +393,7 @@
             {
                 if (card_items[i].item_name=='Peter England Elite')
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
@@ -469,24 +411,7 @@
             {
                 if (card_items[i].item_name=='INVICTUS')
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
-    
+                    allelement(i);
                 }
                 else
                 {
@@ -507,23 +432,7 @@
             {
                 if (card_items[i].size==38)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
@@ -541,24 +450,7 @@
             {
                 if (card_items[i].size==40)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
-    
+                    allelement(i);
                 }
                
                 
@@ -575,24 +467,7 @@
             {
                 if (card_items[i].size==42)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
-    
+                    allelement(i);
                 }
                
                 
@@ -609,23 +484,7 @@
             {
                 if (card_items[i].size==44)
                  {
-                 let element1=document.createElement('div');
-
-                    let element2=` 
-             <div class='mincard1'>
-             <img src="${card_items[i].src}" alt="">
-                <p class='p1'>${card_items[i].item_name}</p>
-                <p class='p1'>${card_items[i].item_title}</p>
-                <p class='p1'>Rs.${card_items[i].price}</p>
-
-                <div class='wishlist1'>
-                    <button class='btnwrapper1' onclick='buttonfun()'><i class="fa-regular fa-heart" id='heart'></i> <span>Wishlist</span> </button>
-                    <p id='p2'>Sizes:${card_items[i].size} </p>
-                    </div>
-
-                </div>`;
-                element1.innerHTML=element2;
-                t_shirt_cards1.appendChild(element1);
+                    allelement(i);
     
                 }
                
