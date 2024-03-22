@@ -20,7 +20,7 @@
 
     <header id="header1">
         <nav class="container-fluid flex-wrap">
-            <ul class="lists ">
+            <ul class="lists " id="lists2">
 
                 <div class="wrapper1">
                 <li id="About"><a href="#23">About Us ▾</a></li>
@@ -792,18 +792,25 @@
     </footer>
 
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js    "></script>
 
     <script>
+
+        document.getElementById('btn1').addEventListener('click',function ()
+         {
+           let a= document.getElementById('lists2');
+        //    console.log(a);
+            a.style.display='flex';
+        })
+
         $(document).ready(function () {
             // $('i').css({'transform': 'rotate(0deg)'});
 
-            $('#btn1').click(function ()
-             {
-                $('.lists').css({display:'flex'});    
-            });
+            // $('#btn1').click(function ()
+            //  {
+            //     $('.lists').css({display:'flex'});    
+            // });
+
 
             $('.smallblock').css({ 'display': 'none' });
 
